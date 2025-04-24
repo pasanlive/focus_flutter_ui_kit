@@ -1,0 +1,182 @@
+[
+  {
+    "period": "2021 Q1",
+    "type": "Durable Goods",
+    "value": 926.2
+  },
+  {
+    "period": "2021 Q1",
+    "type": "Non-Durable Goods",
+    "value": 698.8
+  },
+  {
+    "period": "2021 Q1",
+    "type": "Services",
+    "value": 757.8
+  },
+  {
+    "period": "2021 Q2",
+    "type": "Durable Goods",
+    "value": 965.4
+  },
+  {
+    "period": "2021 Q2",
+    "type": "Non-Durable Goods",
+    "value": 748.1
+  },
+  {
+    "period": "2021 Q2",
+    "type": "Services",
+    "value": 784.8
+  },
+  {
+    "period": "2021 Q3",
+    "type": "Durable Goods",
+    "value": 967.5
+  },
+  {
+    "period": "2021 Q3",
+    "type": "Non-Durable Goods",
+    "value": 784.4
+  },
+  {
+    "period": "2021 Q3",
+    "type": "Services",
+    "value": 814.0
+  },
+  {
+    "period": "2021 Q4",
+    "type": "Durable Goods",
+    "value": 1004.2
+  },
+  {
+    "period": "2021 Q4",
+    "type": "Non-Durable Goods",
+    "value": 889.2
+  },
+  {
+    "period": "2021 Q4",
+    "type": "Services",
+    "value": 859.7
+  },
+  {
+    "period": "2022 Q1",
+    "type": "Durable Goods",
+    "value": 1026.7
+  },
+  {
+    "period": "2022 Q1",
+    "type": "Non-Durable Goods",
+    "value": 924.3
+  },
+  {
+    "period": "2022 Q1",
+    "type": "Services",
+    "value": 886.6
+  },
+  {
+    "period": "2022 Q2",
+    "type": "Durable Goods",
+    "value": 1058.2
+  },
+  {
+    "period": "2022 Q2",
+    "type": "Non-Durable Goods",
+    "value": 1056.9
+  },
+  {
+    "period": "2022 Q2",
+    "type": "Services",
+    "value": 929.1
+  },
+  {
+    "period": "2022 Q3",
+    "type": "Durable Goods",
+    "value": 1089.8
+  },
+  {
+    "period": "2022 Q3",
+    "type": "Non-Durable Goods",
+    "value": 1050.1
+  },
+  {
+    "period": "2022 Q3",
+    "type": "Services",
+    "value": 944.6
+  },
+  {
+    "period": "2022 Q4",
+    "type": "Durable Goods",
+    "value": 1081.4
+  },
+  {
+    "period": "2022 Q4",
+    "type": "Non-Durable Goods",
+    "value": 965.5
+  },
+  {
+    "period": "2022 Q4",
+    "type": "Services",
+    "value": 966.9
+  },
+  {
+    "period": "2023 Q1",
+    "type": "Durable Goods",
+    "value": 1116.4
+  },
+  {
+    "period": "2023 Q1",
+    "type": "Non-Durable Goods",
+    "value": 974.0
+  },
+  {
+    "period": "2023 Q1",
+    "type": "Services",
+    "value": 974.4
+  },
+  {
+    "period": "2023 Q2",
+    "type": "Durable Goods",
+    "value": 1100.7
+  },
+  {
+    "period": "2023 Q2",
+    "type": "Non-Durable Goods",
+    "value": 867.9
+  },
+  {
+    "period": "2023 Q2",
+    "type": "Services",
+    "value": 993.2
+  },
+  {
+    "period": "2023 Q3",
+    "type": "Durable Goods",
+    "value": 1132.2
+  },
+  {
+    "period": "2023 Q3",
+    "type": "Non-Durable Goods",
+    "value": 894.6
+  },
+  {
+    "period": "2023 Q3",
+    "type": "Services",
+    "value": 1004.0
+  },
+  {
+    "period": "2023 Q4",
+    "type": "Durable Goods",
+    "value": 1112.7
+  },
+  {
+    "period": "2023 Q4",
+    "type": "Non-Durable Goods",
+    "value": 914.2
+  },
+  {
+    "period": "2023 Q4",
+    "type": "Services",
+    "value": 1027.2
+  }
+]

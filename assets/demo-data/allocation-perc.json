@@ -1,0 +1,26 @@
+[
+  {
+    "asset": "Stocks",
+    "allocationPerc": 35.0
+  },
+  {
+    "asset": "Bonds",
+    "allocationPerc": 20.0
+  },
+  {
+    "asset": "Forex",
+    "allocationPerc": 13.0
+  },
+  {
+    "asset": "Crypto",
+    "allocationPerc": 11.0
+  },
+  {
+    "asset": "Commodities",
+    "allocationPerc": 8.0
+  },
+  {
+    "asset": "Metal",
+    "allocationPerc": 13.0
+  }
+]
