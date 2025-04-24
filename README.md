@@ -1,6 +1,6 @@
 # Focus Flutter UI Kit
 
-![Banner]([Isolated.png](https://github.com/maxlam79/focus_flutter_ui_kit/blob/main/assets/demo-background/github-banner.jpg) "Focus Flutter UI Kit")
+![](https://github.com/maxlam79/focus_flutter_ui_kit/blob/main/assets/demo-background/github-banner.jpg?raw=true "Focus Flutter UI Kit")
 
 ## Demo & Documentation Link
 The demo could be found here: [https://focusuidemo.pages.dev](https://focusuidemo.pages.dev)
