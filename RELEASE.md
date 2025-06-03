@@ -6,6 +6,7 @@
 - Updated various dependencies in pubspec.yaml
 
 ## Version v1.0.1 (Date 29 Apr 2025)
+- Fixed FUISpinner not showing
 - Maintenance release, update of dependency versions on pubspec.yaml.
 
 ## Version v1.0.0 (Date 24 Apr 2025)
