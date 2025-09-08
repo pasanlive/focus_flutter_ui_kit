@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoButtons extends StatelessWidget {
@@ -8,7 +8,7 @@ class DemoButtons extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FUISingleChildScrollView(
+    return UISingleChildScrollView(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -18,7 +18,7 @@ class DemoButtons extends StatelessWidget {
           DemoButtonsMoreFeaturesBanner(),
           DemoButtonsMoreFeatures(),
           DemoButtonsBlockLevel(),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           DemoScaffoldBottom01(),
         ],
       ),

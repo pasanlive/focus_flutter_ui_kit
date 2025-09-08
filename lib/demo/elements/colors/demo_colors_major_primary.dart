@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoColorsMajorPrimary extends StatelessWidget {
   const DemoColorsMajorPrimary({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     Text colorNameText = Text('Primary', style: TextStyle(color: fuiColors.shade0), softWrap: false);
 
@@ -39,7 +39,7 @@ class DemoColorsMajorPrimary extends StatelessWidget {
                 xs: H4(colorNameText),
               ),
             ),
-            FUISpacer.vSpace20,
+            UISpacer.vSpace20,
           ],
         ),
       ),

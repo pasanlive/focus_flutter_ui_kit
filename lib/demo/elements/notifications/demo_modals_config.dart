@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoModalsConfig extends StatelessWidget {
@@ -21,16 +21,16 @@ class DemoModalsConfig extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(const Text('Modal Configuration')),
           Regular(const Text('Modal display animation and duration can be configured. Please explore.')),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           ResponsiveGridRow(children: [
             ResponsiveGridCol(
               sm: 12,
               md: 6,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -58,7 +58,7 @@ class DemoModalsConfig extends StatelessWidget {
             ResponsiveGridCol(
               sm: 12,
               md: 6,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   Padding(
                     padding: const EdgeInsets.all(8.0),
@@ -78,7 +78,7 @@ class DemoModalsConfig extends StatelessWidget {
                       selectedDataList: [DemoNotificationData.selectedModalFeature()],
                     ),
                   ),
-                  FUISpacer.vSpace10,
+                  UISpacer.vSpace10,
                   Align(
                     alignment: Alignment.topRight,
                     child: SmallTextI(const Text('See this in advanced modal demo.')),

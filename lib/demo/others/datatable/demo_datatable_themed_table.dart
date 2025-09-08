@@ -2,7 +2,7 @@ import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import 'exports.dart';
 
 class DemoDatatableThemedTable extends StatelessWidget {
@@ -23,7 +23,7 @@ class DemoDatatableThemedTable extends StatelessWidget {
   }
 
   ResponsiveGridCol _buildSizeSmall(BuildContext context) {
-    FUIColorScheme fuiColorScheme = FUIColorScheme.denim;
+    UIColorScheme fuiColorScheme = UIColorScheme.denim;
     FUIDataTableColumnHelper dtColumnHelper = FUIDataTableColumnHelper(context, fuiColorScheme: fuiColorScheme, size: FUIDataTable2Size.small);
     DemoDatatableData demoData = DemoDatatableData(context);
     FUIDataTable2Size fuiDataTable2Size = FUIDataTable2Size.small;
@@ -33,10 +33,10 @@ class DemoDatatableThemedTable extends StatelessWidget {
       md: 5,
       child: FUISectionContainer(
         padding: FUISectionTheme.eiSecContainerPaddingZeroTop,
-        child: FUIColumn(
+        child: UIColumn(
           children: [
             H4(const Text('Small')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIDataTable2(
               fuiColorScheme: fuiColorScheme,
               fuiDataTable2Size: fuiDataTable2Size,
@@ -56,7 +56,7 @@ class DemoDatatableThemedTable extends StatelessWidget {
   }
 
   ResponsiveGridCol _buildSizeLarge(BuildContext context) {
-    FUIColorScheme fuiColorScheme = FUIColorScheme.cobalt;
+    UIColorScheme fuiColorScheme = UIColorScheme.cobalt;
     FUIDataTableColumnHelper dtColumnHelper = FUIDataTableColumnHelper(context, fuiColorScheme: fuiColorScheme, size: FUIDataTable2Size.large);
     DemoDatatableData demoData = DemoDatatableData(context);
     FUIDataTable2Size fuiDataTable2Size = FUIDataTable2Size.large;
@@ -66,10 +66,10 @@ class DemoDatatableThemedTable extends StatelessWidget {
       md: 7,
       child: FUISectionContainer(
         padding: FUISectionTheme.eiSecContainerPaddingZeroTop,
-        child: FUIColumn(
+        child: UIColumn(
           children: [
             H4(const Text('Large')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIDataTable2(
               fuiColorScheme: fuiColorScheme,
               fuiDataTable2Size: fuiDataTable2Size,

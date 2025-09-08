@@ -9,14 +9,14 @@ import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetFinance07 extends StatelessWidget {
   const DemoWidgetFinance07({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUIPanel(
       headerShow: true,
@@ -24,11 +24,11 @@ class DemoWidgetFinance07 extends StatelessWidget {
       height: 800,
       headerIconButtons: _buildHeaderIconButtons(context),
       contentScrollBarEnable: true,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           _buildChart(context),
           PreH(Text('Key Ratios')),
-          FUISpacer.vSpace7,
+          UISpacer.vSpace7,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -65,7 +65,7 @@ class DemoWidgetFinance07 extends StatelessWidget {
               ),
             ],
           ),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -102,7 +102,7 @@ class DemoWidgetFinance07 extends StatelessWidget {
               ),
             ],
           ),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           H4(Text('Thesis')),
           Regular(Text(
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.')),
@@ -155,7 +155,7 @@ class DemoWidgetFinance07 extends StatelessWidget {
   }
 
   _buildChart(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     NumberFormat valueNf = NumberFormat('#,###');
 
     return SizedBox(

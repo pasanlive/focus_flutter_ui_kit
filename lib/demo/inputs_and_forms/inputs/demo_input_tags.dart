@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:textfield_tags/textfield_tags.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoInputTags extends StatefulWidget {
   const DemoInputTags({super.key});
@@ -35,7 +35,7 @@ class _DemoInputTagsState extends State<DemoInputTags> {
   Widget build(BuildContext context) {
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.focus,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           _buildHeader(),
           ResponsiveGridRow(
@@ -54,7 +54,7 @@ class _DemoInputTagsState extends State<DemoInputTags> {
   Widget _buildHeader() {
     return FUISectionContainer(
       padding: FUISectionTheme.eiSecPaddingZeroTop,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(const Text('Tags')),
           Regular(const Text('Tags input field could be customized in various ways.')),
@@ -79,7 +79,7 @@ class _DemoInputTagsState extends State<DemoInputTags> {
               tagSeparators: const [' ', ',', ';'],
               initialTags: const ['flutter', 'dart'],
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Regular(const Text(
                 'Regular tag field comes with default separators of <space> \' \' or \',\'. Here we can configure some other separators including \';\'.')),
           ],
@@ -99,12 +99,12 @@ class _DemoInputTagsState extends State<DemoInputTags> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             FUIInputTags(
-              fuiColorScheme: FUIColorScheme.cobalt,
+              fuiColorScheme: UIColorScheme.cobalt,
               fuiInputTagShape: FUIInputTagShape.square,
               label: 'Tag (color scheme)',
               hint: 'Type something',
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Regular(const Text('Color scheme and tag shape could be changed.')),
           ],
         ),
@@ -154,7 +154,7 @@ class _DemoInputTagsState extends State<DemoInputTags> {
                 }
               },
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Regular(const Text('Duplication detection and custom filter to allow/disallow certain tags.')),
           ],
         ),
@@ -178,7 +178,7 @@ class _DemoInputTagsState extends State<DemoInputTags> {
               tagPrefixString: '#',
               tagPostfixString: '!',
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Regular(const Text('You can add prefix and/or postfix characters to the tag.')),
           ],
         ),

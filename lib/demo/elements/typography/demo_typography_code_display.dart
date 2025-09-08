@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoTypographyCodeDisplay extends StatelessWidget {
   const DemoTypographyCodeDisplay({super.key});
@@ -34,7 +34,7 @@ class HelloWorldApp extends StatelessWidget {
           H2(const Text('Code or Instructional Text View')),
           H4(const Text('Code Display Box')),
           FUICodeDisplayBox(text: srcCode, lang: 'dart'),
-          FUISpacer.vSpace5,
+          UISpacer.vSpace5,
           Align(
             alignment: Alignment.topLeft,
             child: SmallTextI(const Text('Code Display Box')),

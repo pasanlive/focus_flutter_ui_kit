@@ -5,7 +5,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:lottie/lottie.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoPane extends StatefulWidget {
@@ -20,7 +20,7 @@ class _DemoPaneState extends State<DemoPane> {
   late GlobalKey paneFeatureSelectKey;
 
   /// Theme
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Bloc
   late FUIPaneController paneCtrl;
@@ -74,11 +74,11 @@ class _DemoPaneState extends State<DemoPane> {
 
   _buildIntro() {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           PreH(const Text('BORDERLESS')),
           H2(const Text('Pane')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           H5(const Text(
               'More than a container, borderless and seemingly promote subtle separation of concern with build-in pace bar, fading and spinner capability.')),
         ],
@@ -210,20 +210,20 @@ class _DemoPaneState extends State<DemoPane> {
                     spinnerRotationEnable: spinnerRotationEnable,
                     spinnerWidget: spinnerWidget,
                     height: responsiveValue(context, lg: 350, md: 380, sm: 450, xs: 450),
-                    child: FUISingleChildScrollView(
+                    child: UISingleChildScrollView(
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           H4(const Text('This is a Pane')),
-                          FUISpacer.vSpace10,
+                          UISpacer.vSpace10,
                           Regular(
                               const Text('Pane works like a container, with additional features that can be triggered to create a better user experience.')),
-                          FUISpacer.vSpace10,
+                          UISpacer.vSpace10,
                           SmallTextI(const Text('** The FUIPane class is located in components/pane.')),
-                          FUISpacer.vSpace20,
+                          UISpacer.vSpace20,
                           Regular(const Text('Select the demo option in the drop down and click/tap on the Show Me button.')),
-                          FUISpacer.vSpace10,
+                          UISpacer.vSpace10,
                           FUIInputSelect(
                             key: paneFeatureSelectKey,
                             label: 'Pane Feature',
@@ -235,7 +235,7 @@ class _DemoPaneState extends State<DemoPane> {
                               Future.delayed(Duration(microseconds: 350), () => paneFeatureController.changeTo(selectedValue));
                             },
                           ),
-                          FUISpacer.vSpace10,
+                          UISpacer.vSpace10,
                           Row(
                             mainAxisAlignment: MainAxisAlignment.end,
                             crossAxisAlignment: CrossAxisAlignment.center,

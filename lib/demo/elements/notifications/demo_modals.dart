@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoModals extends StatefulWidget {
@@ -56,7 +56,7 @@ class _DemoModalsState extends State<DemoModals> {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       H2(const Text('Modal')),
-                      FUISpacer.vSpace10,
+                      UISpacer.vSpace10,
                       H5(const Text(
                           'Popup dialog of layered UI sheet which demands the user\'s attention or to display certain info without going to another screen page.')),
                     ],
@@ -66,7 +66,7 @@ class _DemoModalsState extends State<DemoModals> {
               ResponsiveGridCol(
                 sm: 12,
                 md: 8,
-                child: FUIColumn(
+                child: UIColumn(
                   children: [
                     ResponsiveGridRow(
                       children: [
@@ -118,7 +118,7 @@ class _DemoModalsState extends State<DemoModals> {
               ),
             ],
           ),
-          FUIHDivider(),
+          UIHDivider(),
         ],
       ),
     );

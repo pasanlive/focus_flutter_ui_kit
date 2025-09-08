@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:graphic/graphic.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoChartsHeatmap extends StatelessWidget {
   const DemoChartsHeatmap({super.key});
@@ -40,10 +40,10 @@ class DemoChartsHeatmap extends StatelessWidget {
       ],
       headerSeparator: false,
       panelBorderColor: Colors.transparent,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           _buildChart(context),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           PreH(const Text('Sales Volume')),
           Regular(const Text('For more examples, please visit https://pub.dev/packages/graphic')),
         ],
@@ -52,7 +52,7 @@ class DemoChartsHeatmap extends StatelessWidget {
   }
 
   _buildChart(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return SizedBox(
       height: 150,

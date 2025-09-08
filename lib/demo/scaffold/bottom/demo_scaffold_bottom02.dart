@@ -3,14 +3,14 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoScaffoldBottom02 extends StatelessWidget {
   const DemoScaffoldBottom02({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionPlain(
       backgroundColor: fuiColors.secondary,
@@ -57,7 +57,7 @@ class DemoScaffoldBottom02 extends StatelessWidget {
 
   _buildLogoSection(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     TextStyle tsDot = typoTheme.h1.copyWith(color: fuiColors.primary);
     TextStyle tsTitle = typoTheme.h1.copyWith(color: fuiColors.shade0);
@@ -80,7 +80,7 @@ class DemoScaffoldBottom02 extends StatelessWidget {
               ),
             ]),
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           Text('More than just a theme, a Flutter UI toolkit crafted to lift burdens from extensive development of UI for the web / mobile / desktop.',
               style: tsBottomRegular),
         ],
@@ -90,7 +90,7 @@ class DemoScaffoldBottom02 extends StatelessWidget {
 
   _buildCopyrightSection(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     TextStyle tsBottomRegular = typoTheme.regular.copyWith(color: fuiColors.shade2);
 
     return Column(
@@ -98,7 +98,7 @@ class DemoScaffoldBottom02 extends StatelessWidget {
       crossAxisAlignment: responsiveValue(context, sm: CrossAxisAlignment.start, xs: CrossAxisAlignment.center),
       children: [
         Text('Copyright \u00A9 2024 - ${DateTime.now().year}. Max Lam and contributors.', style: tsBottomRegular),
-        FUISpacer.vSpace10,
+        UISpacer.vSpace10,
         Row(
           mainAxisAlignment: responsiveValue(context, sm: MainAxisAlignment.start, xs: MainAxisAlignment.center),
           children: [
@@ -110,7 +110,7 @@ class DemoScaffoldBottom02 extends StatelessWidget {
                     webOnlyWindowName: '_blank', // launch to new tab
                   );
                 }),
-            FUISpacer.hSpace25,
+            UISpacer.hSpace25,
             FUIButtonLinkTextIcon(
                 text: Text('Docs'),
                 onPressed: () {
@@ -119,7 +119,7 @@ class DemoScaffoldBottom02 extends StatelessWidget {
                     webOnlyWindowName: '_blank', // launch to new tab
                   );
                 }),
-            FUISpacer.hSpace25,
+            UISpacer.hSpace25,
             FUIButtonLinkTextIcon(
                 text: Text(
                   'Starter Kit',
@@ -137,7 +137,7 @@ class DemoScaffoldBottom02 extends StatelessWidget {
   }
 
   _buildSocialButtonsSection(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return Padding(
       padding: EdgeInsets.only(top: 20),

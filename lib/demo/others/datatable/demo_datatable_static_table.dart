@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:select2dot1/select2dot1.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../demo_helper.dart';
 import 'exports.dart';
 
@@ -15,7 +15,7 @@ class DemoDatatableStaticTable extends StatefulWidget {
   State<DemoDatatableStaticTable> createState() => _DemoDatatableStaticTableState();
 }
 
-class _DemoDatatableStaticTableState extends State<DemoDatatableStaticTable> with FUIColorMixin, DemoHelper {
+class _DemoDatatableStaticTableState extends State<DemoDatatableStaticTable> with UIColorMixin, DemoHelper {
   late DemoDatatableData demoDatatableData;
 
   /// Bloc
@@ -31,7 +31,7 @@ class _DemoDatatableStaticTableState extends State<DemoDatatableStaticTable> wit
   _initBloc() {
     colorSchemeCtrl = DemoChangeColorSchemeController(
       event: DemoChangeColorSchemeEvent(
-        FUIColorScheme.primary.name,
+        UIColorScheme.primary.name,
       ),
     );
   }
@@ -58,7 +58,7 @@ class _DemoDatatableStaticTableState extends State<DemoDatatableStaticTable> wit
               _buildStaticTable(),
             ],
           ),
-          FUIHDivider(),
+          UIHDivider(),
         ],
       ),
     );
@@ -70,20 +70,20 @@ class _DemoDatatableStaticTableState extends State<DemoDatatableStaticTable> wit
       md: 3,
       child: FUISectionContainer(
         padding: FUISectionTheme.eiSecContainerPaddingZeroBottom,
-        child: FUIColumn(
+        child: UIColumn(
           children: [
             H2(const Text('Static Table')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             H5(const Text('Straight forward table with header and row/data cells.')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             SmallTextI(const Text('Datatables could be found in components/datatable2/FUIDataTable2.')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             H5(const Text('Color Scheme')),
             Regular(const Text('Select the color scheme below to change the table\'s color scheme')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputSelect(
               label: 'Color Scheme',
-              selectedDataList: [SingleItemCategoryModel(nameSingleItem: 'primary', value: FUIColorScheme.primary.toString())],
+              selectedDataList: [SingleItemCategoryModel(nameSingleItem: 'primary', value: UIColorScheme.primary.toString())],
               dataList: demoDatatableData.colorSchemeList(),
               onChanged: (colorSchemeName) {
                 colorSchemeCtrl.trigger(DemoChangeColorSchemeEvent(colorSchemeName));
@@ -104,7 +104,7 @@ class _DemoDatatableStaticTableState extends State<DemoDatatableStaticTable> wit
         child: BlocBuilder(
           bloc: colorSchemeCtrl,
           builder: (BuildContext context, DemoChangeColorSchemeEvent event) {
-            FUIColorScheme fuiColorScheme = stringToColorScheme(event.colorSchemeName);
+            UIColorScheme fuiColorScheme = stringToColorScheme(event.colorSchemeName);
 
             FUIDataTableColumnHelper dtColumnHelper = FUIDataTableColumnHelper(context, fuiColorScheme: fuiColorScheme);
             DemoDatatableData demoData = DemoDatatableData(context);

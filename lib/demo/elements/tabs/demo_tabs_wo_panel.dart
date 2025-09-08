@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoTabsWithoutPanel extends StatelessWidget {
@@ -9,7 +9,7 @@ class DemoTabsWithoutPanel extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionPlain(
       padding: EdgeInsets.zero,
@@ -31,7 +31,7 @@ class DemoTabsWithoutPanel extends StatelessWidget {
   }
 
   _buildTabs(BuildContext context, Color backgroundColor) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionContainer(
       constraints: const BoxConstraints(

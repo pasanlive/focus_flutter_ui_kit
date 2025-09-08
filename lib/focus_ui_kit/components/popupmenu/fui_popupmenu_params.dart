@@ -1,4 +1,0 @@
-enum FUIPopupMenuItemIconPosition {
-  left,
-  right,
-}

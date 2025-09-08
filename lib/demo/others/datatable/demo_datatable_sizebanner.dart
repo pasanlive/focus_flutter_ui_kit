@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoDatatableSizeBanner extends StatelessWidget {
   const DemoDatatableSizeBanner({super.key});
@@ -11,7 +11,7 @@ class DemoDatatableSizeBanner extends StatelessWidget {
       padding: FUISectionTheme.eiSecPaddingOnlyHorizontal,
       horizontalSpace: FUISectionHorizontalSpace.focus,
       child: FUISectionContainer(
-        child: FUIColumn(
+        child: UIColumn(
           children: [
             H2(const Text('Table Sizes')),
             Regular(const Text('The size of the tables can be defined via fuiDataTable2Size.')),

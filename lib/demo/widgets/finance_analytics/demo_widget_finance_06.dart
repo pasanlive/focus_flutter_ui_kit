@@ -11,7 +11,7 @@ import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetFinance06 extends StatelessWidget {
   const DemoWidgetFinance06({super.key});
@@ -95,10 +95,10 @@ class DemoWidgetFinance06 extends StatelessWidget {
   }
 
   _buildSec01(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
-    return FUIColumn(
+    return UIColumn(
       children: [
         Container(
           width: double.infinity,
@@ -108,12 +108,12 @@ class DemoWidgetFinance06 extends StatelessWidget {
             crossAxisAlignment: WrapCrossAlignment.center,
             spacing: 10,
             children: [
-              FUITextPill(fuiColorScheme: FUIColorScheme.secondary, pillShape: FUITextPillShape.square, text: Text('NASDAQ')),
+              FUITextPill(fuiColorScheme: UIColorScheme.secondary, pillShape: FUITextPillShape.square, text: Text('NASDAQ')),
               FUITextPill(pillShape: FUITextPillShape.square, text: Text('S&P 500')),
             ],
           ),
         ),
-        FUISpacer.vSpace30,
+        UISpacer.vSpace30,
         Text('94,745,000', style: typoTheme.h1),
         Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -124,11 +124,11 @@ class DemoWidgetFinance06 extends StatelessWidget {
               padding: EdgeInsets.only(bottom: 1),
               child: Icon(LineAwesome.arrow_alt_circle_up, size: 18, color: fuiColors.statusSuccess.shade600),
             ),
-            FUISpacer.hSpace5,
+            UISpacer.hSpace5,
             Text('+1.2%', style: typoTheme.regular.copyWith(fontWeight: FontWeight.bold)),
           ],
         ),
-        FUISpacer.vSpace5,
+        UISpacer.vSpace5,
         Regular(Text('U.S. markets open in 6h 23m')),
       ],
     );
@@ -143,7 +143,7 @@ class DemoWidgetFinance06 extends StatelessWidget {
         sm: EdgeInsets.only(top: 20),
         xs: EdgeInsets.only(top: 20),
       ),
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H5(Text('Annual Figures')),
           _buildDataTable(context),
@@ -202,7 +202,7 @@ class DemoWidgetFinance06 extends StatelessWidget {
   }
 
   _buildChart(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return SizedBox(
       height: 230,

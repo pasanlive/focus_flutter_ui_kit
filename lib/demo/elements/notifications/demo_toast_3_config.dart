@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoToast3Config extends StatelessWidget {
@@ -29,11 +29,11 @@ class DemoToast3Config extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(const Text('Configuration')),
           Regular(const Text('Type-3 has more configurable parameters. Please explore them.')),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(

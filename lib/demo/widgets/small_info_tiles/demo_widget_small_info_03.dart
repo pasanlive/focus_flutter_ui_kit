@@ -2,7 +2,7 @@ import 'package:color_shade/color_shade.dart';
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetSmallInfo03 extends StatelessWidget {
   const DemoWidgetSmallInfo03({super.key});
@@ -41,7 +41,7 @@ class DemoWidgetSmallInfo03 extends StatelessWidget {
   }
 
   _buildUpIndicator(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     double borderRadius = 5;
     double width = 60;
     double height = 25;

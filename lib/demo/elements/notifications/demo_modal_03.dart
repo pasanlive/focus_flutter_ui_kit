@@ -9,7 +9,7 @@ import 'package:intl/intl.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:select2dot1/select2dot1.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoModal03 extends StatefulWidget {
   final FUIAnimationType fuiModalAnimationType;
@@ -43,7 +43,7 @@ class DemoModal03 extends StatefulWidget {
 
 class _DemoModal03State extends State<DemoModal03> {
   /// Themes
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Modal Related
   late FUIModalController modalCtrl;
@@ -105,12 +105,12 @@ class _DemoModal03State extends State<DemoModal03> {
           footerButtons: [
             FUIButtonOutlinedTextIcon(
               text: const Text('Refresh'),
-              fuiColorScheme: FUIColorScheme.secondary,
+              fuiColorScheme: UIColorScheme.secondary,
               onPressed: () => dataChanger.changeTo(countrySelectCtrl.text),
             ),
             FUIButtonBlockTextIcon(
               text: const Text('Close'),
-              fuiColorScheme: FUIColorScheme.primary,
+              fuiColorScheme: UIColorScheme.primary,
               onPressed: () => modalCtrl.trigger(FUIModalControlEvent(close: true)),
             ),
           ],
@@ -120,11 +120,11 @@ class _DemoModal03State extends State<DemoModal03> {
   }
 
   Widget _buildModalContent() {
-    return FUISingleChildScrollView(
-      child: FUIColumn(
+    return UISingleChildScrollView(
+      child: UIColumn(
         children: [
           Regular(const Text('Data source is gotten from "https://github.com/datasets/gdp".')),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           FUIInputSelect(
             label: 'Country',
             textEditingController: countrySelectCtrl,
@@ -132,14 +132,14 @@ class _DemoModal03State extends State<DemoModal03> {
             selectedDataList: [_selectedCountry()],
             onChanged: (newJsonAssetPath) => dataChanger.changeTo(newJsonAssetPath),
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               SmallText(const Text('Chart of GDP (USD \$) / Year(s)')),
             ],
           ),
-          FUISpacer.vSpace5,
+          UISpacer.vSpace5,
           Container(
             height: 400,
             alignment: Alignment.center,

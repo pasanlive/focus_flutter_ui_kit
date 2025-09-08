@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoTypographyHeadings extends StatelessWidget {
   const DemoTypographyHeadings({super.key});
@@ -24,7 +24,7 @@ class DemoTypographyHeadings extends StatelessWidget {
                 md: 6,
                 sm: 12,
                 child: FUISectionContainer(
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       /// ---------------------
                       /// Heading 1 - H1
@@ -32,7 +32,7 @@ class DemoTypographyHeadings extends StatelessWidget {
                       PreH(Text('HEADING 1 / H1')),
                       H1(Text('Uncommon Common Sense')),
                       SmallTextI(Text('Size: 44; typography class: H1; style class: FUITypographyTheme.h1')),
-                      FUISpacer.vSpace10,
+                      UISpacer.vSpace10,
 
                       /// ---------------------
                       /// Heading 2 - H2
@@ -48,7 +48,7 @@ class DemoTypographyHeadings extends StatelessWidget {
                 md: 6,
                 sm: 12,
                 child: FUISectionContainer(
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       /// ---------------------
                       /// Heading 3 - H3
@@ -56,7 +56,7 @@ class DemoTypographyHeadings extends StatelessWidget {
                       PreH(Text('HEADING 3 / H3')),
                       H3(Text('Uncommon Common Sense')),
                       SmallTextI(Text('Size: 27; text class: H3; style class: FUITypographyTheme.h3')),
-                      FUISpacer.vSpace10,
+                      UISpacer.vSpace10,
 
                       /// ---------------------
                       /// Heading 4 - H4
@@ -64,7 +64,7 @@ class DemoTypographyHeadings extends StatelessWidget {
                       PreH(Text('HEADING 4 / H4')),
                       H4(Text('Uncommon Common Sense')),
                       SmallTextI(Text('Size: 22; text class: H4; style class: FUITypographyTheme.h4')),
-                      FUISpacer.vSpace10,
+                      UISpacer.vSpace10,
 
                       /// ---------------------
                       /// Heading 5 - H5
@@ -80,7 +80,7 @@ class DemoTypographyHeadings extends StatelessWidget {
           ),
           FUISectionContainer(
             padding: FUISectionTheme.eiSecContainerPaddingZeroBottom,
-            child: FUIHDivider(),
+            child: UIHDivider(),
           ),
         ],
       ),

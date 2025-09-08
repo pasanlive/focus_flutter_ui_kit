@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetBusiness03 extends StatelessWidget {
   const DemoWidgetBusiness03({super.key});
@@ -20,9 +20,9 @@ class DemoWidgetBusiness03 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           _buildProject01(context),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           _buildProject02(context),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           _buildProject03(context),
         ],
       ),
@@ -68,10 +68,10 @@ class DemoWidgetBusiness03 extends StatelessWidget {
   }
 
   _buildProject01(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
-    return FUIColumn(
+    return UIColumn(
       children: [
         ResponsiveGridRow(
           children: [
@@ -91,7 +91,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
             ),
             ResponsiveGridCol(
               xs: 10,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   H5(Text('Project Nebula')),
                   SmallText(Text('A very module heavy typiescript/angular project which requires many many months to complete.')),
@@ -100,7 +100,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
             ),
           ],
         ),
-        FUISpacer.vSpace15,
+        UISpacer.vSpace15,
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.end,
@@ -109,7 +109,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
             Text('100%', style: typoTheme.smallText.copyWith(fontWeight: FontWeight.w500, color: fuiColors.textBody.shade500)),
           ],
         ),
-        FUISpacer.vSpace5,
+        UISpacer.vSpace5,
         FUIPaceBar(
           barRepeating: false,
           barBackgroundColor: fuiColors.primary.shade200,
@@ -121,10 +121,10 @@ class DemoWidgetBusiness03 extends StatelessWidget {
   }
 
   _buildProject02(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
-    return FUIColumn(
+    return UIColumn(
       children: [
         ResponsiveGridRow(
           children: [
@@ -144,7 +144,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
             ),
             ResponsiveGridCol(
               xs: 10,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   H5(Text('Project Uranus')),
                   SmallText(Text(
@@ -154,7 +154,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
             ),
           ],
         ),
-        FUISpacer.vSpace15,
+        UISpacer.vSpace15,
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.end,
@@ -163,7 +163,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
             Text('100%', style: typoTheme.smallText.copyWith(fontWeight: FontWeight.w500, color: fuiColors.textBody.shade500)),
           ],
         ),
-        FUISpacer.vSpace5,
+        UISpacer.vSpace5,
         FUIPaceBar(
           barRepeating: false,
           barBackgroundColor: fuiColors.primary.shade200,
@@ -175,10 +175,10 @@ class DemoWidgetBusiness03 extends StatelessWidget {
   }
 
   _buildProject03(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
-    return FUIColumn(
+    return UIColumn(
       children: [
         ResponsiveGridRow(
           children: [
@@ -198,7 +198,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
             ),
             ResponsiveGridCol(
               xs: 10,
-              child: FUIColumn(
+              child: UIColumn(
                 mainAxisSize: MainAxisSize.max,
                 children: [
                   H5(Text('Project Ethopia')),
@@ -208,7 +208,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
             ),
           ],
         ),
-        FUISpacer.vSpace15,
+        UISpacer.vSpace15,
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           crossAxisAlignment: CrossAxisAlignment.end,
@@ -217,7 +217,7 @@ class DemoWidgetBusiness03 extends StatelessWidget {
             Text('100%', style: typoTheme.smallText.copyWith(fontWeight: FontWeight.w500, color: fuiColors.textBody.shade500)),
           ],
         ),
-        FUISpacer.vSpace5,
+        UISpacer.vSpace5,
         FUIPaceBar(
           barRepeating: false,
           barBackgroundColor: fuiColors.primary.shade200,

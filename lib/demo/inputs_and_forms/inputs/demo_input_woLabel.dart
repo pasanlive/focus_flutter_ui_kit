@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoInputWithoutLabel extends StatelessWidget with DemoInputHelper {
@@ -10,7 +10,7 @@ class DemoInputWithoutLabel extends StatelessWidget with DemoInputHelper {
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.focus,
@@ -37,7 +37,7 @@ class DemoInputWithoutLabel extends StatelessWidget with DemoInputHelper {
             PreH(const Text('Regular Input Fields')),
             H2(const Text('Without Label Box Decoration')),
             Regular(const Text('If you prefer plain input fields without fancy decoration.')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             SmallTextI(const Text('Set the showTopLabelBar to \'false\'.')),
           ],
         ),
@@ -61,18 +61,18 @@ class DemoInputWithoutLabel extends StatelessWidget with DemoInputHelper {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             H5(const Text('Text, Dates & Selects')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FieldLabel(const Text('Text Input Field')),
-            FUISpacer.vSpace3,
+            UISpacer.vSpace3,
             FUIInputText(
               showTopLabelBar: false,
               hint: 'Please type something',
               mandatory: true,
               minWidth: 400,
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FieldLabel(const Text('Date Input Field')),
-            FUISpacer.vSpace3,
+            UISpacer.vSpace3,
             FUIInputDate(
               showTopLabelBar: false,
               hint: 'Please select a date',
@@ -80,18 +80,18 @@ class DemoInputWithoutLabel extends StatelessWidget with DemoInputHelper {
               fuiPickerDisplayMode: FUIPickerDisplayMode.dialog,
               minWidth: 400,
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FieldLabel(const Text('Masked Input Field')),
-            FUISpacer.vSpace3,
+            UISpacer.vSpace3,
             FUIInputText(
               showTopLabelBar: false,
               hint: '+# (###) ###-##-##',
               inputFormatters: [maskFormatter],
               minWidth: 400,
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FieldLabel(const Text('Select Input Field')),
-            FUISpacer.vSpace3,
+            UISpacer.vSpace3,
             FUIInputSelect(
               showTopLabelBar: false,
               hint: 'Tap to select',
@@ -113,11 +113,11 @@ class DemoInputWithoutLabel extends StatelessWidget with DemoInputHelper {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             H5(const Text('Configurables')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Regular(const Text('Sizes of input fields could be defined as small, medium (default) and LARGE')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             SmallTextI(const Text('via fuiInputSize')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputText(
               showTopLabelBar: false,
               hint: 'LARGE Field',
@@ -125,7 +125,7 @@ class DemoInputWithoutLabel extends StatelessWidget with DemoInputHelper {
               fuiInputSize: FUIInputSize.large,
               minWidth: 400,
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputText(
               showTopLabelBar: false,
               hint: 'Medium Field (default)',
@@ -133,7 +133,7 @@ class DemoInputWithoutLabel extends StatelessWidget with DemoInputHelper {
               fuiInputSize: FUIInputSize.medium,
               minWidth: 400,
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputText(
               showTopLabelBar: false,
               hint: 'Small Field',

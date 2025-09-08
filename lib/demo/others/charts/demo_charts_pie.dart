@@ -7,7 +7,7 @@ import 'package:flutter/services.dart' show rootBundle;
 import 'package:graphic/graphic.dart';
 import 'package:lottie/lottie.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoChartsPie extends StatelessWidget {
   const DemoChartsPie({super.key});
@@ -44,10 +44,10 @@ class DemoChartsPie extends StatelessWidget {
       ],
       headerSeparator: false,
       panelBorderColor: Colors.transparent,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           _buildChart(),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           PreH(const Text('% Capital Allocation')),
           Regular(const Text('Old Rugged Straight Forward Pie Chart.')),
         ],
@@ -61,7 +61,7 @@ class DemoChartsPie extends StatelessWidget {
       child: FutureBuilder(
         future: rootBundle.loadString('assets/demo-data/allocation-perc.json'),
         builder: (BuildContext context, AsyncSnapshot<String> data) {
-          FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+          UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
           if (data.hasData) {
             List<dynamic> dataList = jsonDecode(data.requireData);

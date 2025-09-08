@@ -10,7 +10,7 @@ import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetFinance01 extends StatelessWidget {
   const DemoWidgetFinance01({super.key});
@@ -23,7 +23,7 @@ class DemoWidgetFinance01 extends StatelessWidget {
       height: responsiveValue(context, md: FUIPanelTheme.defaultHeight, xs: 720),
       headerIconButtons: _buildHeaderIconButtons(context),
       contentScrollBarEnable: false,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           ResponsiveGridRow(
             children: [
@@ -39,7 +39,7 @@ class DemoWidgetFinance01 extends StatelessWidget {
               ),
             ],
           ),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -103,30 +103,30 @@ class DemoWidgetFinance01 extends StatelessWidget {
   }
 
   _buildSec01(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
-    return FUIColumn(
+    return UIColumn(
       children: [
         SmallText(Text('Data gathered on 13/05/23')),
         SizedBox(
           height: responsiveValue(context, md: 60, sm: 20, xs: 20),
         ),
         Text('3.8%', style: typoTheme.h1),
-        FUIRow(
+        UIRow(
           mainAxisSize: MainAxisSize.min,
           children: [
             Container(
               padding: EdgeInsets.only(bottom: 1),
               child: Icon(LineAwesome.arrow_alt_circle_up, size: 18, color: fuiColors.statusSuccess.shade600),
             ),
-            FUISpacer.hSpace5,
+            UISpacer.hSpace5,
             Text('+1.2%', style: typoTheme.regular.copyWith(fontWeight: FontWeight.bold)),
           ],
         ),
-        FUISpacer.vSpace5,
+        UISpacer.vSpace5,
         Regular(Text('U.S. markets open in 6h 23m')),
-        FUISpacer.vSpace10,
+        UISpacer.vSpace10,
         Container(
           width: double.infinity,
           padding: EdgeInsets.zero,
@@ -135,7 +135,7 @@ class DemoWidgetFinance01 extends StatelessWidget {
             crossAxisAlignment: WrapCrossAlignment.center,
             spacing: 10,
             children: [
-              FUITextPill(fuiColorScheme: FUIColorScheme.secondary, pillShape: FUITextPillShape.square, text: Text('NASDAQ')),
+              FUITextPill(fuiColorScheme: UIColorScheme.secondary, pillShape: FUITextPillShape.square, text: Text('NASDAQ')),
               FUITextPill(pillShape: FUITextPillShape.square, text: Text('S&P 500')),
             ],
           ),
@@ -145,12 +145,12 @@ class DemoWidgetFinance01 extends StatelessWidget {
   }
 
   _buildSec02(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
-    return FUIColumn(
+    return UIColumn(
       children: [
         H2(Text('Q3 2024')),
-        FUISpacer.vSpace15,
+        UISpacer.vSpace15,
         SizedBox(
           height: 150,
           child: FutureBuilder(
@@ -239,7 +239,7 @@ class DemoWidgetFinance01 extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         H1(Text('11T')),
-        FUISpacer.hSpace5,
+        UISpacer.hSpace5,
         Padding(
           padding: EdgeInsets.only(bottom: 12),
           child: Column(
@@ -262,7 +262,7 @@ class DemoWidgetFinance01 extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         H1(Text('100B')),
-        FUISpacer.hSpace5,
+        UISpacer.hSpace5,
         Padding(
           padding: EdgeInsets.only(bottom: 12),
           child: Column(
@@ -285,7 +285,7 @@ class DemoWidgetFinance01 extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         H1(Text('18%')),
-        FUISpacer.hSpace5,
+        UISpacer.hSpace5,
         Padding(
           padding: EdgeInsets.only(bottom: 12),
           child: Column(

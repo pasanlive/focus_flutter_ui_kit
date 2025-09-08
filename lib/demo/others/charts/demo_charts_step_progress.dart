@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 ///
 /// Configurations are not in the .focus UI Kit docs.
@@ -72,10 +72,10 @@ class DemoChartStepProgress extends StatelessWidget {
       ),
       headerSeparator: false,
       panelBorderColor: Colors.transparent,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           _buildChart(context),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           PreH(const Text('% Capital Allocation')),
           Regular(const Text('Using circular step progress indicator.')),
         ],
@@ -84,7 +84,7 @@ class DemoChartStepProgress extends StatelessWidget {
   }
 
   _buildChart(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     return SizedBox(

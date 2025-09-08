@@ -3,7 +3,7 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import 'demo_timeline_data.dart';
 
 class DemoTimeLineWithIcon extends StatelessWidget {
@@ -25,11 +25,11 @@ class DemoTimeLineWithIcon extends StatelessWidget {
     double? responsiveLineXY = responsiveValue(context, md: lineXY, sm: null, xs: null);
 
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H2(const Text('With Icon')),
           Regular(const Text('Indicators can be customized, you may insert an icon button or some other widgets.')),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           FUITimelineTile(
             fuiTimelineSize: FUITimelineSize.medium,
             alignment: responsiveTLAlign,
@@ -58,7 +58,7 @@ class DemoTimeLineWithIcon extends StatelessWidget {
               indicator: Center(
                   child: FUIButtonBlockCircleIcon(
                 fuiButtonSize: FUIButtonSize.small,
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 icon: const Icon(LineAwesome.edit),
                 onPressed: () {},
               )),
@@ -97,7 +97,7 @@ class DemoTimeLineWithIcon extends StatelessWidget {
               indicator: Center(
                   child: FUIButtonBlockCircleIcon(
                 fuiButtonSize: FUIButtonSize.small,
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 icon: const Icon(LineAwesome.clock),
                 onPressed: () {},
               )),
@@ -118,7 +118,7 @@ class DemoTimeLineWithIcon extends StatelessWidget {
   }
 
   _buildEndChildResponsive(BuildContext context, Widget timeLineDate, Widget timeLineContent) {
-    Widget xsWidget = FUIColumn(
+    Widget xsWidget = UIColumn(
       children: [
         Padding(
           padding: const EdgeInsets.only(left: 18),

@@ -8,7 +8,7 @@ import 'package:graphic/graphic.dart';
 import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoChartsPriceVol extends StatefulWidget {
   const DemoChartsPriceVol({super.key});
@@ -19,7 +19,7 @@ class DemoChartsPriceVol extends StatefulWidget {
 
 class _DemoChartsPriceVolState extends State<DemoChartsPriceVol> {
   /// Themes
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
   late FUITypographyTheme typoTheme;
   late FUIPanelTheme panelTheme;
 
@@ -74,10 +74,10 @@ class _DemoChartsPriceVolState extends State<DemoChartsPriceVol> {
       ],
       headerSeparator: false,
       panelBorderColor: Colors.transparent,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           _buildChart(),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           PreH(const Text('Historical Price Chart NASDAQ::TSLA')),
           Regular(const Text('A demonstration of multiple charts vertically aligned.')),
         ],

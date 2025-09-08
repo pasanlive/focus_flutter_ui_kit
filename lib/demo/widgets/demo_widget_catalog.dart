@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
 import '../../demo/exports.dart';
-import '../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetCatalog extends StatelessWidget {
   const DemoWidgetCatalog({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return FUISingleChildScrollView(
+    return UISingleChildScrollView(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
@@ -22,7 +22,7 @@ class DemoWidgetCatalog extends StatelessWidget {
           _sectionRow06(context),
           _sectionRow07(context),
           _sectionRow08(context),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           DemoScaffoldBottom01(),
         ],
       ),
@@ -30,7 +30,7 @@ class DemoWidgetCatalog extends StatelessWidget {
   }
 
   Widget _sectionIntro(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     TextStyle tsDot = typoTheme.h1.copyWith(color: fuiColors.primary);
@@ -77,7 +77,7 @@ class DemoWidgetCatalog extends StatelessWidget {
                 xs: 12,
                 child: FUISectionContainer(
                   padding: FUISectionTheme.eiSecPaddingZeroTopBottom,
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       H5(Text('Ready made UX/UI raw widgets for your development purposes.')),
                       Regular(Text('Copy and paste the widget codes to make it your own.')),
@@ -95,7 +95,7 @@ class DemoWidgetCatalog extends StatelessWidget {
   Widget _sectionRow01(BuildContext context) {
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.full,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           FUISectionContainer(
             padding: FUISectionTheme.eiSecContainerPaddingZeroTop,
@@ -111,7 +111,7 @@ class DemoWidgetCatalog extends StatelessWidget {
                 xl: 3,
                 child: FUISectionContainer(
                   padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       _buildWidgetTitle(context, 'Small Info 01'),
                       DemoWidgetSmallInfo01(),
@@ -128,7 +128,7 @@ class DemoWidgetCatalog extends StatelessWidget {
                 xl: 3,
                 child: FUISectionContainer(
                   padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       _buildWidgetTitle(context, 'Small Info 02'),
                       DemoWidgetSmallInfo02(),
@@ -145,7 +145,7 @@ class DemoWidgetCatalog extends StatelessWidget {
                 xl: 3,
                 child: FUISectionContainer(
                   padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       _buildWidgetTitle(context, 'Small Info 03'),
                       DemoWidgetSmallInfo03(),
@@ -162,7 +162,7 @@ class DemoWidgetCatalog extends StatelessWidget {
                 xl: 3,
                 child: FUISectionContainer(
                   padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       _buildWidgetTitle(context, 'Small Info 04'),
                       DemoWidgetSmallInfo04(),
@@ -190,7 +190,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             xl: 3,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Small Info 05'),
                   DemoWidgetSmallInfo05(),
@@ -207,7 +207,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             xl: 3,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Small Info 06'),
                   DemoWidgetSmallInfo06(),
@@ -224,7 +224,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             xl: 3,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Small Info 07'),
                   DemoWidgetSmallInfo07(),
@@ -241,7 +241,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             xl: 3,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Small Info 08'),
                   DemoWidgetSmallInfo08(),
@@ -257,7 +257,7 @@ class DemoWidgetCatalog extends StatelessWidget {
   Widget _sectionRow03(BuildContext context) {
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.full,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           FUISectionContainer(
             padding: FUISectionTheme.eiSecContainerPaddingZeroTop,
@@ -271,7 +271,7 @@ class DemoWidgetCatalog extends StatelessWidget {
                 xl: 6,
                 child: FUISectionContainer(
                   padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       _buildWidgetTitle(context, 'Finance Widget 01'),
                       DemoWidgetFinance01(),
@@ -286,7 +286,7 @@ class DemoWidgetCatalog extends StatelessWidget {
                 xl: 6,
                 child: FUISectionContainer(
                   padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       _buildWidgetTitle(context, 'Finance Widget 02'),
                       DemoWidgetFinance02(),
@@ -296,7 +296,7 @@ class DemoWidgetCatalog extends StatelessWidget {
               ),
             ],
           ),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           ResponsiveGridRow(
             children: [
               /// demo_widget_finance_03
@@ -305,7 +305,7 @@ class DemoWidgetCatalog extends StatelessWidget {
                 xl: 6,
                 child: FUISectionContainer(
                   padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       _buildWidgetTitle(context, 'Finance Widget 03'),
                       DemoWidgetFinance03(),
@@ -320,7 +320,7 @@ class DemoWidgetCatalog extends StatelessWidget {
                 xl: 6,
                 child: FUISectionContainer(
                   padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       _buildWidgetTitle(context, 'Finance Widget 04'),
                       DemoWidgetFinance04(),
@@ -346,7 +346,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             lg: 4,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Finance Widget 05'),
                   DemoWidgetFinance05(),
@@ -361,7 +361,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             lg: 4,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Finance Widget 06'),
                   DemoWidgetFinance06(),
@@ -376,7 +376,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             lg: 4,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Finance Widget 07'),
                   DemoWidgetFinance07(),
@@ -392,7 +392,7 @@ class DemoWidgetCatalog extends StatelessWidget {
   Widget _sectionRow05(BuildContext context) {
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.full,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           FUISectionContainer(
             padding: FUISectionTheme.eiSecContainerPaddingZeroTop,
@@ -400,7 +400,7 @@ class DemoWidgetCatalog extends StatelessWidget {
           ),
           FUISectionContainer(
             padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-            child: FUIColumn(
+            child: UIColumn(
               children: [
                 _buildWidgetTitle(context, 'Business Widget 01'),
                 DemoWidgetBusiness01(),
@@ -423,7 +423,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             lg: 8,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Business Widget 02'),
                   DemoWidgetBusiness02(),
@@ -438,7 +438,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             lg: 4,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Business Widget 03'),
                   DemoWidgetBusiness03(),
@@ -462,7 +462,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             lg: 4,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Business Widget 04'),
                   DemoWidgetBusiness04(),
@@ -477,7 +477,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             lg: 4,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Business Widget 05'),
                   DemoWidgetBusiness05(),
@@ -492,7 +492,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             lg: 4,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingZeroTop,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Business Widget 06'),
                   DemoWidgetBusiness06(),
@@ -516,7 +516,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             lg: 6,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Business Widget 07'),
                   DemoWidgetBusiness07(),
@@ -531,7 +531,7 @@ class DemoWidgetCatalog extends StatelessWidget {
             lg: 6,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   _buildWidgetTitle(context, 'Business Widget 08'),
                   DemoWidgetBusiness08(),

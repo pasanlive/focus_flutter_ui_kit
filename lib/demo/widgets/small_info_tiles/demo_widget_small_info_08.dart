@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetSmallInfo08 extends StatelessWidget {
   const DemoWidgetSmallInfo08({super.key});
@@ -8,7 +8,7 @@ class DemoWidgetSmallInfo08 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     /// Attributes
     double height = 150;
@@ -36,7 +36,7 @@ class DemoWidgetSmallInfo08 extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               FieldLabel(Text('Advance Mode', style: TextStyle(color: bottomTextColor))),
-              FUISpacer.hSpace20,
+              UISpacer.hSpace20,
               FUIInputToggleSwitch(
                 showOnOff: true,
                 initialValue: true,

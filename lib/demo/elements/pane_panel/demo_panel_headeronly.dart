@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoPanelHeaderOnly extends StatelessWidget {
   const DemoPanelHeaderOnly({super.key});
@@ -8,10 +8,10 @@ class DemoPanelHeaderOnly extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H4(const Text('Title Only')),
-          FUISpacer.vSpace8,
+          UISpacer.vSpace8,
           FUIPanel(
             height: 220, // ** Optional, but to make it standardize among the row, just have a height value.
             header: const Text('PANEL TITLE'),

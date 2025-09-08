@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetBusiness01 extends StatelessWidget {
   const DemoWidgetBusiness01({super.key});
@@ -104,7 +104,7 @@ class DemoWidgetBusiness01 extends StatelessWidget {
   }
 
   _buildActionTileAssignment(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUIActionTile(
       nonHoverImageProvider: const AssetImage('assets/demo-background/bgat01-non-hover.jpg'),
@@ -130,7 +130,7 @@ class DemoWidgetBusiness01 extends StatelessWidget {
   }
 
   _buildActionTileCurrentProject(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUIActionTile(
       nonHoverImageProvider: const AssetImage('assets/demo-background/bgat02-non-hover.jpg'),
@@ -156,7 +156,7 @@ class DemoWidgetBusiness01 extends StatelessWidget {
   }
 
   _buildActionTileMajorIndictors(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUIActionTile(
       nonHoverImageProvider: const AssetImage('assets/demo-background/bgat03-non-hover.jpg'),
@@ -184,7 +184,7 @@ class DemoWidgetBusiness01 extends StatelessWidget {
   }
 
   _buildActionTileSchedule(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUIActionTile(
       nonHoverImageProvider: const AssetImage('assets/demo-background/bgat04-non-hover.jpg'),
@@ -210,7 +210,7 @@ class DemoWidgetBusiness01 extends StatelessWidget {
   }
 
   _buildActionTileKeyAccounts(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUIActionTile(
       nonHoverImageProvider: const AssetImage('assets/demo-background/bgat05-non-hover.jpg'),
@@ -236,7 +236,7 @@ class DemoWidgetBusiness01 extends StatelessWidget {
   }
 
   _buildActionTileTransactions(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUIActionTile(
       nonHoverImageProvider: const AssetImage('assets/demo-background/bgat06-non-hover.jpg'),
@@ -263,7 +263,7 @@ class DemoWidgetBusiness01 extends StatelessWidget {
   }
 
   _buildActionTileTeam(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUIActionTile(
       nonHoverImageProvider: const AssetImage('assets/demo-background/bgat07-non-hover.jpg'),

@@ -4,7 +4,7 @@ import 'package:flutter_animator/flutter_animator.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoDashboard01Row01 extends StatelessWidget {
   const DemoDashboard01Row01({super.key});
@@ -57,7 +57,7 @@ class DemoDashboard01Row01 extends StatelessWidget {
           paceBarRepeating: false,
           paceBarCurrentValue: 100,
           height: 150,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -98,7 +98,7 @@ class DemoDashboard01Row01 extends StatelessWidget {
           paceBarRepeating: false,
           paceBarCurrentValue: 100,
           height: 150,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               PreH(Text('CURRENT INVENTORY VALUE')),
               Row(
@@ -142,7 +142,7 @@ class DemoDashboard01Row01 extends StatelessWidget {
           paceBarRepeating: false,
           paceBarCurrentValue: 100,
           height: 150,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               PreH(const Text('OPERATING PROFIT MARGIN')),
               Wrap(
@@ -184,10 +184,10 @@ class DemoDashboard01Row01 extends StatelessWidget {
           paceBarRepeating: false,
           paceBarCurrentValue: 100,
           height: 150,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               PreH(const Text('EXPENSE RATIO')),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 crossAxisAlignment: CrossAxisAlignment.end,
@@ -214,7 +214,7 @@ class DemoDashboard01Row01 extends StatelessWidget {
   }
 
   _buildUpIndicator(BuildContext context, String textValue) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     double borderRadius = 5;
     double width = 60;
@@ -247,7 +247,7 @@ class DemoDashboard01Row01 extends StatelessWidget {
   }
 
   _buildDownIndicator(BuildContext context, String textValue) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     double borderRadius = 5;
     double width = 60;

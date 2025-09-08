@@ -9,7 +9,7 @@ import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoChartsLine extends StatelessWidget {
   const DemoChartsLine({super.key});
@@ -72,12 +72,12 @@ class DemoChartsLine extends StatelessWidget {
       ),
       headerSeparator: false,
       panelBorderColor: Colors.transparent,
-      content: FUIColumn(
+      content: UIColumn(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           _buildChart(),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           PreH(const Text('Gross Private Domestic Investment')),
           Regular(const Text('For more examples, please visit https://pub.dev/packages/graphic')),
         ],
@@ -91,7 +91,7 @@ class DemoChartsLine extends StatelessWidget {
       child: FutureBuilder(
         future: rootBundle.loadString('assets/demo-data/gpdi-us.json'),
         builder: (BuildContext context, AsyncSnapshot<String> data) {
-          FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+          UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
           if (data.hasData) {
             List<dynamic> dataList = jsonDecode(data.requireData);

@@ -9,7 +9,7 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:lottie/lottie.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetFinance05 extends StatelessWidget {
   const DemoWidgetFinance05({super.key});
@@ -87,7 +87,7 @@ class DemoWidgetFinance05 extends StatelessWidget {
   }
 
   _buildSec01(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return Center(
       child: Padding(
@@ -206,7 +206,7 @@ class DemoWidgetFinance05 extends StatelessWidget {
   }
 
   _buildSec02(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     return Column(
@@ -217,8 +217,8 @@ class DemoWidgetFinance05 extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Icon(BoxIcons.bx_pie_chart, size: 60),
-            FUISpacer.hSpace20,
-            FUIColumn(
+            UISpacer.hSpace20,
+            UIColumn(
               children: [
                 Text('Segmentation', style: typoTheme.regular.copyWith(fontSize: responsiveValue(context, md: 36, sm: 26, xs: 26), fontWeight: FontWeight.w800)),
                 Text('Market Outlook', style: typoTheme.regular.copyWith(color: fuiColors.primary, fontSize: 16, fontWeight: FontWeight.w700)),
@@ -226,7 +226,7 @@ class DemoWidgetFinance05 extends StatelessWidget {
             ),
           ],
         ),
-        FUISpacer.vSpace20,
+        UISpacer.vSpace20,
         _buildLabelAndValue(context, 'Stock', true, '13.3%'),
         _buildLabelAndValue(context, 'Metal', false, '8.9%'),
         _buildLabelAndValue(context, 'Institution', false, '3.0%'),
@@ -238,7 +238,7 @@ class DemoWidgetFinance05 extends StatelessWidget {
 
   _buildLabelAndValue(BuildContext context, String fieldLabel, bool up, String fieldValue) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     double commonFontSize = 18;
 
     TextStyle labelTs = typoTheme.defaultTextStyle.copyWith(color: fuiColors.textHinted, fontSize: commonFontSize, fontWeight: FontWeight.bold);

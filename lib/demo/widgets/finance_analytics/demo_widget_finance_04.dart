@@ -8,14 +8,14 @@ import 'package:intl/intl.dart';
 import 'package:lottie/lottie.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetFinance04 extends StatelessWidget {
   const DemoWidgetFinance04({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUIPanel(
       headerShow: true,
@@ -27,11 +27,11 @@ class DemoWidgetFinance04 extends StatelessWidget {
           ResponsiveGridCol(
             sm: 12,
             md: 6,
-            child: FUIColumn(
+            child: UIColumn(
               children: [
                 H1(Text('2,394,309')),
                 Regular(Text('CONSOLIDATED Q3 2024', style: TextStyle(color: fuiColors.primary, fontWeight: FontWeight.w700))),
-                FUISpacer.vSpace10,
+                UISpacer.vSpace10,
                 _buildChart(context),
               ],
             ),
@@ -98,7 +98,7 @@ class DemoWidgetFinance04 extends StatelessWidget {
 
   _buildAccordionDetails(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     TextStyle labelTs = typoTheme.regular.copyWith(color: fuiColors.secondary);
     TextStyle descTs = typoTheme.smallText.copyWith(color: fuiColors.shade3);
@@ -132,7 +132,7 @@ class DemoWidgetFinance04 extends StatelessWidget {
           contentHeight: 130,
           sideDecoExpAniIconEnable: true,
           headLabel: Text('Key Indicators'),
-          content: FUISingleChildScrollView(
+          content: UISingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -148,7 +148,7 @@ class DemoWidgetFinance04 extends StatelessWidget {
           contentHeight: 130,
           sideDecoExpAniIconEnable: true,
           headLabel: Text('Compliance'),
-          content: FUISingleChildScrollView(
+          content: UISingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -164,7 +164,7 @@ class DemoWidgetFinance04 extends StatelessWidget {
           contentHeight: 130,
           sideDecoExpAniIconEnable: true,
           headLabel: Text('Risk'),
-          content: FUISingleChildScrollView(
+          content: UISingleChildScrollView(
             child: Column(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -181,7 +181,7 @@ class DemoWidgetFinance04 extends StatelessWidget {
   }
 
   _buildChart(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return SizedBox(
       height: 200,

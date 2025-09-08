@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoCalendar extends StatefulWidget {
@@ -14,7 +14,7 @@ class DemoCalendar extends StatefulWidget {
 
 class _DemoCalendarState extends State<DemoCalendar> {
   /// Theme
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
   late FUITypographyTheme typoTheme;
 
   /// Bloc
@@ -44,8 +44,8 @@ class _DemoCalendarState extends State<DemoCalendar> {
     fuiColors = context.theme.fuiColors;
     typoTheme = context.theme.fuiTypography;
 
-    return FUISingleChildScrollView(
-      child: FUIColumn(
+    return UISingleChildScrollView(
+      child: UIColumn(
         children: [
           DemoCalendarTopBanner(),
           FUISectionPlain(
@@ -61,7 +61,7 @@ class _DemoCalendarState extends State<DemoCalendar> {
               ],
             ),
           ),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           DemoScaffoldBottom01(),
         ],
       ),
@@ -74,13 +74,13 @@ class _DemoCalendarState extends State<DemoCalendar> {
       md: 3,
       child: FUISectionContainer(
         padding: FUISectionTheme.eiSecContainerPaddingZeroBottom,
-        child: FUIColumn(
+        child: UIColumn(
           children: [
             PreH(const Text('Events View')),
             H2(const Text('Calendar')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             H5(const Text('Instead of the traditional "FullCalendar", we took a different approach to displaying dates and events.')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             SmallTextI(const Text('Select the year, spin with the date wheel and select the date to display the events.')),
           ],
         ),
@@ -93,14 +93,14 @@ class _DemoCalendarState extends State<DemoCalendar> {
       sm: 12,
       md: 9,
       child: FUISectionContainer(
-        child: FUIColumn(
+        child: UIColumn(
           children: [
             FUICalendarDateWheel(
               onDateChanged: (selectedDateTime) {
                 calViewCtrl.loadCalendarItems(selectedDateTime);
               },
             ),
-            FUISpacer.vSpace20,
+            UISpacer.vSpace20,
             Container(
               padding: EdgeInsets.zero,
               color: fuiColors.bg1,
@@ -113,7 +113,7 @@ class _DemoCalendarState extends State<DemoCalendar> {
                     List<FUICalendarItem> morningList = calHelper.generateMorningItems(selectedDateTime);
                     List<FUICalendarItem> afternoonList = calHelper.generateMorningItems(selectedDateTime);
 
-                    return FUIColumn(
+                    return UIColumn(
                       spacing: 20,
                       children: [
                         FUICalendarView(

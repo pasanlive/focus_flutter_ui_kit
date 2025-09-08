@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../demo_helper.dart';
 import 'exports.dart';
 
@@ -14,7 +14,7 @@ class DemoDatatablePaginatedTable extends StatefulWidget {
   State<DemoDatatablePaginatedTable> createState() => _DemoDatatablePaginatedTableState();
 }
 
-class _DemoDatatablePaginatedTableState extends State<DemoDatatablePaginatedTable> with FUIColorMixin, DemoHelper {
+class _DemoDatatablePaginatedTableState extends State<DemoDatatablePaginatedTable> with UIColorMixin, DemoHelper {
   /// Bloc
   late DemoPaginatedDataTableSortController pSortCtrl;
 
@@ -48,12 +48,12 @@ class _DemoDatatablePaginatedTableState extends State<DemoDatatablePaginatedTabl
             md: 3,
             sm: 12,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   H2(const Text('Paginated Data Table Demo')),
-                  FUISpacer.vSpace10,
+                  UISpacer.vSpace10,
                   H5(const Text('Predefined data and the use of DataTableSource and RestorableProperty.')),
-                  FUISpacer.vSpace10,
+                  UISpacer.vSpace10,
                   SmallText(const Text('This demo is with checkbox capability, sortable column, and fixed column for tight screen horizontal scroll.')),
                 ],
               ),
@@ -63,11 +63,11 @@ class _DemoDatatablePaginatedTableState extends State<DemoDatatablePaginatedTabl
             md: 9,
             sm: 12,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   H4(const Text('Meteoroid Landing Data')),
                   SmallTextI(const Text('Data is gotten from https://data.nasa.gov/resource/y77d-th95.json')),
-                  FUISpacer.vSpace10,
+                  UISpacer.vSpace10,
                   _buildPaginatedTable(),
                 ],
               ),
@@ -89,7 +89,7 @@ class _DemoDatatablePaginatedTableState extends State<DemoDatatablePaginatedTabl
         bool sortAscending = event.sortAscending;
 
         return FUIPaginatedDataTable2(
-          fuiColorScheme: FUIColorScheme.tartOrange,
+          fuiColorScheme: UIColorScheme.tartOrange,
           sortColumnIndex: sortColumnIndex,
           sortAscending: sortAscending,
           source: dataSource,

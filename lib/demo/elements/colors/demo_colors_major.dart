@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoColorsMajor extends StatelessWidget {
@@ -9,7 +9,7 @@ class DemoColorsMajor extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.tight,
@@ -20,13 +20,13 @@ class DemoColorsMajor extends StatelessWidget {
             md: 12,
             lg: 6,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   PreH(const Text('Most Used Colors')),
                   H2(const Text('Primary / Secondary')),
                   Regular(const Text(
                       'We keep colors simple for the theme, thus the name - FOCUS. There are only 2 prominent colors which is most used across the theme, namely \'Ruby\' and \'Near Black\'.')),
-                  FUISpacer.vSpace10,
+                  UISpacer.vSpace10,
                   SmallTextI(const Text('Note: the naming convention is somewhat different from Material.')),
                 ],
               ),

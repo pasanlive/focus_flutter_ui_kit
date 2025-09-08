@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoColorsStatus extends StatelessWidget {
   const DemoColorsStatus({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.tight,
@@ -19,7 +19,7 @@ class DemoColorsStatus extends StatelessWidget {
             lg: 4,
             child: FUISectionContainer(
               padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   H3(Text('Status Colors')),
                   Regular(Text('Common status colors popularized by Bootstrap.')),
@@ -70,16 +70,16 @@ class DemoColorsStatus extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Regular(Text(statusType, softWrap: false)),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Container(
             height: 80,
             decoration: BoxDecoration(
               color: statusColor,
             ),
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
         ],
       ),
     );

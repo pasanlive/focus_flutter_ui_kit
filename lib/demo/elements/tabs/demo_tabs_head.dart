@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoTabsHead extends StatelessWidget {
@@ -25,9 +25,9 @@ class DemoTabsHead extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       H2(const Text('Tabs')),
-                      FUISpacer.vSpace10,
+                      UISpacer.vSpace10,
                       H5(const Text('Switchable content pane via ‘tapping’ on the header.')),
-                      FUISpacer.vSpace10,
+                      UISpacer.vSpace10,
                       Regular(const Text('Content display animation is configurable. Please try.')),
                     ],
                   ),

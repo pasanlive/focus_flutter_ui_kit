@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoInputStatus extends StatelessWidget {
   const DemoInputStatus({super.key});
@@ -58,9 +58,9 @@ class DemoInputStatus extends StatelessWidget {
           children: [
             H5(Text('Disable / Read Only')),
             Regular(Text('Can be either or both.')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             SmallText(Text('Dynamic setting can be achieved by firing the \'FUIInputStateChangeEvent\' event.')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             ResponsiveGridRow(
               children: [
                 ResponsiveGridCol(
@@ -108,9 +108,9 @@ class DemoInputStatus extends StatelessWidget {
           children: [
             H5(Text('Status')),
             Regular(Text('Different highlight colors around the box to show the status of the input.')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             SmallTextI(Text('Setting of status is achieved via firing the \'FUIInputStateChangeEvent\'')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             ResponsiveGridRow(
               children: [
                 ResponsiveGridCol(
@@ -178,7 +178,7 @@ class DemoInputStatus extends StatelessWidget {
           children: [
             H5(Text('Side Icon')),
             Regular(Text('Side icons could be included either on the right or left of the input box.')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             ResponsiveGridRow(
               children: [
                 ResponsiveGridCol(

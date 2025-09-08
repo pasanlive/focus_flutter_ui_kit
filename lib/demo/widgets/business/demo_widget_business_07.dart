@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetBusiness07 extends StatelessWidget {
   const DemoWidgetBusiness07({super.key});
@@ -15,15 +15,15 @@ class DemoWidgetBusiness07 extends StatelessWidget {
       height: 530,
       headerIconButtons: _buildHeaderIconButtons(context),
       contentScrollBarEnable: true,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           _buildIconButtons(context),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           _buildCompanyInfo(context),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           _buildHighlightBox(context),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           H5(Text('General Info')),
           _buildFieldValues(context),
         ],
@@ -112,10 +112,10 @@ class DemoWidgetBusiness07 extends StatelessWidget {
 
   _buildHighlightBox(BuildContext context) {
     return FUISectionHighlightBox(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           Text('Remarks', style: TextStyle(fontWeight: FontWeight.bold)),
-          FUISpacer.vSpace5,
+          UISpacer.vSpace5,
           Text(
               'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.'),
         ],
@@ -125,7 +125,7 @@ class DemoWidgetBusiness07 extends StatelessWidget {
 
   _buildFieldValues(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     TextStyle labelTs = typoTheme.regular.copyWith(color: fuiColors.textHinted);
     TextStyle valueTs = typoTheme.regular.copyWith(fontWeight: FontWeight.bold);

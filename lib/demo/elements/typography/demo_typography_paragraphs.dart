@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoTypographyParagraphs extends StatelessWidget {
   const DemoTypographyParagraphs({super.key});
@@ -13,7 +13,7 @@ class DemoTypographyParagraphs extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           H4(Text('Regular Paragraphs')),
-          FUISpacer.vSpace8,
+          UISpacer.vSpace8,
 
           /// ---------------------
           /// Regular Normal
@@ -21,9 +21,9 @@ class DemoTypographyParagraphs extends StatelessWidget {
           PreH(Text('REGULAR NORMAL')),
           Regular(Text(
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat consequat mauris.')),
-          FUISpacer.vSpace5,
+          UISpacer.vSpace5,
           SmallTextI(Text('Size: 14; text class: Regular; style class: FUITypographyTheme.regular')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
 
           /// ---------------------
           /// Regular Italic
@@ -31,7 +31,7 @@ class DemoTypographyParagraphs extends StatelessWidget {
           PreH(Text('REGULAR ITALIC')),
           RegularI(Text(
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sagittis purus sit amet volutpat consequat mauris.')),
-          FUISpacer.vSpace5,
+          UISpacer.vSpace5,
           SmallTextI(Text('Size: 14; text class: RegularI; style class: FUITypographyTheme.regular')),
         ],
       ),

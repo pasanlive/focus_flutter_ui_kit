@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoButtonsTypesIcon extends StatelessWidget {
   const DemoButtonsTypesIcon({super.key});
@@ -11,14 +11,14 @@ class DemoButtonsTypesIcon extends StatelessWidget {
     EdgeInsets containerMargin = EdgeInsets.only(left: 15, right: 15, bottom: 15);
     double boxHeight = 200;
 
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionContainer(
       margin: containerMargin,
       backgroundColor: fuiColors.shade2,
       child: SizedBox(
         height: boxHeight,
-        child: FUIColumn(
+        child: UIColumn(
           children: [
             H5(const Text('Icon Button')),
             Expanded(
@@ -30,9 +30,9 @@ class DemoButtonsTypesIcon extends StatelessWidget {
                 ),
               ),
             ),
-            FUISpacer.vSpace35,
+            UISpacer.vSpace35,
             Regular(const Text('Clickable captionless image button.')),
-            FUISpacer.vSpace5,
+            UISpacer.vSpace5,
             SmallTextI(const Text('Class: components/button/FUIButtonPlainIcon')),
           ],
         ),

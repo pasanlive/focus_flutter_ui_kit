@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetScaffoldMenuRightLatestUpdates extends StatelessWidget {
   const DemoWidgetScaffoldMenuRightLatestUpdates({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUIPanelTheme panelTheme = context.theme.fuiPanel;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
@@ -27,7 +27,7 @@ class DemoWidgetScaffoldMenuRightLatestUpdates extends StatelessWidget {
                 children: textPillList,
               ),
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -36,7 +36,7 @@ class DemoWidgetScaffoldMenuRightLatestUpdates extends StatelessWidget {
                   avatar: avatarImgProvider,
                   fuiAvatarSize: FUIAvatarSize.small,
                 ),
-                FUISpacer.hSpace15,
+                UISpacer.hSpace15,
                 Column(
                   mainAxisAlignment: MainAxisAlignment.start,
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -47,7 +47,7 @@ class DemoWidgetScaffoldMenuRightLatestUpdates extends StatelessWidget {
                 ),
               ],
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             SmallText(Text(comments)),
             FractionallySizedBox(
               widthFactor: 1,
@@ -89,29 +89,29 @@ class DemoWidgetScaffoldMenuRightLatestUpdates extends StatelessWidget {
           commentBox(
             [
               FUITextPill(text: Text('Issue #1029')),
-              FUITextPill(fuiColorScheme: FUIColorScheme.secondary, text: Text('Project Nebula')),
+              FUITextPill(fuiColorScheme: UIColorScheme.secondary, text: Text('Project Nebula')),
             ],
             AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
             'Scott S. Quintero',
             '34 minutes ago',
             'Quisque eleifend efficitur dolor, malesuada mattis tortor blandit id. Phasellus facilisis hendrerit arcu sit amet porta.',
           ),
-          FUIHDivider(),
+          UIHDivider(),
           commentBox(
             [
-              FUITextPill(fuiColorScheme: FUIColorScheme.denim, text: Text('Progress Meeting')),
-              FUITextPill(fuiColorScheme: FUIColorScheme.lightGrey, text: Text('Team Delta')),
+              FUITextPill(fuiColorScheme: UIColorScheme.denim, text: Text('Progress Meeting')),
+              FUITextPill(fuiColorScheme: UIColorScheme.lightGrey, text: Text('Team Delta')),
             ],
             AssetImage('assets/demo-avatar/avatar-woman-02.jpg'),
             'Lee R. Lundberg',
             '6 hours ago',
             'Quisque eleifend efficitur dolor, malesuada mattis tortor blandit id. Phasellus facilisis hendrerit arcu sit amet porta.',
           ),
-          FUIHDivider(),
+          UIHDivider(),
           commentBox(
             [
-              FUITextPill(fuiColorScheme: FUIColorScheme.bumbleBee, text: Text('HR')),
-              FUITextPill(fuiColorScheme: FUIColorScheme.denim, text: Text('Interview')),
+              FUITextPill(fuiColorScheme: UIColorScheme.bumbleBee, text: Text('HR')),
+              FUITextPill(fuiColorScheme: UIColorScheme.denim, text: Text('Interview')),
             ],
             AssetImage('assets/demo-avatar/avatar-man-03.jpg'),
             'Chris S. Stuart',

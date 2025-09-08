@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoInputOthers extends StatefulWidget {
   const DemoInputOthers({super.key});
@@ -31,14 +31,14 @@ class _DemoInputOthersState extends State<DemoInputOthers> {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H5(const Text('Toggle Switch')),
           _buildToggleSwitches(),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           H5(const Text('Check Box')),
           _buildCheckBoxes(),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           H5(const Text('Radio Buttons')),
           _buildRadioButtons(),
         ],
@@ -52,10 +52,10 @@ class _DemoInputOthersState extends State<DemoInputOthers> {
         ResponsiveGridCol(
           sm: 12,
           md: 4,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               FieldLabel(const Text('LARGE')),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               FUIInputToggleSwitch(
                 initialValue: true,
                 showOnOff: true,
@@ -68,10 +68,10 @@ class _DemoInputOthersState extends State<DemoInputOthers> {
         ResponsiveGridCol(
           sm: 12,
           md: 4,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               FieldLabel(const Text('Medium (Default)')),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               FUIInputToggleSwitch(
                 initialValue: true,
                 showOnOff: true,
@@ -83,10 +83,10 @@ class _DemoInputOthersState extends State<DemoInputOthers> {
         ResponsiveGridCol(
           sm: 12,
           md: 4,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               FieldLabel(const Text('Small')),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               FUIInputToggleSwitch(
                 initialValue: true,
                 showOnOff: true,
@@ -106,10 +106,10 @@ class _DemoInputOthersState extends State<DemoInputOthers> {
         ResponsiveGridCol(
           sm: 12,
           md: 4,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               FieldLabel(const Text('LARGE')),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               FUIInputCheckbox(
                 fuiInputSize: FUIInputSize.large,
                 initialValue: true,
@@ -121,10 +121,10 @@ class _DemoInputOthersState extends State<DemoInputOthers> {
         ResponsiveGridCol(
           sm: 12,
           md: 4,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               FieldLabel(const Text('Medium (Default)')),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               FUIInputCheckbox(
                 fuiInputSize: FUIInputSize.medium,
                 initialValue: true,
@@ -136,10 +136,10 @@ class _DemoInputOthersState extends State<DemoInputOthers> {
         ResponsiveGridCol(
           sm: 12,
           md: 4,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               FieldLabel(const Text('Small')),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               FUIInputCheckbox(
                 fuiInputSize: FUIInputSize.small,
                 initialValue: true,
@@ -158,10 +158,10 @@ class _DemoInputOthersState extends State<DemoInputOthers> {
         ResponsiveGridCol(
           sm: 12,
           md: 4,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               FieldLabel(const Text('LARGE')),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               FUIInputRadio<String>(
                 value: 'A',
                 fuiInputFieldRadioGroupController: radioGroupCtrl,
@@ -174,10 +174,10 @@ class _DemoInputOthersState extends State<DemoInputOthers> {
         ResponsiveGridCol(
           sm: 12,
           md: 4,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               FieldLabel(const Text('Medium (Default)')),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               FUIInputRadio<String>(
                 value: 'B',
                 fuiInputFieldRadioGroupController: radioGroupCtrl,
@@ -190,10 +190,10 @@ class _DemoInputOthersState extends State<DemoInputOthers> {
         ResponsiveGridCol(
           sm: 12,
           md: 4,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               FieldLabel(const Text('Small')),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               FUIInputRadio<String>(
                 value: 'C',
                 fuiInputFieldRadioGroupController: radioGroupCtrl,

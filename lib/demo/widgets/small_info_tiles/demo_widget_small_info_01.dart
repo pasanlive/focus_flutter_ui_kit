@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetSmallInfo01 extends StatelessWidget {
   const DemoWidgetSmallInfo01({super.key});
@@ -43,7 +43,7 @@ class DemoWidgetSmallInfo01 extends StatelessWidget {
   }
 
   _buildUpIndicator(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     double bottomPadding = 14;
     double borderRadius = 5;
     double width = 60;

@@ -2,7 +2,7 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoPanelProgressBarManual extends StatefulWidget {
   const DemoPanelProgressBarManual({super.key});
@@ -32,7 +32,7 @@ class _DemoPanelProgressBarManualState extends State<DemoPanelProgressBarManual>
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           FUIPanel(
             fuiPanelController: panelCtrl,

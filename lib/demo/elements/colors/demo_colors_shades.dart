@@ -2,14 +2,14 @@ import 'package:color_shade/color_shade.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoColorsShades extends StatelessWidget {
   const DemoColorsShades({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.tight,
@@ -20,7 +20,7 @@ class DemoColorsShades extends StatelessWidget {
             md: 12,
             lg: 4,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   H3(const Text('Shades')),
                   Regular(const Text('Shades are achieved via the \'color_shade\' flutter package.')),
@@ -39,7 +39,7 @@ class DemoColorsShades extends StatelessWidget {
   }
 
   _buildShades(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     Map shadeColorMap = {
       '50': fuiColors.secondary.shade50,
@@ -98,7 +98,7 @@ class DemoColorsShades extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Regular(const Text('Shades - Near Black (Secondary Color)')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Wrap(
             crossAxisAlignment: WrapCrossAlignment.start,
             children: widgetList,

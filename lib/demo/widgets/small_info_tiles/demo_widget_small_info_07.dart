@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetSmallInfo07 extends StatelessWidget {
   const DemoWidgetSmallInfo07({super.key});
@@ -9,7 +9,7 @@ class DemoWidgetSmallInfo07 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUIPanelTheme panelTheme = context.theme.fuiPanel;
 
     /// Attributes

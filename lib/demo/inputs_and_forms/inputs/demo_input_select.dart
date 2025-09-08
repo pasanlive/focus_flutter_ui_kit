@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import 'demo_input_helper.dart';
 
 class DemoInputSelect extends StatelessWidget with DemoInputHelper {
@@ -11,7 +11,7 @@ class DemoInputSelect extends StatelessWidget with DemoInputHelper {
   Widget build(BuildContext context) {
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.focus,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           _buildHeader(),
           ResponsiveGridRow(
@@ -30,11 +30,11 @@ class DemoInputSelect extends StatelessWidget with DemoInputHelper {
   Widget _buildHeader() {
     return  FUISectionContainer(
       padding: FUISectionTheme.eiSecPaddingZeroTop,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(const Text('Select')),
           Regular(const Text('The select dropdown input field component can be customized to display selectable items in different ways')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           SmallText(const Text('Try to resize the screen to mobile size to see a different dropdown pane for mobile.')),
         ],
       ),
@@ -57,7 +57,7 @@ class DemoInputSelect extends StatelessWidget with DemoInputHelper {
               isSearchable: false,
               dataList: demoSelectDataList1(),
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
              Regular(const Text('Regular selectable dropdown. Nothing fancy')),
           ],
         ),
@@ -82,7 +82,7 @@ class DemoInputSelect extends StatelessWidget with DemoInputHelper {
               isSearchable: false,
               dataList: demoSelectDataList2(),
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
              Regular(const Text('Selectable dropdown with category section header names.')),
           ],
         ),
@@ -108,7 +108,7 @@ class DemoInputSelect extends StatelessWidget with DemoInputHelper {
               extraInfoInDropdown: true,
               dataList: demoSelectDataList2(),
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
              Regular(const Text('With searchable bar and additional info.')),
           ],
         ),
@@ -134,7 +134,7 @@ class DemoInputSelect extends StatelessWidget with DemoInputHelper {
               extraInfoInDropdown: true,
               dataList: demoSelectDataList3(),
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
              Regular(const Text('With advanced UI, with avatar and other details.')),
           ],
         ),

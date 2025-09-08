@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import 'demo_input_helper.dart';
 
 class DemoInputWithLabel extends StatelessWidget with DemoInputHelper {
@@ -34,7 +34,7 @@ class DemoInputWithLabel extends StatelessWidget with DemoInputHelper {
             PreH(const Text('Regular Input Fields')),
             H2(const Text('With Label Box')),
             Regular(const Text('These are the input fields components which are regularly used.')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             SmallTextI(const Text('Decorated with label box.')),
           ],
         ),
@@ -58,14 +58,14 @@ class DemoInputWithLabel extends StatelessWidget with DemoInputHelper {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             H5(const Text('Text, Dates & Selects')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputText(
               label: 'Text Input Field',
               hint: 'Type something',
               mandatory: true,
               minWidth: 400,
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputDate(
               label: 'Date Input Field',
               hint: 'Please select a date',
@@ -73,14 +73,14 @@ class DemoInputWithLabel extends StatelessWidget with DemoInputHelper {
               fuiPickerDisplayMode: FUIPickerDisplayMode.dialog,
               minWidth: 400,
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputText(
               label: 'Masked Input Field',
               hint: '+# (###) ###-##-##',
               inputFormatters: [maskFormatter],
               minWidth: 400,
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputSelect(
               label: 'Select Dropdown',
               hint: 'Please make your choice',
@@ -102,25 +102,25 @@ class DemoInputWithLabel extends StatelessWidget with DemoInputHelper {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             H5(const Text('Configurables')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Regular(const Text('Sizes of input fields could be defined as small, medium (default) and LARGE')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             SmallTextI(const Text('via fuiInputSize')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputText(
               label: 'LARGE Field',
               mandatory: true,
               fuiInputSize: FUIInputSize.large,
               minWidth: 400,
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputText(
               label: 'Medium Field (default)',
               mandatory: true,
               fuiInputSize: FUIInputSize.medium,
               minWidth: 400,
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             FUIInputText(
               label: 'Small Field',
               mandatory: true,

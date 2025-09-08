@@ -1,19 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoChartsTopBanner extends StatelessWidget {
   const DemoChartsTopBanner({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     TextStyle tsDot = typoTheme.h1.copyWith(color: fuiColors.primary);
 
-    return FUIColumn(
+    return UIColumn(
       children: [
         ResponsiveGridRow(
           children: [
@@ -45,7 +45,7 @@ class DemoChartsTopBanner extends StatelessWidget {
               xs: 12,
               child: FUISectionContainer(
                 padding: FUISectionTheme.eiSecPaddingZeroTopBottom,
-                child: FUIColumn(
+                child: UIColumn(
                   children: [
                     H5(const Text('Displaying data in different perspective.')),
                     Regular(const Text('Building native Flutter app which best view and used for tablet and desktop.')),

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetBusiness06 extends StatelessWidget {
   const DemoWidgetBusiness06({super.key});
@@ -15,7 +15,7 @@ class DemoWidgetBusiness06 extends StatelessWidget {
       height: 700,
       headerIconButtons: _buildHeaderIconButtons(context),
       contentScrollBarEnable: true,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           _buildTeamMember(AssetImage('assets/demo-avatar/avatar-man-05.jpg'), 'Mckinley Davis', 'Project Manager'),
           _buildTeamMember(AssetImage('assets/demo-avatar/avatar-man-01.jpg'), 'Mike Cohen', 'Backend Developer'),
@@ -90,7 +90,7 @@ class DemoWidgetBusiness06 extends StatelessWidget {
               child: FUITooltip(
                 tooltip: Text(name),
                 child: FUIAvatar(
-                  fuiColorScheme: FUIColorScheme.primary,
+                  fuiColorScheme: UIColorScheme.primary,
                   avatar: avatarImg,
                 ),
               ),
@@ -98,7 +98,7 @@ class DemoWidgetBusiness06 extends StatelessWidget {
           ),
           ResponsiveGridCol(
             xs: 9,
-            child: FUIColumn(
+            child: UIColumn(
               children: [
                 RegularB(Text(name), padding: EdgeInsets.zero),
                 Regular(Text(desc), padding: EdgeInsets.zero),

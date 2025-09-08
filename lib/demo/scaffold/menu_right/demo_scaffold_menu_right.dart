@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import 'exports.dart';
 
 class DemoScaffoldMenuRight extends StatelessWidget {
@@ -8,13 +8,13 @@ class DemoScaffoldMenuRight extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     double screenHeight = MediaQuery.sizeOf(context).height;
 
     return SizedBox(
       width: FUIMenuTheme.drawerWidth,
       height: screenHeight,
-      child: FUISingleChildScrollView(
+      child: UISingleChildScrollView(
         child: FUISectionContainer(
           backgroundColor: fuiColors.shade1,
           constraints: BoxConstraints(
@@ -25,9 +25,9 @@ class DemoScaffoldMenuRight extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               DemoWidgetScaffoldMenuRightLogin(),
-              FUISpacer.vSpace15,
+              UISpacer.vSpace15,
               DemoScaffoldMenuRightQuickAccess(),
-              FUISpacer.vSpace15,
+              UISpacer.vSpace15,
               DemoWidgetScaffoldMenuRightLatestUpdates(),
             ],
           ),

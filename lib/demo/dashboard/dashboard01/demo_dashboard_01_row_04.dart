@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animator/animation/animation_preferences.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoDashboard01Row04 extends StatelessWidget {

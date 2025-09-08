@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:graphic/graphic.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoTabsContent03 extends StatelessWidget {
   const DemoTabsContent03({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     List<Map<String, dynamic>> chartData = [
       {'month': 'Jul', 'value': 233.596, 'highlight': false},
@@ -19,12 +19,12 @@ class DemoTabsContent03 extends StatelessWidget {
       {'month': 'Dec', 'value': 233.049, 'highlight': false},
     ];
 
-    return FUISingleChildScrollView(
-      child: FUIColumn(
+    return UISingleChildScrollView(
+      child: UIColumn(
         children: [
           PreH(const Text('Bar Chart')),
           H5(const Text('US CPI (2013 - Q3 & Q4)')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Center(
             child: SizedBox(
               width: 600,

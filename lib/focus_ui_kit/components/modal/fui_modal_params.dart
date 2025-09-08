@@ -1,4 +1,0 @@
-enum FUIModalPaceBarPosition {
-  top,
-  bottom,
-}

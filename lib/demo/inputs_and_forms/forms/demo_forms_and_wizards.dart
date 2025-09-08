@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoFormsAndWizards extends StatelessWidget {
@@ -8,14 +8,14 @@ class DemoFormsAndWizards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FUISingleChildScrollView(
+    return UISingleChildScrollView(
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           DemoFormsAndWizardsTopBanner(),
           DemoWizard(),
           DemoFormLayout01(),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           DemoScaffoldBottom01(),
         ],
       ),

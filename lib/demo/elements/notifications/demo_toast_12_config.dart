@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoToast12Config extends StatelessWidget {
@@ -25,12 +25,12 @@ class DemoToast12Config extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(const Text('Configuration')),
           Regular(const Text(
               'Type-2 is slightly more elaborated than Type-1, with the inclusion of a side icon and the close button. Both Type-1 and Type-2 toast / notification has many commons configuration. Some are specific to Type-2, such as those relating to side icon and close button.')),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(

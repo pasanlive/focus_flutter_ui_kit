@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoButtonsMoreFeaturesSocial extends StatelessWidget {
   const DemoButtonsMoreFeaturesSocial({super.key});
@@ -9,12 +9,12 @@ class DemoButtonsMoreFeaturesSocial extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(const Text('Social Buttons')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           SmallTextI(const Text('Class: FUIButtonBlockCircleIcon')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Wrap(
             crossAxisAlignment: WrapCrossAlignment.start,
             spacing: 8,
@@ -28,9 +28,9 @@ class DemoButtonsMoreFeaturesSocial extends StatelessWidget {
               FUIButtonBlockCircleIcon(icon: const Icon(LineAwesome.github, color: Colors.white), backgroundColor: Color(0xff000000), onPressed: () {}),
             ],
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           SmallTextI(const Text('Class: FUIButtonOutlinedCircleIcon')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Wrap(
             crossAxisAlignment: WrapCrossAlignment.start,
             spacing: 8,

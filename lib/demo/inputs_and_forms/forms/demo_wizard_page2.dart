@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoWizardPage2 extends StatefulWidget {
@@ -22,7 +22,7 @@ class DemoWizardPage2 extends StatefulWidget {
 
 class _DemoWizardPage2State extends State<DemoWizardPage2> {
   /// Theme
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Bloc
   late FUIButtonController prevBtnCtrl;
@@ -85,15 +85,15 @@ class _DemoWizardPage2State extends State<DemoWizardPage2> {
 
   _buildSideInfo() {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           const Icon(
             LineAwesome.shopping_cart_solid,
             size: 65,
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           H3(const Text('Purchase Items')),
-          FUISpacer.vSpace5,
+          UISpacer.vSpace5,
           Regular(const Text('Do kindly review the items to be purchased.'))
         ],
       ),
@@ -104,17 +104,17 @@ class _DemoWizardPage2State extends State<DemoWizardPage2> {
     EdgeInsets eiSidePadding = const EdgeInsets.only(right: 20);
 
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(
             padding: eiSidePadding,
             const Text('Items Confirm'),
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Regular(const Text('Here is the list of items which you are about to purchase. Please review.')),
-          FUISpacer.vSpace25,
+          UISpacer.vSpace25,
           const CartItemsWidget(),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -209,7 +209,7 @@ class CartItemsWidget extends StatelessWidget {
             ),
           ],
         ),
-        FUIHDivider(),
+        UIHDivider(),
         ResponsiveGridRow(
           children: [
             ResponsiveGridCol(
@@ -224,7 +224,7 @@ class CartItemsWidget extends StatelessWidget {
                       Text('HEAVY DUTY DRILL', style: itemNameStyle),
                       Text('Part No. DD2839', style: itemPartNoStyle),
                       Text('Type: H / Hammer Type', style: itemDescStyle),
-                      FUISpacer.vSpace5,
+                      UISpacer.vSpace5,
                       Text('Uni Price: \$150.90 (incl. sales tax)', style: itemUnitPriceStyle),
                     ],
                   ),
@@ -257,7 +257,7 @@ class CartItemsWidget extends StatelessWidget {
             ),
           ],
         ),
-        FUISpacer.vSpace20,
+        UISpacer.vSpace20,
         ResponsiveGridRow(
           children: [
             ResponsiveGridCol(
@@ -272,7 +272,7 @@ class CartItemsWidget extends StatelessWidget {
                       Text('ANGEL GRINDER', style: itemNameStyle),
                       Text('Part No. MG3843', style: itemPartNoStyle),
                       Text('Type: C / Metal Application', style: itemDescStyle),
-                      FUISpacer.vSpace5,
+                      UISpacer.vSpace5,
                       Text('Uni Price: \$23.90 (incl. sales tax)', style: itemUnitPriceStyle),
                     ],
                   ),
@@ -305,7 +305,7 @@ class CartItemsWidget extends StatelessWidget {
             ),
           ],
         ),
-        FUISpacer.vSpace20,
+        UISpacer.vSpace20,
         ResponsiveGridRow(
           children: [
             ResponsiveGridCol(
@@ -320,7 +320,7 @@ class CartItemsWidget extends StatelessWidget {
                       Text('MOTOR WRENCH KIT 4 SPEED', style: itemNameStyle),
                       Text('Part No. MW2383', style: itemPartNoStyle),
                       Text('Type: DI / Drive Impact', style: itemDescStyle),
-                      FUISpacer.vSpace5,
+                      UISpacer.vSpace5,
                       Text('Uni Price: \$50.70 (incl. sales tax)', style: itemUnitPriceStyle),
                     ],
                   ),
@@ -353,9 +353,9 @@ class CartItemsWidget extends StatelessWidget {
             ),
           ],
         ),
-        FUISpacer.vSpace20,
-        FUIHDivider(),
-        FUISpacer.vSpace10,
+        UISpacer.vSpace20,
+        UIHDivider(),
+        UISpacer.vSpace10,
         ResponsiveGridRow(
           children: [
             ResponsiveGridCol(
@@ -368,15 +368,15 @@ class CartItemsWidget extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
                   Text('Total : ', style: totalPriceStyle),
-                  FUISpacer.hSpace10,
+                  UISpacer.hSpace10,
                   Text('\$954.40', style: totalPriceStyle),
                 ],
               ),
             ),
           ],
         ),
-        FUISpacer.vSpace10,
-        FUIHDivider(),
+        UISpacer.vSpace10,
+        UIHDivider(),
       ],
     );
   }

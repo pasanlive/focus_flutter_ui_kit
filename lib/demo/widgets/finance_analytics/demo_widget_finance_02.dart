@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetFinance02 extends StatelessWidget {
   const DemoWidgetFinance02({super.key});
@@ -17,7 +17,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
       height: responsiveValue(context, md: FUIPanelTheme.defaultHeight, xs: 720),
       headerIconButtons: _buildHeaderIconButtons(context),
       contentScrollBarEnable: false,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           ResponsiveGridRow(
             children: [
@@ -33,7 +33,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
               ),
             ],
           ),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -53,7 +53,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
               ),
             ],
           ),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -113,24 +113,24 @@ class DemoWidgetFinance02 extends StatelessWidget {
 
   _buildSec01(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return Align(
       alignment: Alignment.center,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Icon(LineAwesome.signal_solid, size: typoTheme.h2.fontSize),
-              FUISpacer.hSpace10,
+              UISpacer.hSpace10,
               Text('Q2 2024', style: typoTheme.h2),
-              FUISpacer.hSpace10,
+              UISpacer.hSpace10,
               Text('Audited', style: typoTheme.h5.copyWith(color: fuiColors.shade3)),
             ],
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Container(
             width: double.infinity,
             padding: EdgeInsets.zero,
@@ -139,8 +139,8 @@ class DemoWidgetFinance02 extends StatelessWidget {
               crossAxisAlignment: WrapCrossAlignment.center,
               spacing: 10,
               children: [
-                FUITextPill(fuiColorScheme: FUIColorScheme.primary, pillShape: FUITextPillShape.square, text: Text('Published')),
-                FUITextPill(fuiColorScheme: FUIColorScheme.lightGrey, pillShape: FUITextPillShape.square, text: Text('Audited')),
+                FUITextPill(fuiColorScheme: UIColorScheme.primary, pillShape: FUITextPillShape.square, text: Text('Published')),
+                FUITextPill(fuiColorScheme: UIColorScheme.lightGrey, pillShape: FUITextPillShape.square, text: Text('Audited')),
               ],
             ),
           ),
@@ -173,7 +173,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         H1(Text('64%')),
-        FUISpacer.hSpace5,
+        UISpacer.hSpace5,
         Padding(
           padding: EdgeInsets.only(bottom: 12),
           child: Column(
@@ -196,7 +196,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         H1(Text('29%')),
-        FUISpacer.hSpace5,
+        UISpacer.hSpace5,
         Padding(
           padding: EdgeInsets.only(bottom: 12),
           child: Column(
@@ -219,7 +219,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
       mainAxisSize: MainAxisSize.min,
       children: [
         H1(Text('7%')),
-        FUISpacer.hSpace5,
+        UISpacer.hSpace5,
         Padding(
           padding: EdgeInsets.only(bottom: 12),
           child: Column(
@@ -236,7 +236,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
   }
 
   _buildSec06(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
@@ -252,7 +252,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
   }
 
   _buildSec07(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     List<double> mockData = [
       3456782,
@@ -286,7 +286,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
   }
 
   _buildUpIndicator(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     double topPadding = 5;
     double bottomPadding = 3;
     double borderRadius = 5;
@@ -323,7 +323,7 @@ class DemoWidgetFinance02 extends StatelessWidget {
   }
 
   _buildDownIndicator(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     double topPadding = 5;
     double bottomPadding = 3;
     double borderRadius = 5;

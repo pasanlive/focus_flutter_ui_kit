@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoInputTopBanner extends StatelessWidget {
@@ -11,7 +11,7 @@ class DemoInputTopBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     TextStyle tsDot = typoTheme.h1.copyWith(color: fuiColors.primary);
@@ -43,9 +43,9 @@ class DemoInputTopBanner extends StatelessWidget {
                   md: 7,
                   sm: 12,
                   child: FUISectionContainer(
-                    child: FUIColumn(
+                    child: UIColumn(
                       children: [
-                        FUISpacer.vSpace15,
+                        UISpacer.vSpace15,
                         PreH(Text('INPUT & SELECTABLE FIELDS', style: TextStyle(color: fuiColors.shade0))),
                         Container(
                           alignment: Alignment.bottomLeft,
@@ -65,7 +65,7 @@ class DemoInputTopBanner extends StatelessWidget {
                         ),
                         Regular(Text('From free to guided decorated input text and selectable fields.', style: TextStyle(color: fuiColors.shade0))),
                         SmallText(Text('Classes are located in the components/input package', style: TextStyle(color: fuiColors.shade2))),
-                        FUISpacer.vSpace10,
+                        UISpacer.vSpace10,
                       ],
                     ),
                   ),

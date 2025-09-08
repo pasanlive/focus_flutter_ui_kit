@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import '../../../pasanlive_ui_kit/exports.dart';
 import '../exports.dart';
 
 class DemoSearchResult extends StatelessWidget {
@@ -9,13 +9,13 @@ class DemoSearchResult extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUISingleChildScrollView(
-        child: FUIColumn(
+      child: UISingleChildScrollView(
+        child: UIColumn(
           children: [
             DemoSearchResultPeople(),
-            FUISpacer.vSpace20,
+            UISpacer.vSpace20,
             DemoSearchResultDocs(),
-            FUISpacer.vSpace20,
+            UISpacer.vSpace20,
             DemoSearchResultOthers(),
           ],
         ),

@@ -1,7 +1,7 @@
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoModalsInput extends StatelessWidget {
@@ -19,16 +19,16 @@ class DemoModalsInput extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(const Text('Input Modal')),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           FUIButtonBlockTextIcon(
             text: const Text('Show Me'),
             fuiButtonSize: FUIButtonSize.small,
             onPressed: () => _showModal(context),
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Regular(const Text('Modal with widgets.')),
         ],
       ),

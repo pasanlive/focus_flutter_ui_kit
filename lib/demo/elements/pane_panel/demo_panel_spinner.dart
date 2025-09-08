@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoPanelSpinner extends StatelessWidget {
@@ -18,7 +18,7 @@ class DemoPanelSpinner extends StatelessWidget {
             lg: 6,
             md: 12,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   PreH(const Text('ROTATING INDICATOR')),
                   H3(const Text('Panel With Spinner')),

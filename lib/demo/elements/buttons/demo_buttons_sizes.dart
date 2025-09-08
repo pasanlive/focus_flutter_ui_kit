@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoButtonsSizes extends StatelessWidget {
@@ -17,12 +17,12 @@ class DemoButtonsSizes extends StatelessWidget {
             lg: 3,
             md: 12,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   H3(Text('Sizes')),
-                  FUISpacer.vSpace15,
+                  UISpacer.vSpace15,
                   Regular(Text('Preset sizes of small, medium and large are available.')),
-                  FUISpacer.vSpace5,
+                  UISpacer.vSpace5,
                   SmallTextI(Text('Option parameter class: components/button/FUIButtonSize')),
                 ],
               ),

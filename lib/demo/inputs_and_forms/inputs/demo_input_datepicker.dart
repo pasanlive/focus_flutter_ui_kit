@@ -2,7 +2,7 @@ import 'package:calendar_date_picker2/calendar_date_picker2.dart';
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoInputDatePicker extends StatelessWidget {
   const DemoInputDatePicker({super.key});
@@ -11,7 +11,7 @@ class DemoInputDatePicker extends StatelessWidget {
   Widget build(BuildContext context) {
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.focus,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           _buildHeader(),
           ResponsiveGridRow(
@@ -30,7 +30,7 @@ class DemoInputDatePicker extends StatelessWidget {
   Widget _buildHeader() {
     return FUISectionContainer(
       padding: FUISectionTheme.eiSecPaddingZeroTop,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(const Text('Date Picker')),
           Regular(const Text('Customizable date / calendar picker.')),
@@ -56,7 +56,7 @@ class DemoInputDatePicker extends StatelessWidget {
                 print(dateStr);
               },
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Regular(const Text('Regular single date select date picker.')),
           ],
         ),
@@ -82,7 +82,7 @@ class DemoInputDatePicker extends StatelessWidget {
                 print(dateRangeStr);
               },
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Regular(const Text('Range date select date picker.')),
           ],
         ),
@@ -110,7 +110,7 @@ class DemoInputDatePicker extends StatelessWidget {
                 print(dateRangeStr);
               },
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Regular(const Text('Customizable date display and range delimiter.')),
           ],
         ),
@@ -136,7 +136,7 @@ class DemoInputDatePicker extends StatelessWidget {
                 print(dateStr);
               },
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             Regular(const Text('Dialog date picker display (for mobile use if applicable)')),
           ],
         ),

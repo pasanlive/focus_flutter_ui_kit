@@ -4,7 +4,7 @@ import 'package:data_table_2/data_table_2.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart' show rootBundle;
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoTabsContent02 extends StatelessWidget {
   const DemoTabsContent02({super.key});
@@ -14,11 +14,11 @@ class DemoTabsContent02 extends StatelessWidget {
     FUIDataTableColumnHelper dtColumnHelper = FUIDataTableColumnHelper(context);
     DemoTabsContentDataSource ds = DemoTabsContentDataSource(context);
 
-    return FUIColumn(
+    return UIColumn(
       children: [
         PreH(const Text('Data Table')),
         H5(const Text('NASA - Earth Meteorite Landings')),
-        FUISpacer.vSpace10,
+        UISpacer.vSpace10,
         SizedBox(
           height: 200, // Always have height bounded when using FUIAsyncPaginatedDataTable2
           child: FUIAsyncPaginatedDataTable2(

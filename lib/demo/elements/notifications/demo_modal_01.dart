@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoModal01 extends StatelessWidget {
   final FUIAnimationType fuiModalAnimationType;
@@ -30,12 +30,12 @@ class DemoModal01 extends StatelessWidget {
       footerButtons: [
         FUIButtonOutlinedTextIcon(
           text: const Text('No'),
-          fuiColorScheme: FUIColorScheme.secondary,
+          fuiColorScheme: UIColorScheme.secondary,
           onPressed: () => modalCtrl.trigger(FUIModalControlEvent(close: true)),
         ),
         FUIButtonBlockTextIcon(
           text: const Text('Yes'),
-          fuiColorScheme: FUIColorScheme.primary,
+          fuiColorScheme: UIColorScheme.primary,
           onPressed: () {
             // Do something...then,
             modalCtrl.trigger(FUIModalControlEvent(close: true));

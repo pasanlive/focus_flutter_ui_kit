@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoButtonsMoreFeaturesEnableDisabled extends StatefulWidget {
   const DemoButtonsMoreFeaturesEnableDisabled({super.key});
@@ -11,7 +11,7 @@ class DemoButtonsMoreFeaturesEnableDisabled extends StatefulWidget {
 
 class _DemoButtonsMoreFeaturesEnableDisabledState extends State<DemoButtonsMoreFeaturesEnableDisabled> {
   /// Theme
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Bloc
   late FUIButtonController btnCtrl;
@@ -42,16 +42,16 @@ class _DemoButtonsMoreFeaturesEnableDisabledState extends State<DemoButtonsMoreF
 
     return FUISectionContainer(
       backgroundColor: fuiColors.shade2,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(Text('Button Enable / Disable')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Regular(Text('Buttons can be enabled or disabled via events. Use the event class in components/button/FUIButtonEnableEvent')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           SmallTextI(Text('There are other event classes to trigger specific button events within the dart file as well. Please explore.')),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           Regular(Text('Toggle Enable / Disable', style: TextStyle(fontWeight: FontWeight.w600))),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           FUIInputToggleSwitch(
             showOnOff: true,
             initialValue: true,

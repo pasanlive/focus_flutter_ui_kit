@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetBusiness04 extends StatelessWidget {
   const DemoWidgetBusiness04({super.key});
@@ -16,13 +16,13 @@ class DemoWidgetBusiness04 extends StatelessWidget {
       height: 700,
       headerIconButtons: _buildHeaderIconButtons(context),
       contentScrollBarEnable: false,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           _buildTop(context),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           H5(Text('Outstanding Invoices')),
           _buildUnpaidDataTable(context),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           H5(Text('Last Transactions')),
           _buildPaidDataTable(context),
         ],
@@ -82,7 +82,7 @@ class DemoWidgetBusiness04 extends StatelessWidget {
       children: [
         ResponsiveGridCol(
           xs: 6,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               Text('Company Ltd.', style: typoTheme.defaultTextStyle.copyWith(fontSize: 18, fontWeight: FontWeight.w700)),
               Text('Last updated 11/06/24', style: typoTheme.defaultTextStyle.copyWith(fontSize: 9, fontWeight: FontWeight.w300)),

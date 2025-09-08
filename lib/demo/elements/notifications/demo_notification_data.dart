@@ -1,7 +1,7 @@
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:select2dot1/select2dot1.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoNotificationData {
   static SingleItemCategoryModel selectedToastColor() {
@@ -13,31 +13,31 @@ class DemoNotificationData {
       SingleCategoryModel(
         nameCategory: 'Status',
         singleItemCategoryList: [
-          SingleItemCategoryModel(value: FUIColorScheme.success.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.success, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.complete.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.complete, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.warning.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.warning, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.error.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.error, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.success.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.success, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.complete.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.complete, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.warning.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.warning, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.error.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.error, camelCase: true)),
         ],
       ),
       SingleCategoryModel(
         nameCategory: 'Other Color Schemes',
         singleItemCategoryList: [
-          SingleItemCategoryModel(value: FUIColorScheme.primary.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.primary, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.secondary.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.secondary, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.ruby.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.ruby, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.tartOrange.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.tartOrange, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.papayaWhip.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.papayaWhip, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.opal.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.opal, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.lightGrey.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.lightGrey, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.purple.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.purple, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.berry.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.berry, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.cobalt.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.cobalt, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.teal.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.teal, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.black.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.black, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.denim.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.denim, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.prussian.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.prussian, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.bumbleBee.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.bumbleBee, camelCase: true)),
-          SingleItemCategoryModel(value: FUIColorScheme.banana.name, nameSingleItem: EnumToString.convertToString(FUIColorScheme.banana, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.primary.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.primary, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.secondary.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.secondary, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.ruby.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.ruby, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.tartOrange.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.tartOrange, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.papayaWhip.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.papayaWhip, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.opal.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.opal, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.lightGrey.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.lightGrey, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.purple.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.purple, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.berry.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.berry, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.cobalt.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.cobalt, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.teal.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.teal, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.black.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.black, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.denim.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.denim, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.prussian.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.prussian, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.bumbleBee.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.bumbleBee, camelCase: true)),
+          SingleItemCategoryModel(value: UIColorScheme.banana.name, nameSingleItem: EnumToString.convertToString(UIColorScheme.banana, camelCase: true)),
         ],
       ),
     ];

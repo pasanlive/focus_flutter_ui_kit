@@ -1,7 +1,7 @@
 import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoModalsSimpleDialog extends StatelessWidget {
@@ -20,10 +20,10 @@ class DemoModalsSimpleDialog extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(Text('Dialog Modal')),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           FUIButtonBlockTextIcon(
             text: Text('Show Me'),
             fuiButtonSize: FUIButtonSize.small,
@@ -38,7 +38,7 @@ class DemoModalsSimpleDialog extends StatelessWidget {
               );
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Regular(Text('A simple dialog box with confirmation buttons.')),
         ],
       ),

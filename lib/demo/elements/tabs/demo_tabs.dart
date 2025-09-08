@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoTabs extends StatelessWidget {
@@ -9,15 +9,15 @@ class DemoTabs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FUISingleChildScrollView(
-      child: FUIColumn(
+    return UISingleChildScrollView(
+      child: UIColumn(
         children: [
           DemoTabsTopBanner(),
           DemoTabsHead(),
           DemoTabsWithoutPanel(),
           DemoTabsAccordionBanner(),
           DemoTabsAccordion(),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           DemoScaffoldBottom01(),
         ],
       ),

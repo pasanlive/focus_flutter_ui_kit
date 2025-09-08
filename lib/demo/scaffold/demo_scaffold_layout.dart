@@ -4,8 +4,8 @@ import 'package:go_router/go_router.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../focus_ui_kit/exports.dart';
 import '../exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoScaffoldLayout extends StatefulWidget {
   final Widget child;
@@ -25,7 +25,7 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
   GlobalKey<SliderDrawerState> sliderDrawerKey = GlobalKey<SliderDrawerState>();
 
   /// Themes
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Menu
   late FUIExpMenuController menuCtrl;
@@ -292,7 +292,7 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
               icon: Icon(BoxIcons.bx_menu),
               onPressed: () => _sliderToggle(),
             ),
-            FUISpacer.hSpace20,
+            UISpacer.hSpace20,
             _buildLogo(),
           ],
         ),
@@ -313,7 +313,7 @@ class _DemoScaffoldLayoutState extends State<DemoScaffoldLayout> {
               icon: Icon(BoxIcons.bx_search),
               onPressed: () => _goto(DemoPaths.pathSearch),
             ),
-            FUISpacer.hSpace5,
+            UISpacer.hSpace5,
             FUIButtonLinkIcon(
               fuiButtonSize: FUIButtonSize.small,
               icon: Icon(BoxIcons.bx_menu_alt_right),

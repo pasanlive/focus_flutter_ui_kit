@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../exports.dart';
 
 class DemoSearchResultOthers extends StatelessWidget {
@@ -10,7 +10,7 @@ class DemoSearchResultOthers extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FUIColumn(
+    return UIColumn(
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -28,14 +28,14 @@ class DemoSearchResultOthers extends StatelessWidget {
               children: [
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
-                  fuiColorScheme: FUIColorScheme.lightGrey,
+                  fuiColorScheme: UIColorScheme.lightGrey,
                   icon: const Icon(BoxIcons.bx_list_ul),
                   onPressed: () {},
                 ),
-                FUISpacer.hSpace5,
+                UISpacer.hSpace5,
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
-                  fuiColorScheme: FUIColorScheme.lightGrey,
+                  fuiColorScheme: UIColorScheme.lightGrey,
                   icon: const Icon(BoxIcons.bx_grid_small),
                   onPressed: () {},
                 ),
@@ -43,13 +43,13 @@ class DemoSearchResultOthers extends StatelessWidget {
             ),
           ],
         ),
-        FUISpacer.vSpace20,
+        UISpacer.vSpace20,
         _buildOthersResultItem(context, 'Result 1',
             'Curabitur fermentum vel lorem imperdiet pellentesque. Praesent gravida, nisi et accumsan sollicitudin, augue nisi ullamcorper ipsum, sed finibus augue sapien eu nisi.'),
-        FUIHDivider(),
+        UIHDivider(),
         _buildOthersResultItem(context, 'Result 2',
             'Etiam sit amet mauris consequat, laoreet ante in, accumsan turpis. Duis accumsan eu enim sed laoreet. Aenean consequat mauris porttitor nibh vulputate, et viverra ligula ultrices.'),
-        FUIHDivider(),
+        UIHDivider(),
         _buildOthersResultItem(context, 'Result 3', 'Nullam vel semper metus. Aliquam ultricies diam sed nibh tristique, eu semper enim vehicula.'),
       ],
     );
@@ -66,13 +66,13 @@ class DemoSearchResultOthers extends StatelessWidget {
         onTap: () {},
         child: Padding(
           padding: const EdgeInsets.only(top: 10, bottom: 10),
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               RegularB(Text(title)),
               Regular(Text(desc)),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               RegularB(const Text('Tags')),
-              FUISpacer.vSpace5,
+              UISpacer.vSpace5,
               SizedBox(
                 width: double.infinity,
                 child: Wrap(

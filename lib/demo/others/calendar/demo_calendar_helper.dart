@@ -2,7 +2,7 @@ import 'package:avatar_stack/positions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:intl/intl.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoCalendarHelper {
   DateFormat df = DateFormat('MM/dd/yyyy');
@@ -18,7 +18,7 @@ class DemoCalendarHelper {
       venue: Text('New York HQ'),
       tags: [
         FUITextPill(
-          fuiColorScheme: FUIColorScheme.banana,
+          fuiColorScheme: UIColorScheme.banana,
           text: Text('Java'),
         ),
       ],
@@ -33,56 +33,56 @@ class DemoCalendarHelper {
           FUITooltip(
             tooltip: Text('Mckinley Davis'),
             child: FUIAvatar(
-              fuiColorScheme: FUIColorScheme.warning,
+              fuiColorScheme: UIColorScheme.warning,
               avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
             ),
           ),
           FUITooltip(
             tooltip: Text('Mike Cohen'),
             child: FUIAvatar(
-              fuiColorScheme: FUIColorScheme.banana,
+              fuiColorScheme: UIColorScheme.banana,
               avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
             ),
           ),
           FUITooltip(
             tooltip: Text('Tanner Bray'),
             child: FUIAvatar(
-              fuiColorScheme: FUIColorScheme.purple,
+              fuiColorScheme: UIColorScheme.purple,
               avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
             ),
           ),
           FUITooltip(
             tooltip: Text('Juliana Evans'),
             child: FUIAvatar(
-              fuiColorScheme: FUIColorScheme.secondary,
+              fuiColorScheme: UIColorScheme.secondary,
               avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
             ),
           ),
           FUITooltip(
             tooltip: Text('Abdiel Roberson'),
             child: FUIAvatar(
-              fuiColorScheme: FUIColorScheme.purple,
+              fuiColorScheme: UIColorScheme.purple,
               avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
             ),
           ),
           FUITooltip(
             tooltip: Text('Jeremy Mays'),
             child: FUIAvatar(
-              fuiColorScheme: FUIColorScheme.berry,
+              fuiColorScheme: UIColorScheme.berry,
               avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
             ),
           ),
           FUITooltip(
             tooltip: Text('Savanna Donovan'),
             child: FUIAvatar(
-              fuiColorScheme: FUIColorScheme.berry,
+              fuiColorScheme: UIColorScheme.berry,
               avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
             ),
           ),
           FUITooltip(
             tooltip: Text('Mannas Khan'),
             child: FUIAvatar(
-              fuiColorScheme: FUIColorScheme.lightGrey,
+              fuiColorScheme: UIColorScheme.lightGrey,
               avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
             ),
           ),
@@ -192,11 +192,11 @@ class DemoCalendarHelper {
         venue: Text('HQ'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.berry,
+            fuiColorScheme: UIColorScheme.berry,
             text: Text('Flutter'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.opal,
+            fuiColorScheme: UIColorScheme.opal,
             text: Text('Web'),
           ),
         ],
@@ -206,42 +206,42 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.primary,
+                fuiColorScheme: UIColorScheme.primary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
@@ -270,11 +270,11 @@ class DemoCalendarHelper {
         venue: Text('Meeting Hall'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.teal,
+            fuiColorScheme: UIColorScheme.teal,
             text: Text('GoLang'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.papayaWhip,
+            fuiColorScheme: UIColorScheme.papayaWhip,
             text: Text('Kafka'),
           ),
         ],
@@ -284,56 +284,56 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.success,
+                fuiColorScheme: UIColorScheme.success,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
@@ -362,15 +362,15 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.denim,
+            fuiColorScheme: UIColorScheme.denim,
             text: Text('Java'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.lightGrey,
+            fuiColorScheme: UIColorScheme.lightGrey,
             text: Text('CD/CI'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.purple,
+            fuiColorScheme: UIColorScheme.purple,
             text: Text('Web'),
           ),
         ],
@@ -380,49 +380,49 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.denim,
+                fuiColorScheme: UIColorScheme.denim,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
@@ -451,11 +451,11 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.success,
+            fuiColorScheme: UIColorScheme.success,
             text: Text('CD/CI'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.teal,
+            fuiColorScheme: UIColorScheme.teal,
             text: Text('AWS'),
           ),
         ],
@@ -465,70 +465,70 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.prussian,
+                fuiColorScheme: UIColorScheme.prussian,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.prussian,
+                fuiColorScheme: UIColorScheme.prussian,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
@@ -557,7 +557,7 @@ class DemoCalendarHelper {
         venue: Text('Meeting Hall'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.secondary,
+            fuiColorScheme: UIColorScheme.secondary,
             text: Text('GoLang'),
           ),
         ],
@@ -567,21 +567,21 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
@@ -610,11 +610,11 @@ class DemoCalendarHelper {
         venue: Text('Meeting Hall'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.teal,
+            fuiColorScheme: UIColorScheme.teal,
             text: Text('Web'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.cobalt,
+            fuiColorScheme: UIColorScheme.cobalt,
             text: Text('Kafka'),
           ),
         ],
@@ -624,14 +624,14 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
@@ -660,7 +660,7 @@ class DemoCalendarHelper {
         venue: Text('HQ'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.prussian,
+            fuiColorScheme: UIColorScheme.prussian,
             text: Text('GoLang'),
           ),
         ],
@@ -670,70 +670,70 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
@@ -767,7 +767,7 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.primary,
+            fuiColorScheme: UIColorScheme.primary,
             text: Text('API Integration'),
           ),
         ],
@@ -777,42 +777,42 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.primary,
+                fuiColorScheme: UIColorScheme.primary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.prussian,
+                fuiColorScheme: UIColorScheme.prussian,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
@@ -841,7 +841,7 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.banana,
+            fuiColorScheme: UIColorScheme.banana,
             text: Text('GoLang'),
           ),
         ],
@@ -851,42 +851,42 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
@@ -915,11 +915,11 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.prussian,
+            fuiColorScheme: UIColorScheme.prussian,
             text: Text('Elastic Search'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.berry,
+            fuiColorScheme: UIColorScheme.berry,
             text: Text('GoLang'),
           ),
         ],
@@ -929,56 +929,56 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.primary,
+                fuiColorScheme: UIColorScheme.primary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
@@ -1007,11 +1007,11 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.complete,
+            fuiColorScheme: UIColorScheme.complete,
             text: Text('AWS'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.purple,
+            fuiColorScheme: UIColorScheme.purple,
             text: Text('Elastic Search'),
           ),
         ],
@@ -1021,49 +1021,49 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
@@ -1092,11 +1092,11 @@ class DemoCalendarHelper {
         venue: Text('HQ'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.banana,
+            fuiColorScheme: UIColorScheme.banana,
             text: Text('AWS'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.purple,
+            fuiColorScheme: UIColorScheme.purple,
             text: Text('API Integration'),
           ),
         ],
@@ -1106,7 +1106,7 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
@@ -1135,7 +1135,7 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.teal,
+            fuiColorScheme: UIColorScheme.teal,
             text: Text('Java'),
           ),
         ],
@@ -1145,14 +1145,14 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
@@ -1186,7 +1186,7 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.papayaWhip,
+            fuiColorScheme: UIColorScheme.papayaWhip,
             text: Text('Kafka'),
           ),
         ],
@@ -1196,49 +1196,49 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.success,
+                fuiColorScheme: UIColorScheme.success,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
@@ -1267,11 +1267,11 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.success,
+            fuiColorScheme: UIColorScheme.success,
             text: Text('Flutter'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.warning,
+            fuiColorScheme: UIColorScheme.warning,
             text: Text('GoLang'),
           ),
         ],
@@ -1281,49 +1281,49 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.denim,
+                fuiColorScheme: UIColorScheme.denim,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.success,
+                fuiColorScheme: UIColorScheme.success,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.prussian,
+                fuiColorScheme: UIColorScheme.prussian,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
@@ -1352,15 +1352,15 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.papayaWhip,
+            fuiColorScheme: UIColorScheme.papayaWhip,
             text: Text('API Integration'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.black,
+            fuiColorScheme: UIColorScheme.black,
             text: Text('AWS'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.bumbleBee,
+            fuiColorScheme: UIColorScheme.bumbleBee,
             text: Text('CD/CI'),
           ),
         ],
@@ -1370,70 +1370,70 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
@@ -1467,11 +1467,11 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.papayaWhip,
+            fuiColorScheme: UIColorScheme.papayaWhip,
             text: Text('Kafka'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.denim,
+            fuiColorScheme: UIColorScheme.denim,
             text: Text('Java'),
           ),
         ],
@@ -1481,70 +1481,70 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.success,
+                fuiColorScheme: UIColorScheme.success,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
@@ -1573,15 +1573,15 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.black,
+            fuiColorScheme: UIColorScheme.black,
             text: Text('CD/CI'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.ruby,
+            fuiColorScheme: UIColorScheme.ruby,
             text: Text('Kafka'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.complete,
+            fuiColorScheme: UIColorScheme.complete,
             text: Text('Flutter'),
           ),
         ],
@@ -1591,7 +1591,7 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
@@ -1625,7 +1625,7 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.primary,
+            fuiColorScheme: UIColorScheme.primary,
             text: Text('AWS'),
           ),
         ],
@@ -1635,63 +1635,63 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.success,
+                fuiColorScheme: UIColorScheme.success,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.prussian,
+                fuiColorScheme: UIColorScheme.prussian,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
@@ -1720,11 +1720,11 @@ class DemoCalendarHelper {
         venue: Text('Meeting Hall'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.papayaWhip,
+            fuiColorScheme: UIColorScheme.papayaWhip,
             text: Text('AWS'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.cobalt,
+            fuiColorScheme: UIColorScheme.cobalt,
             text: Text('Elastic Search'),
           ),
         ],
@@ -1734,35 +1734,35 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.denim,
+                fuiColorScheme: UIColorScheme.denim,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
@@ -1791,7 +1791,7 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.purple,
+            fuiColorScheme: UIColorScheme.purple,
             text: Text('AWS'),
           ),
         ],
@@ -1801,14 +1801,14 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
@@ -1837,11 +1837,11 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.success,
+            fuiColorScheme: UIColorScheme.success,
             text: Text('API Integration'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.banana,
+            fuiColorScheme: UIColorScheme.banana,
             text: Text('Elastic Search'),
           ),
         ],
@@ -1851,70 +1851,70 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
@@ -1943,15 +1943,15 @@ class DemoCalendarHelper {
         venue: Text('Meeting Hall'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.ruby,
+            fuiColorScheme: UIColorScheme.ruby,
             text: Text('Java'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.papayaWhip,
+            fuiColorScheme: UIColorScheme.papayaWhip,
             text: Text('CD/CI'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.cobalt,
+            fuiColorScheme: UIColorScheme.cobalt,
             text: Text('Web'),
           ),
         ],
@@ -1961,35 +1961,35 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
@@ -2023,15 +2023,15 @@ class DemoCalendarHelper {
         venue: Text('Meeting Hall'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.lightGrey,
+            fuiColorScheme: UIColorScheme.lightGrey,
             text: Text('Web'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.primary,
+            fuiColorScheme: UIColorScheme.primary,
             text: Text('AWS'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.opal,
+            fuiColorScheme: UIColorScheme.opal,
             text: Text('GoLang'),
           ),
         ],
@@ -2041,28 +2041,28 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
@@ -2091,11 +2091,11 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.tartOrange,
+            fuiColorScheme: UIColorScheme.tartOrange,
             text: Text('Flutter'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.lightGrey,
+            fuiColorScheme: UIColorScheme.lightGrey,
             text: Text('GoLang'),
           ),
         ],
@@ -2105,21 +2105,21 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
@@ -2148,7 +2148,7 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.berry,
+            fuiColorScheme: UIColorScheme.berry,
             text: Text('Kafka'),
           ),
         ],
@@ -2158,21 +2158,21 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.primary,
+                fuiColorScheme: UIColorScheme.primary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
@@ -2201,7 +2201,7 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.denim,
+            fuiColorScheme: UIColorScheme.denim,
             text: Text('Web'),
           ),
         ],
@@ -2211,14 +2211,14 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
@@ -2252,15 +2252,15 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.berry,
+            fuiColorScheme: UIColorScheme.berry,
             text: Text('CD/CI'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.warning,
+            fuiColorScheme: UIColorScheme.warning,
             text: Text('Web'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.opal,
+            fuiColorScheme: UIColorScheme.opal,
             text: Text('AWS'),
           ),
         ],
@@ -2270,49 +2270,49 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
@@ -2341,7 +2341,7 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.banana,
+            fuiColorScheme: UIColorScheme.banana,
             text: Text('Kafka'),
           ),
         ],
@@ -2351,35 +2351,35 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.denim,
+                fuiColorScheme: UIColorScheme.denim,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
@@ -2408,7 +2408,7 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.secondary,
+            fuiColorScheme: UIColorScheme.secondary,
             text: Text('AWS'),
           ),
         ],
@@ -2418,70 +2418,70 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.prussian,
+                fuiColorScheme: UIColorScheme.prussian,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.success,
+                fuiColorScheme: UIColorScheme.success,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
@@ -2515,11 +2515,11 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.bumbleBee,
+            fuiColorScheme: UIColorScheme.bumbleBee,
             text: Text('Java'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.ruby,
+            fuiColorScheme: UIColorScheme.ruby,
             text: Text('Web'),
           ),
         ],
@@ -2529,35 +2529,35 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.primary,
+                fuiColorScheme: UIColorScheme.primary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.primary,
+                fuiColorScheme: UIColorScheme.primary,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
@@ -2586,15 +2586,15 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.error,
+            fuiColorScheme: UIColorScheme.error,
             text: Text('AWS'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.purple,
+            fuiColorScheme: UIColorScheme.purple,
             text: Text('CD/CI'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.papayaWhip,
+            fuiColorScheme: UIColorScheme.papayaWhip,
             text: Text('GoLang'),
           ),
         ],
@@ -2604,28 +2604,28 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
@@ -2654,11 +2654,11 @@ class DemoCalendarHelper {
         venue: Text('Meeting Hall'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.error,
+            fuiColorScheme: UIColorScheme.error,
             text: Text('API Integration'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.bumbleBee,
+            fuiColorScheme: UIColorScheme.bumbleBee,
             text: Text('CD/CI'),
           ),
         ],
@@ -2668,56 +2668,56 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.primary,
+                fuiColorScheme: UIColorScheme.primary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.prussian,
+                fuiColorScheme: UIColorScheme.prussian,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
@@ -2751,7 +2751,7 @@ class DemoCalendarHelper {
         venue: Text('Meeting Hall'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.banana,
+            fuiColorScheme: UIColorScheme.banana,
             text: Text('Java'),
           ),
         ],
@@ -2761,56 +2761,56 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
@@ -2839,15 +2839,15 @@ class DemoCalendarHelper {
         venue: Text('Meeting Hall'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.papayaWhip,
+            fuiColorScheme: UIColorScheme.papayaWhip,
             text: Text('GoLang'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.primary,
+            fuiColorScheme: UIColorScheme.primary,
             text: Text('AWS'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.primary,
+            fuiColorScheme: UIColorScheme.primary,
             text: Text('Web'),
           ),
         ],
@@ -2857,7 +2857,7 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
@@ -2886,11 +2886,11 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.secondary,
+            fuiColorScheme: UIColorScheme.secondary,
             text: Text('CD/CI'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.secondary,
+            fuiColorScheme: UIColorScheme.secondary,
             text: Text('GoLang'),
           ),
         ],
@@ -2900,21 +2900,21 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.primary,
+                fuiColorScheme: UIColorScheme.primary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
@@ -2943,15 +2943,15 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.secondary,
+            fuiColorScheme: UIColorScheme.secondary,
             text: Text('Java'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.tartOrange,
+            fuiColorScheme: UIColorScheme.tartOrange,
             text: Text('Elastic Search'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.success,
+            fuiColorScheme: UIColorScheme.success,
             text: Text('GoLang'),
           ),
         ],
@@ -2961,28 +2961,28 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
@@ -3011,15 +3011,15 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.prussian,
+            fuiColorScheme: UIColorScheme.prussian,
             text: Text('API Integration'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.papayaWhip,
+            fuiColorScheme: UIColorScheme.papayaWhip,
             text: Text('AWS'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.purple,
+            fuiColorScheme: UIColorScheme.purple,
             text: Text('CD/CI'),
           ),
         ],
@@ -3029,56 +3029,56 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.denim,
+                fuiColorScheme: UIColorScheme.denim,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
@@ -3107,11 +3107,11 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.banana,
+            fuiColorScheme: UIColorScheme.banana,
             text: Text('Java'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.warning,
+            fuiColorScheme: UIColorScheme.warning,
             text: Text('Web'),
           ),
         ],
@@ -3121,35 +3121,35 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.primary,
+                fuiColorScheme: UIColorScheme.primary,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
@@ -3183,11 +3183,11 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.ruby,
+            fuiColorScheme: UIColorScheme.ruby,
             text: Text('CD/CI'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.banana,
+            fuiColorScheme: UIColorScheme.banana,
             text: Text('Kafka'),
           ),
         ],
@@ -3197,35 +3197,35 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.purple,
+                fuiColorScheme: UIColorScheme.purple,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.ruby,
+                fuiColorScheme: UIColorScheme.ruby,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
@@ -3254,15 +3254,15 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.bumbleBee,
+            fuiColorScheme: UIColorScheme.bumbleBee,
             text: Text('Java'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.berry,
+            fuiColorScheme: UIColorScheme.berry,
             text: Text('Flutter'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.tartOrange,
+            fuiColorScheme: UIColorScheme.tartOrange,
             text: Text('API Integration'),
           ),
         ],
@@ -3272,14 +3272,14 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
@@ -3308,7 +3308,7 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.papayaWhip,
+            fuiColorScheme: UIColorScheme.papayaWhip,
             text: Text('API Integration'),
           ),
         ],
@@ -3318,70 +3318,70 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.success,
+                fuiColorScheme: UIColorScheme.success,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.secondary,
+                fuiColorScheme: UIColorScheme.secondary,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
@@ -3410,11 +3410,11 @@ class DemoCalendarHelper {
         venue: Text('HQ'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.complete,
+            fuiColorScheme: UIColorScheme.complete,
             text: Text('Elastic Search'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.banana,
+            fuiColorScheme: UIColorScheme.banana,
             text: Text('Java'),
           ),
         ],
@@ -3424,21 +3424,21 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.papayaWhip,
+                fuiColorScheme: UIColorScheme.papayaWhip,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.banana,
+                fuiColorScheme: UIColorScheme.banana,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
@@ -3467,11 +3467,11 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.opal,
+            fuiColorScheme: UIColorScheme.opal,
             text: Text('AWS'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.complete,
+            fuiColorScheme: UIColorScheme.complete,
             text: Text('Web'),
           ),
         ],
@@ -3481,70 +3481,70 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Jeremy Mays'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.prussian,
+                fuiColorScheme: UIColorScheme.prussian,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.denim,
+                fuiColorScheme: UIColorScheme.denim,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.prussian,
+                fuiColorScheme: UIColorScheme.prussian,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.opal,
+                fuiColorScheme: UIColorScheme.opal,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.error,
+                fuiColorScheme: UIColorScheme.error,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.denim,
+                fuiColorScheme: UIColorScheme.denim,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
@@ -3573,7 +3573,7 @@ class DemoCalendarHelper {
         venue: Text('War Room'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.cobalt,
+            fuiColorScheme: UIColorScheme.cobalt,
             text: Text('Java'),
           ),
         ],
@@ -3583,7 +3583,7 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
@@ -3617,15 +3617,15 @@ class DemoCalendarHelper {
         venue: Text('HQ'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.ruby,
+            fuiColorScheme: UIColorScheme.ruby,
             text: Text('GoLang'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.bumbleBee,
+            fuiColorScheme: UIColorScheme.bumbleBee,
             text: Text('Elastic Search'),
           ),
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.teal,
+            fuiColorScheme: UIColorScheme.teal,
             text: Text('CD/CI'),
           ),
         ],
@@ -3635,63 +3635,63 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Tanner Bray'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.prussian,
+                fuiColorScheme: UIColorScheme.prussian,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Gregory Flores'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.bumbleBee,
+                fuiColorScheme: UIColorScheme.bumbleBee,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Savanna Donovan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.tartOrange,
+                fuiColorScheme: UIColorScheme.tartOrange,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mckinley Davis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.complete,
+                fuiColorScheme: UIColorScheme.complete,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.cobalt,
+                fuiColorScheme: UIColorScheme.cobalt,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.warning,
+                fuiColorScheme: UIColorScheme.warning,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mannas Khan'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.black,
+                fuiColorScheme: UIColorScheme.black,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
               ),
             ),
@@ -3720,7 +3720,7 @@ class DemoCalendarHelper {
         venue: Text('Client Site'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.primary,
+            fuiColorScheme: UIColorScheme.primary,
             text: Text('Flutter'),
           ),
         ],
@@ -3730,14 +3730,14 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Abdiel Roberson'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.teal,
+                fuiColorScheme: UIColorScheme.teal,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-07.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Mike Cohen'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.lightGrey,
+                fuiColorScheme: UIColorScheme.lightGrey,
                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
               ),
             ),
@@ -3766,7 +3766,7 @@ class DemoCalendarHelper {
         venue: Text('Development Floor'),
         tags: [
           FUITextPill(
-            fuiColorScheme: FUIColorScheme.error,
+            fuiColorScheme: UIColorScheme.error,
             text: Text('AWS'),
           ),
         ],
@@ -3776,14 +3776,14 @@ class DemoCalendarHelper {
             FUITooltip(
               tooltip: Text('Dana Curtis'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.berry,
+                fuiColorScheme: UIColorScheme.berry,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
               ),
             ),
             FUITooltip(
               tooltip: Text('Juliana Evans'),
               child: FUIAvatar(
-                fuiColorScheme: FUIColorScheme.success,
+                fuiColorScheme: UIColorScheme.success,
                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
               ),
             ),

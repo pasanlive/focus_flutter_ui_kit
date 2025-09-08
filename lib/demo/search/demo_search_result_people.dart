@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../exports.dart';
 
 class DemoSearchResultPeople extends StatefulWidget {
@@ -20,7 +20,7 @@ class _DemoSearchResultPeopleState extends State<DemoSearchResultPeople> {
   Widget build(BuildContext context) {
     panelTheme = context.theme.fuiPanel;
 
-    return FUIColumn(
+    return UIColumn(
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -33,14 +33,14 @@ class _DemoSearchResultPeopleState extends State<DemoSearchResultPeople> {
               children: [
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
-                  fuiColorScheme: FUIColorScheme.lightGrey,
+                  fuiColorScheme: UIColorScheme.lightGrey,
                   icon: Icon(BoxIcons.bx_list_ul),
                   onPressed: () {},
                 ),
-                FUISpacer.hSpace5,
+                UISpacer.hSpace5,
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
-                  fuiColorScheme: FUIColorScheme.lightGrey,
+                  fuiColorScheme: UIColorScheme.lightGrey,
                   icon: Icon(BoxIcons.bx_grid_small),
                   onPressed: () {},
                 ),
@@ -48,7 +48,7 @@ class _DemoSearchResultPeopleState extends State<DemoSearchResultPeople> {
             ),
           ],
         ),
-        FUISpacer.vSpace20,
+        UISpacer.vSpace20,
         ResponsiveGridRow(
           children: [
             ResponsiveGridCol(
@@ -151,7 +151,7 @@ class _DemoSearchResultPeopleState extends State<DemoSearchResultPeople> {
         ],
         contentScrollBarEnable: true,
         footerShow: false,
-        content: FUIColumn(
+        content: UIColumn(
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -161,8 +161,8 @@ class _DemoSearchResultPeopleState extends State<DemoSearchResultPeople> {
                   avatar: avatarImg,
                   fuiAvatarSize: FUIAvatarSize.large,
                 ),
-                FUISpacer.hSpace20,
-                FUIColumn(
+                UISpacer.hSpace20,
+                UIColumn(
                   children: [
                     RegularB(Text(name)),
                     SmallText(Text(role)),
@@ -170,14 +170,14 @@ class _DemoSearchResultPeopleState extends State<DemoSearchResultPeople> {
                 )
               ],
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             SmallText(Text('Joined since $joinSince')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             RegularB(Text('Profile')),
             Regular(Text('Ut malesuada arcu metus, tempor tempor justo tristique vel.')),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             RegularB(Text('Projects')),
-            FUISpacer.vSpace5,
+            UISpacer.vSpace5,
             SizedBox(
               width: double.infinity,
               child: Wrap(

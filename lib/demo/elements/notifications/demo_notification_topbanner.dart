@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoNotificationTopBanner extends StatelessWidget {
@@ -11,7 +11,7 @@ class DemoNotificationTopBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     TextStyle tsDot = responsiveValue(
@@ -52,9 +52,9 @@ class DemoNotificationTopBanner extends StatelessWidget {
                   md: 7,
                   sm: 12,
                   child: FUISectionContainer(
-                    child: FUIColumn(
+                    child: UIColumn(
                       children: [
-                        FUISpacer.vSpace15,
+                        UISpacer.vSpace15,
                         PreH(Text('ELEMENTS FOR SEEKING ATTENTION', style: TextStyle(color: fuiColors.shade0))),
                         Container(
                           alignment: Alignment.bottomLeft,
@@ -74,7 +74,7 @@ class DemoNotificationTopBanner extends StatelessWidget {
                         ),
                         Regular(Text('Components to grab the attention of the user.', style: TextStyle(color: fuiColors.shade0))),
                         SmallText(Text('Built for web/bootstrap developers who are migrating to Flutter in mind.', style: TextStyle(color: fuiColors.shade2))),
-                        FUISpacer.vSpace10,
+                        UISpacer.vSpace10,
                       ],
                     ),
                   ),

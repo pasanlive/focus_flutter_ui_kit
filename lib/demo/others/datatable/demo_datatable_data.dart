@@ -8,7 +8,7 @@ import 'package:http/http.dart';
 import 'package:intl/intl.dart';
 import 'package:select2dot1/select2dot1.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoDatatableData {
   final BuildContext context;
@@ -17,10 +17,10 @@ class DemoDatatableData {
 
   List<SingleCategoryModel> colorSchemeList() {
     List<SingleItemCategoryModel> list = [];
-    Iterator<FUIColorScheme> itr = FUIColorScheme.values.iterator;
+    Iterator<UIColorScheme> itr = UIColorScheme.values.iterator;
 
     while (itr.moveNext()) {
-      FUIColorScheme fuiColorScheme = itr.current;
+      UIColorScheme fuiColorScheme = itr.current;
       list.add(SingleItemCategoryModel(nameSingleItem: fuiColorScheme.name, value: fuiColorScheme.name));
     }
 
@@ -31,8 +31,8 @@ class DemoDatatableData {
     ];
   }
 
-  List<DataRow2> generateStaticData1(FUIColorScheme fuiColorScheme) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+  List<DataRow2> generateStaticData1(UIColorScheme fuiColorScheme) {
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUIDataTableCellHelper dtCellHelper = FUIDataTableCellHelper(context);
     List<DataRow2> rowList = [];
 
@@ -58,8 +58,8 @@ class DemoDatatableData {
               crossAxisAlignment: WrapCrossAlignment.center,
               spacing: 5,
               children: [
-                FUITextPill(text: const Text('Cygnus'), fuiColorScheme: FUIColorScheme.cobalt),
-                FUITextPill(text: const Text('Lepus'), fuiColorScheme: FUIColorScheme.purple),
+                FUITextPill(text: const Text('Cygnus'), fuiColorScheme: UIColorScheme.cobalt),
+                FUITextPill(text: const Text('Lepus'), fuiColorScheme: UIColorScheme.purple),
               ],
             ),
           ),
@@ -117,7 +117,7 @@ class DemoDatatableData {
               crossAxisAlignment: WrapCrossAlignment.center,
               spacing: 5,
               children: [
-                FUITextPill(text: const Text('Lepus'), fuiColorScheme: FUIColorScheme.purple),
+                FUITextPill(text: const Text('Lepus'), fuiColorScheme: UIColorScheme.purple),
               ],
             ),
           ),
@@ -175,7 +175,7 @@ class DemoDatatableData {
               crossAxisAlignment: WrapCrossAlignment.center,
               spacing: 5,
               children: [
-                FUITextPill(text: const Text('Lepus'), fuiColorScheme: FUIColorScheme.purple),
+                FUITextPill(text: const Text('Lepus'), fuiColorScheme: UIColorScheme.purple),
               ],
             ),
           ),
@@ -233,7 +233,7 @@ class DemoDatatableData {
               crossAxisAlignment: WrapCrossAlignment.center,
               spacing: 5,
               children: [
-                FUITextPill(text: Text('Cygnus'), fuiColorScheme: FUIColorScheme.cobalt),
+                FUITextPill(text: Text('Cygnus'), fuiColorScheme: UIColorScheme.cobalt),
               ],
             ),
           ),
@@ -341,7 +341,7 @@ class DemoDatatableData {
               crossAxisAlignment: WrapCrossAlignment.center,
               spacing: 5,
               children: [
-                FUITextPill(text: const Text('Cygnus'), fuiColorScheme: FUIColorScheme.cobalt),
+                FUITextPill(text: const Text('Cygnus'), fuiColorScheme: UIColorScheme.cobalt),
               ],
             ),
           ),
@@ -380,7 +380,7 @@ class DemoDatatableData {
     return rowList;
   }
 
-  List<DataRow2> generateStaticData2(FUIColorScheme fuiColorScheme, FUIDataTable2Size fuiDataTable2Size) {
+  List<DataRow2> generateStaticData2(UIColorScheme fuiColorScheme, FUIDataTable2Size fuiDataTable2Size) {
     FUIDataTableCellHelper dtCellHelper = FUIDataTableCellHelper(context, size: fuiDataTable2Size);
     List<DataRow2> rowList = [];
 

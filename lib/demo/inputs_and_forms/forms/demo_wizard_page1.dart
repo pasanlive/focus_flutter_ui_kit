@@ -7,7 +7,7 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:select2dot1/select2dot1.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoWizardPage1 extends StatefulWidget {
@@ -28,7 +28,7 @@ class DemoWizardPage1 extends StatefulWidget {
 
 class _DemoWizardPage1State extends State<DemoWizardPage1> {
   /// Theme
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Bloc
   late FUIInputFieldController firstNameFieldCtrl;
@@ -133,15 +133,15 @@ class _DemoWizardPage1State extends State<DemoWizardPage1> {
 
   _buildSideInfo() {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           const Icon(
             LineAwesome.user,
             size: 65,
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           H3(const Text('Customer Info')),
-          FUISpacer.vSpace5,
+          UISpacer.vSpace5,
           Regular(const Text('Please fill in your personal details. Your information will be securely stored, adhering to our data privacy policy.'))
         ],
       ),
@@ -152,13 +152,13 @@ class _DemoWizardPage1State extends State<DemoWizardPage1> {
     EdgeInsets eiSidePadding = const EdgeInsets.only(right: 20);
 
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(
             padding: eiSidePadding,
             const Text('How shall we identify you?'),
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -195,12 +195,12 @@ class _DemoWizardPage1State extends State<DemoWizardPage1> {
               ),
             ],
           ),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           H4(
             padding: eiSidePadding,
             Text('Contact'),
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -230,7 +230,7 @@ class _DemoWizardPage1State extends State<DemoWizardPage1> {
               ),
             ],
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -253,7 +253,7 @@ class _DemoWizardPage1State extends State<DemoWizardPage1> {
               ),
             ],
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(

@@ -6,7 +6,7 @@ import 'package:graphic/graphic.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetBusiness08 extends StatelessWidget {
   final Random rand = Random();
@@ -21,13 +21,13 @@ class DemoWidgetBusiness08 extends StatelessWidget {
       height: 530,
       headerIconButtons: _buildHeaderIconButtons(context),
       contentScrollBarEnable: true,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           H2(Text('Revenue Analysis')),
           SmallText(Text('Last updated 25.02.2024 13:05')),
           Regular(Text(
               'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.')),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -86,7 +86,7 @@ class DemoWidgetBusiness08 extends StatelessWidget {
   }
 
   _buildStats(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     Widget fieldValue(IconData iconData, String label, String value) {
@@ -100,8 +100,8 @@ class DemoWidgetBusiness08 extends StatelessWidget {
               padding: EdgeInsets.only(top: 3),
               child: Icon(iconData, size: 55, color: fuiColors.textBody.shade600),
             ),
-            FUISpacer.hSpace10,
-            FUIColumn(
+            UISpacer.hSpace10,
+            UIColumn(
               children: [
                 Text(label, style: typoTheme.regular.copyWith(color: fuiColors.textBody.shade400, fontWeight: FontWeight.bold)),
                 Text(value, style: typoTheme.h2),
@@ -114,7 +114,7 @@ class DemoWidgetBusiness08 extends StatelessWidget {
 
     return Padding(
       padding: responsiveValue(context, md: EdgeInsets.only(left: 20), sm: EdgeInsets.only(top: 20), xs: EdgeInsets.only(top: 20)),
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           fieldValue(BoxIcons.bx_sun, 'Peak Days', 'Tue - Thu'),
           fieldValue(BoxIcons.bx_time, 'Peak Hours', '15:00 - 16:00'),
@@ -126,7 +126,7 @@ class DemoWidgetBusiness08 extends StatelessWidget {
   }
 
   _buildChart(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return SizedBox(
       height: 270,

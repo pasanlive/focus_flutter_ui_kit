@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
-import '../../focus_ui_kit/exports.dart';
 import '../scaffold/bottom/demo_scaffold_bottom01.dart';
 
 class DemoErrorNotFound extends StatelessWidget {
@@ -8,16 +8,16 @@ class DemoErrorNotFound extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
-    return FUISingleChildScrollView(
-      child: FUIColumn(
+    return UISingleChildScrollView(
+      child: UIColumn(
         children: [
           FUISectionPlain(
             horizontalSpace: FUISectionHorizontalSpace.tight,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   const SizedBox(
                     height: 100,
@@ -42,12 +42,12 @@ class DemoErrorNotFound extends StatelessWidget {
                       ),
                     ),
                   ),
-                  FUISpacer.vSpace30,
+                  UISpacer.vSpace30,
                   H5(const Text(
                       'Much apologies, the page resource which you have requested couldn\'t be found. Do check on the url or contact the system administrator.')),
-                  FUISpacer.vSpace40,
+                  UISpacer.vSpace40,
                   FUIButtonBlockTextIcon(
-                    fuiColorScheme: FUIColorScheme.secondary,
+                    fuiColorScheme: UIColorScheme.secondary,
                     text: const Text('Back to Home'),
                     onPressed: () {},
                   ),
@@ -55,8 +55,8 @@ class DemoErrorNotFound extends StatelessWidget {
               ),
             ),
           ),
-          FUISpacer.vSpace50,
-          FUISpacer.vSpace50,
+          UISpacer.vSpace50,
+          UISpacer.vSpace50,
           DemoScaffoldBottom01(),
         ],
       ),

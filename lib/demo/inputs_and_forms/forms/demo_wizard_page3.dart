@@ -7,7 +7,7 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:select2dot1/select2dot1.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoWizardPage3 extends StatefulWidget {
@@ -28,7 +28,7 @@ class DemoWizardPage3 extends StatefulWidget {
 
 class _DemoWizardPage3State extends State<DemoWizardPage3> {
   /// Theme
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Bloc
   late FUIInputFieldController address1FieldCtrl;
@@ -142,15 +142,15 @@ class _DemoWizardPage3State extends State<DemoWizardPage3> {
 
   _buildSideInfo() {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           Icon(
             LineAwesome.truck_solid,
             size: 65,
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           H3(Text('Delivery Info')),
-          FUISpacer.vSpace5,
+          UISpacer.vSpace5,
           Regular(Text('Please fill in the details of the product delivery destination.'))
         ],
       ),
@@ -161,13 +161,13 @@ class _DemoWizardPage3State extends State<DemoWizardPage3> {
     EdgeInsets eiSidePadding = EdgeInsets.only(right: 20);
 
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(
             padding: eiSidePadding,
             Text('Delivery Address'),
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -189,7 +189,7 @@ class _DemoWizardPage3State extends State<DemoWizardPage3> {
               ),
             ],
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -210,7 +210,7 @@ class _DemoWizardPage3State extends State<DemoWizardPage3> {
               ),
             ],
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -249,7 +249,7 @@ class _DemoWizardPage3State extends State<DemoWizardPage3> {
               ),
             ],
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -282,7 +282,7 @@ class _DemoWizardPage3State extends State<DemoWizardPage3> {
               ),
             ],
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(

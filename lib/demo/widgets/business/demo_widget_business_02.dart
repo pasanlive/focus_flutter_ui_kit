@@ -4,7 +4,7 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:step_progress_indicator/step_progress_indicator.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetBusiness02 extends StatelessWidget {
   const DemoWidgetBusiness02({super.key});
@@ -73,21 +73,21 @@ class DemoWidgetBusiness02 extends StatelessWidget {
   }
 
   _buildContent01(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return Padding(
       padding: responsiveValue(context, md: EdgeInsets.only(right: 30), sm: EdgeInsets.only(right: 30), xs: EdgeInsets.zero),
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           _buildStepProgress(context),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           ResponsiveGridRow(children: [
             ResponsiveGridCol(
               sm: 12,
               md: 6,
               child: Padding(
                 padding: const EdgeInsets.only(bottom: 20),
-                child: FUIColumn(
+                child: UIColumn(
                   children: [
                     Regular(
                         Text(
@@ -105,7 +105,7 @@ class DemoWidgetBusiness02 extends StatelessWidget {
               md: 6,
               child: Padding(
                 padding: const EdgeInsets.only(bottom: 20),
-                child: FUIColumn(
+                child: UIColumn(
                   children: [
                     Regular(
                         Text(
@@ -126,7 +126,7 @@ class DemoWidgetBusiness02 extends StatelessWidget {
                 md: 6,
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 20),
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       Regular(
                           Text(
@@ -144,7 +144,7 @@ class DemoWidgetBusiness02 extends StatelessWidget {
                 md: 6,
                 child: Padding(
                   padding: const EdgeInsets.only(bottom: 20),
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       Regular(
                           Text(
@@ -169,32 +169,32 @@ class DemoWidgetBusiness02 extends StatelessWidget {
 
     return Padding(
       padding: const EdgeInsets.all(10),
-      child: FUIColumn(
+      child: UIColumn(
         children: [
-          FUIColumn(
+          UIColumn(
             children: [
               LayoutBuilder(
                 builder: (context, constraints) {
                   print('maxWidth: ${constraints.maxWidth}');
 
-                  return FUIRow(
+                  return UIRow(
                     children: [
                       Padding(
                         padding: const EdgeInsets.only(top: 7),
                         child: Icon(BoxIcons.bx_category_alt, size: typoTheme.h2.fontSize),
                       ),
-                      FUISpacer.hSpace10,
+                      UISpacer.hSpace10,
                       SizedBox(
                           width: constraints.maxWidth - 40, // Minus typoTheme.h2.fontSize and gSpace 10 for softWrap
                           child:
                               Text('PROJECT ANGULUM', softWrap: true, style: responsiveValue(context, lg: typoTheme.h2, sm: typoTheme.h3, xs: typoTheme.h3))),
-                      // FUISpacer.hSpace10,
+                      // UISpacer.hSpace10,
                       // Text('In Progress', style: typoTheme.h5.copyWith(color: fuiColors.shade3)),
                     ],
                   );
                 },
               ),
-              FUISpacer.vSpace10,
+              UISpacer.vSpace10,
               Container(
                 width: double.infinity,
                 padding: EdgeInsets.zero,
@@ -203,39 +203,39 @@ class DemoWidgetBusiness02 extends StatelessWidget {
                   crossAxisAlignment: WrapCrossAlignment.center,
                   spacing: 10,
                   children: [
-                    FUITextPill(fuiColorScheme: FUIColorScheme.primary, pillShape: FUITextPillShape.square, text: Text('Team Gamma')),
-                    FUITextPill(fuiColorScheme: FUIColorScheme.lightGrey, pillShape: FUITextPillShape.square, text: Text('Behind Schedule')),
+                    FUITextPill(fuiColorScheme: UIColorScheme.primary, pillShape: FUITextPillShape.square, text: Text('Team Gamma')),
+                    FUITextPill(fuiColorScheme: UIColorScheme.lightGrey, pillShape: FUITextPillShape.square, text: Text('Behind Schedule')),
                   ],
                 ),
               ),
-              FUISpacer.vSpace30,
+              UISpacer.vSpace30,
               RegularB(Text('Project Description')),
               Regular(Text(
                   'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.')),
-              FUISpacer.vSpace30,
+              UISpacer.vSpace30,
               ResponsiveGridRow(
                 children: [
                   ResponsiveGridCol(
                     sm: 12,
                     md: 4,
-                    child: FUIColumn(
+                    child: UIColumn(
                       children: [
                         RegularB(Text('Project Manager')),
-                        FUISpacer.vSpace5,
+                        UISpacer.vSpace5,
                         FUIAvatarStack(
                           height: 40,
                           avatars: [
                             FUITooltip(
                               tooltip: Text('Mckinley Davis'),
                               child: FUIAvatar(
-                                fuiColorScheme: FUIColorScheme.error,
+                                fuiColorScheme: UIColorScheme.error,
                                 avatar: AssetImage('assets/demo-avatar/avatar-man-05.jpg'),
                               ),
                             ),
                             FUITooltip(
                               tooltip: Text('Jeremy Mays'),
                               child: FUIAvatar(
-                                fuiColorScheme: FUIColorScheme.papayaWhip,
+                                fuiColorScheme: UIColorScheme.papayaWhip,
                                 avatar: AssetImage('assets/demo-avatar/avatar-man-02.jpg'),
                               ),
                             ),
@@ -247,59 +247,59 @@ class DemoWidgetBusiness02 extends StatelessWidget {
                   ResponsiveGridCol(
                     sm: 12,
                     md: 8,
-                    child: FUIColumn(
+                    child: UIColumn(
                       children: [
                         RegularB(Text('Team')),
-                        FUISpacer.vSpace5,
+                        UISpacer.vSpace5,
                         FUIAvatarStack(
                           height: 40,
                           avatars: [
                             FUITooltip(
                               tooltip: Text('Juliana Evans'),
                               child: FUIAvatar(
-                                fuiColorScheme: FUIColorScheme.papayaWhip,
+                                fuiColorScheme: UIColorScheme.papayaWhip,
                                 avatar: AssetImage('assets/demo-avatar/avatar-woman-11.jpg'),
                               ),
                             ),
                             FUITooltip(
                               tooltip: Text('Dana Curtis'),
                               child: FUIAvatar(
-                                fuiColorScheme: FUIColorScheme.ruby,
+                                fuiColorScheme: UIColorScheme.ruby,
                                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
                               ),
                             ),
                             FUITooltip(
                               tooltip: Text('Mannas Khan'),
                               child: FUIAvatar(
-                                fuiColorScheme: FUIColorScheme.banana,
+                                fuiColorScheme: UIColorScheme.banana,
                                 avatar: AssetImage('assets/demo-avatar/avatar-man-11.jpg'),
                               ),
                             ),
                             FUITooltip(
                               tooltip: Text('Tanner Bray'),
                               child: FUIAvatar(
-                                fuiColorScheme: FUIColorScheme.primary,
+                                fuiColorScheme: UIColorScheme.primary,
                                 avatar: AssetImage('assets/demo-avatar/avatar-woman-06.jpg'),
                               ),
                             ),
                             FUITooltip(
                               tooltip: Text('Savanna Donovan'),
                               child: FUIAvatar(
-                                fuiColorScheme: FUIColorScheme.tartOrange,
+                                fuiColorScheme: UIColorScheme.tartOrange,
                                 avatar: AssetImage('assets/demo-avatar/avatar-woman-03.jpg'),
                               ),
                             ),
                             FUITooltip(
                               tooltip: Text('Mike Cohen'),
                               child: FUIAvatar(
-                                fuiColorScheme: FUIColorScheme.ruby,
+                                fuiColorScheme: UIColorScheme.ruby,
                                 avatar: AssetImage('assets/demo-avatar/avatar-man-01.jpg'),
                               ),
                             ),
                             FUITooltip(
                               tooltip: Text('Dana Curtis'),
                               child: FUIAvatar(
-                                fuiColorScheme: FUIColorScheme.complete,
+                                fuiColorScheme: UIColorScheme.complete,
                                 avatar: AssetImage('assets/demo-avatar/avatar-woman-13.jpg'),
                               ),
                             ),
@@ -318,7 +318,7 @@ class DemoWidgetBusiness02 extends StatelessWidget {
   }
 
   _buildStepProgress(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     return Padding(

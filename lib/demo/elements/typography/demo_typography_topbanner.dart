@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoTypographyTopBanner extends StatelessWidget {
@@ -11,7 +11,7 @@ class DemoTypographyTopBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     TextStyle tsDot = typoTheme.h1.copyWith(color: fuiColors.primary);
@@ -47,7 +47,7 @@ class DemoTypographyTopBanner extends StatelessWidget {
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        FUISpacer.vSpace15,
+                        UISpacer.vSpace15,
                         PreH(Text('FONTS AND TYPE FACES', style: TextStyle(color: fuiColors.shade0))),
                         Container(
                           alignment: Alignment.bottomLeft,
@@ -68,7 +68,7 @@ class DemoTypographyTopBanner extends StatelessWidget {
                         Regular(Text('Carefully selected fonts for major type faces that harmonizes and communicates well with users.',
                             style: TextStyle(color: fuiColors.shade0))),
                         SmallText(Text('Built for web developers who are migrating to Flutter in mind.', style: TextStyle(color: fuiColors.shade2))),
-                        FUISpacer.vSpace10,
+                        UISpacer.vSpace10,
                       ],
                     ),
                   ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoModal02 extends StatefulWidget {
   final FUIAnimationType fuiModalAnimationType;
@@ -20,7 +20,7 @@ class DemoModal02 extends StatefulWidget {
 
 class _DemoModal02State extends State<DemoModal02> {
   /// Themes
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Modal Related
   late FUIModalController modalCtrl;
@@ -55,12 +55,12 @@ class _DemoModal02State extends State<DemoModal02> {
       footerButtons: [
         FUIButtonBlockTextIcon(
           text: const Text('Close'),
-          fuiColorScheme: FUIColorScheme.lightGrey,
+          fuiColorScheme: UIColorScheme.lightGrey,
           onPressed: () => modalCtrl.trigger(FUIModalControlEvent(close: true)),
         ),
         FUIButtonBlockTextIcon(
           text: const Text('Login'),
-          fuiColorScheme: FUIColorScheme.primary,
+          fuiColorScheme: UIColorScheme.primary,
           onPressed: () {},
         ),
       ],
@@ -68,10 +68,10 @@ class _DemoModal02State extends State<DemoModal02> {
   }
 
   _buildForm() {
-    return FUIColumn(
+    return UIColumn(
       children: [
         SmallText(const Text('Login to gain access to more features.')),
-        FUISpacer.vSpace20,
+        UISpacer.vSpace20,
         FUIInputText(
           label: 'Username',
           hint: 'The email which you had registered.',

@@ -4,7 +4,7 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoScaffoldBottom01 extends StatelessWidget {
@@ -12,7 +12,7 @@ class DemoScaffoldBottom01 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.focus,
@@ -49,7 +49,7 @@ class DemoScaffoldBottom01 extends StatelessWidget {
               ),
             ],
           ),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           _buildFooter(context),
         ],
       ),
@@ -57,7 +57,7 @@ class DemoScaffoldBottom01 extends StatelessWidget {
   }
 
   _buildLinkCol1(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     TextStyle tsDot = typoTheme.h1.copyWith(color: fuiColors.primary);
@@ -80,12 +80,12 @@ class DemoScaffoldBottom01 extends StatelessWidget {
               ),
             ]),
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Regular(Text(
             'More than just a theme, a Flutter UI toolkit crafted to lift burdens from extensive development of UI for the web / mobile / desktop.',
             style: TextStyle(color: fuiColors.shade2),
           )),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           Wrap(
             spacing: 20,
             runSpacing: 20,
@@ -126,7 +126,7 @@ class DemoScaffoldBottom01 extends StatelessWidget {
   }
 
   _buildLinkCol2(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionContainer(
       child: Column(
@@ -134,42 +134,42 @@ class DemoScaffoldBottom01 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           H3(Text('Elements', style: TextStyle(color: fuiColors.shade2))),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           FUIButtonLinkTextIcon(
             text: Text('Typography', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathElementsTypography);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Color', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathElementsColors);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Buttons', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathElementsButtons);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Panes & Panels', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathElementsPanePanel);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Tabs & Accordions', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathElementsTabAndAccordion);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Notifications & Modals', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
@@ -182,7 +182,7 @@ class DemoScaffoldBottom01 extends StatelessWidget {
   }
 
   _buildLinkCol3(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionContainer(
       child: Column(
@@ -190,37 +190,37 @@ class DemoScaffoldBottom01 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           H3(Text('Forms', style: TextStyle(color: fuiColors.shade2))),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           FUIButtonLinkTextIcon(
             text: Text('Input Fields', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathInputsAndFormsInput);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Forms & Wizards', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathInputsAndFormsFormsAndWizards);
             },
           ),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           H3(Text('Pages', style: TextStyle(color: fuiColors.shade2))),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           FUIButtonLinkTextIcon(
             text: Text('Login / Authentication', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathPagesLogin01);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Error 404', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathPagesErrorNotFound);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Error 500', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
@@ -233,7 +233,7 @@ class DemoScaffoldBottom01 extends StatelessWidget {
   }
 
   _buildLinkCol4(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionContainer(
       child: Column(
@@ -241,35 +241,35 @@ class DemoScaffoldBottom01 extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           H3(Text('Other Components', style: TextStyle(color: fuiColors.shade2))),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           FUIButtonLinkTextIcon(
             text: Text('Data Tables', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathOthersDataTable);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Graphs & Charts', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathOthersVisualInfo);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Calendar', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathOthersCalendar);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Time Line', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
               _goto(context, DemoPaths.pathOthersTimeline);
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIButtonLinkTextIcon(
             text: Text('Widgets Catalog', style: TextStyle(color: fuiColors.shade2)),
             onPressed: () {
@@ -282,7 +282,7 @@ class DemoScaffoldBottom01 extends StatelessWidget {
   }
 
   _buildFooter(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
 
     return FUISectionContainer(
@@ -316,7 +316,7 @@ class DemoScaffoldBottom01 extends StatelessWidget {
                           webOnlyWindowName: '_blank', // launch to new tab
                         );
                       }),
-                  FUISpacer.hSpace25,
+                  UISpacer.hSpace25,
                   FUIButtonLinkTextIcon(
                       text: Text(
                         'Docs',
@@ -328,7 +328,7 @@ class DemoScaffoldBottom01 extends StatelessWidget {
                           webOnlyWindowName: '_blank', // launch to new tab
                         );
                       }),
-                  FUISpacer.hSpace25,
+                  UISpacer.hSpace25,
                   FUIButtonLinkTextIcon(
                       text: Text(
                         'Starter Kit',

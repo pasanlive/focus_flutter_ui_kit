@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoButtonsBlockLevelFull extends StatelessWidget {
    const DemoButtonsBlockLevelFull({super.key});
@@ -13,20 +13,20 @@ class DemoButtonsBlockLevelFull extends StatelessWidget {
         height: responsiveValue(context, lg: 320, md: 300, xs: 400),
         header:  Text('Full Button Demo'),
         headerSeparator: true,
-        content: FUISingleChildScrollView(
-          child: FUIColumn(
+        content: UISingleChildScrollView(
+          child: UIColumn(
             children: [
                H5(Text('Full Button')),
                Regular(Text('The below buttons have width that corresponds to the width of the parent containing widget.')),
-              FUISpacer.vSpace15,
+              UISpacer.vSpace15,
                SmallTextI(Text('This can be achieved through setting the button\'s \'fuiButtonBlockLevel\' - FUIButtonBlockLevel.full')),
-              FUISpacer.vSpace20,
+              UISpacer.vSpace20,
               FUIButtonBlockTextIcon(
                 text:  Text('Block Button'),
                 fuiButtonBlockLevel: FUIButtonBlockLevel.full,
                 onPressed: () {},
               ),
-              FUISpacer.vSpace15,
+              UISpacer.vSpace15,
               FUIButtonOutlinedTextIcon(
                 text:  Text('Very Long Outlined Text Button'),
                 fuiButtonBlockLevel: FUIButtonBlockLevel.full,

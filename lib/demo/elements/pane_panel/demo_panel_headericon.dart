@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoPanelHeaderAndIcon extends StatelessWidget {
   const DemoPanelHeaderAndIcon({super.key});
@@ -11,10 +11,10 @@ class DemoPanelHeaderAndIcon extends StatelessWidget {
     FUIPanelTheme fuiPanelTheme = context.theme.fuiPanel;
 
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H4(const Text('With Icon Buttons')),
-          FUISpacer.vSpace8,
+          UISpacer.vSpace8,
           FUIPanel(
             header: const Text('PANEL TITLE'),
             height: 220,

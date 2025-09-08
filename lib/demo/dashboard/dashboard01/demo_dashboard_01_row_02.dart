@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animator/flutter_animator.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../widgets/finance_analytics/demo_widget_finance_01.dart';
 import '../../widgets/finance_analytics/demo_widget_finance_04.dart';
 

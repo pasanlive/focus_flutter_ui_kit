@@ -1,7 +1,7 @@
 import 'package:easy_rich_text/easy_rich_text.dart';
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoTypographyRichText extends StatelessWidget with FUITypographyHelper {
   const DemoTypographyRichText({super.key});
@@ -33,7 +33,7 @@ Ut lectus arcu bibendum at varius vel pharetra vel turpis. Semper quis lectus nu
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           H4(Text('Rich Text')),
-          FUISpacer.vSpace8,
+          UISpacer.vSpace8,
           EasyRichText(
             textContent,
             textAlign: TextAlign.justify,

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoSearchSidebar extends StatelessWidget {
   const DemoSearchSidebar({super.key});
@@ -10,8 +10,8 @@ class DemoSearchSidebar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUISingleChildScrollView(
-        child: FUIColumn(
+      child: UISingleChildScrollView(
+        child: UIColumn(
           children: [
             responsiveValue(
               context,
@@ -19,7 +19,7 @@ class DemoSearchSidebar extends StatelessWidget {
               sm: H4(const Text('Search')),
               xs: H4(const Text('Search')),
             ),
-            FUISpacer.vSpace5,
+            UISpacer.vSpace5,
             FUIInputText(
               label: 'Look for',
               hint: 'Type something...',
@@ -32,7 +32,7 @@ class DemoSearchSidebar extends StatelessWidget {
                 BoxIcons.bx_search,
               ),
             ),
-            FUISpacer.vSpace10,
+            UISpacer.vSpace10,
             H5(const Text('Search in')),
             Row(
               mainAxisAlignment: MainAxisAlignment.start,
@@ -42,7 +42,7 @@ class DemoSearchSidebar extends StatelessWidget {
                   initialValue: true,
                   onChanged: (_) {},
                 ),
-                FUISpacer.hSpace10,
+                UISpacer.hSpace10,
                 FieldLabel(const Text('People')),
               ],
             ),
@@ -54,7 +54,7 @@ class DemoSearchSidebar extends StatelessWidget {
                   initialValue: true,
                   onChanged: (_) {},
                 ),
-                FUISpacer.hSpace10,
+                UISpacer.hSpace10,
                 FieldLabel(const Text('Documents')),
               ],
             ),
@@ -66,7 +66,7 @@ class DemoSearchSidebar extends StatelessWidget {
                   initialValue: true,
                   onChanged: (_) {},
                 ),
-                FUISpacer.hSpace10,
+                UISpacer.hSpace10,
                 FieldLabel(const Text('Transactions')),
               ],
             ),
@@ -78,7 +78,7 @@ class DemoSearchSidebar extends StatelessWidget {
                   initialValue: true,
                   onChanged: (_) {},
                 ),
-                FUISpacer.hSpace10,
+                UISpacer.hSpace10,
                 FieldLabel(const Text('Inventory')),
               ],
             ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoButtonsTypesOutline extends StatelessWidget {
   const DemoButtonsTypesOutline({super.key});
@@ -10,14 +10,14 @@ class DemoButtonsTypesOutline extends StatelessWidget {
     EdgeInsets containerMargin = const EdgeInsets.only(left: 15, right: 15, bottom: 15);
     double boxHeight = 200;
 
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionContainer(
       margin: containerMargin,
       backgroundColor: fuiColors.shade2,
       child: SizedBox(
         height: boxHeight,
-        child: FUIColumn(
+        child: UIColumn(
           children: [
             H5(const Text('Outlined Button')),
             Expanded(
@@ -29,7 +29,7 @@ class DemoButtonsTypesOutline extends StatelessWidget {
               ),
             ),
             Regular(const Text('The minimalist\'s side bordered / outlined button.')),
-            FUISpacer.vSpace5,
+            UISpacer.vSpace5,
             SmallTextI(const Text('Class: components/button/FUIButtonOutlinedTextIcon')),
           ],
         ),

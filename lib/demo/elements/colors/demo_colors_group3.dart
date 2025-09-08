@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoColorsGroup3 extends StatelessWidget {
   const DemoColorsGroup3({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUISectionContainer(
       padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
@@ -53,16 +53,16 @@ class DemoColorsGroup3 extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Regular(Text(colorName, softWrap: false)),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           Container(
             height: 80,
             decoration: BoxDecoration(
               color: color,
             ),
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
         ],
       ),
     );

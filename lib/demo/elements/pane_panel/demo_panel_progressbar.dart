@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoPanelProgressBar extends StatelessWidget {
@@ -12,7 +12,7 @@ class DemoPanelProgressBar extends StatelessWidget {
     return FUISectionPlain(
       horizontalSpace: FUISectionHorizontalSpace.focus,
       padding: FUISectionTheme.eiSecPaddingZeroBottom,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           FUISectionContainer(
             child: Column(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoPanelMouseOverShadow extends StatelessWidget {
   const DemoPanelMouseOverShadow({super.key});
@@ -16,7 +16,7 @@ class DemoPanelMouseOverShadow extends StatelessWidget {
             md: 4,
             sm: 12,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   PreH(const Text('SHADOW EFFECTS')),
                   H3(const Text('Panel Box Shadow')),
@@ -48,7 +48,7 @@ class DemoPanelMouseOverShadow extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             H4(const Text('MOUSE OVER HERE!')),
-            FUISpacer.vSpace8,
+            UISpacer.vSpace8,
             H5(const Text('Mouse over will trigger the soft box shadow effect.')),
           ],
         ),

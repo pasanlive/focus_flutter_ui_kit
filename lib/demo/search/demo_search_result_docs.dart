@@ -2,14 +2,14 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoSearchResultDocs extends StatelessWidget {
   const DemoSearchResultDocs({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return FUIColumn(
+    return UIColumn(
       children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -27,14 +27,14 @@ class DemoSearchResultDocs extends StatelessWidget {
               children: [
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
-                  fuiColorScheme: FUIColorScheme.lightGrey,
+                  fuiColorScheme: UIColorScheme.lightGrey,
                   icon: const Icon(BoxIcons.bx_list_ul),
                   onPressed: () {},
                 ),
-                FUISpacer.hSpace5,
+                UISpacer.hSpace5,
                 FUIButtonBlockCircleIcon(
                   fuiButtonSize: responsiveValue(context, md: FUIButtonSize.medium, sm: FUIButtonSize.small, xs: FUIButtonSize.small),
-                  fuiColorScheme: FUIColorScheme.lightGrey,
+                  fuiColorScheme: UIColorScheme.lightGrey,
                   icon: const Icon(BoxIcons.bx_grid_small),
                   onPressed: () {},
                 ),
@@ -42,7 +42,7 @@ class DemoSearchResultDocs extends StatelessWidget {
             ),
           ],
         ),
-        FUISpacer.vSpace20,
+        UISpacer.vSpace20,
         ResponsiveGridRow(
           children: [
             ResponsiveGridCol(
@@ -83,7 +83,7 @@ class DemoSearchResultDocs extends StatelessWidget {
 
   _buildDocsResultItem(BuildContext context, Icon icon, String filename, String lastUpdated, String updatedBy, String fileSize) {
     FUIPanelTheme panelTheme = context.theme.fuiPanel;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return Padding(
       padding: responsiveValue(
@@ -108,7 +108,7 @@ class DemoSearchResultDocs extends StatelessWidget {
           ),
         ],
         footerShow: false,
-        content: FUIColumn(
+        content: UIColumn(
           children: [
             ResponsiveGridRow(
               children: [
@@ -162,7 +162,7 @@ class DemoSearchResultDocs extends StatelessWidget {
                 ),
               ],
             ),
-            FUISpacer.vSpace20,
+            UISpacer.vSpace20,
             RegularB(const Text('Excerpt')),
             Regular(const Text('Proin vulputate, tellus a lacinia varius, neque quam lobortis lectus, sit amet faucibus justo leo nec tortor.')),
           ],

@@ -7,7 +7,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dropzone/flutter_dropzone.dart';
 import 'package:intl/intl.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoInputFileUpload extends StatefulWidget {
   const DemoInputFileUpload({super.key});
@@ -18,7 +18,7 @@ class DemoInputFileUpload extends StatefulWidget {
 
 class _DemoInputFileUploadState extends State<DemoInputFileUpload> {
   /// Themes
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Controllers
   late DropzoneViewController dzvCtrl;
@@ -51,12 +51,12 @@ class _DemoInputFileUploadState extends State<DemoInputFileUpload> {
     fuiColors = context.theme.fuiColors;
 
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H5(const Text('File Select / Dropbox')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           kIsWeb ? _buildFileSelectForWeb() : _buildFileSelectMobileApp(),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           BlocProvider(
             create: (_) => fiCtrl,
             child: BlocBuilder(

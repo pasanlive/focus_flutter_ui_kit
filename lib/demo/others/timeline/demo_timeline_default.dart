@@ -6,7 +6,7 @@ import 'package:responsive_grid/responsive_grid.dart';
 import 'package:select2dot1/select2dot1.dart';
 import 'package:timeline_tile/timeline_tile.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoTimelineDefault extends StatefulWidget {
@@ -84,15 +84,15 @@ class _DemoTimelineDefaultState extends State<DemoTimelineDefault> {
   _buildIntro() {
     return FUISectionContainer(
       padding: FUISectionTheme.eiSecContainerPaddingMore,
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           PreH(const Text('REPRESENTING MILESTONE')),
           H2(const Text('Common Timeline')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           H5(const Text('Timeline usually has a start child, end child and the indicator. Start child and end child are widgets of your own.')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           SmallTextI(const Text('Do experiment with different visual configurations for the timeline below.')),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           FUIInputSelect(
             isSearchable: false,
             label: 'Indicator Size',
@@ -115,7 +115,7 @@ class _DemoTimelineDefaultState extends State<DemoTimelineDefault> {
               ));
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIInputSelect(
             isSearchable: false,
             label: 'Alignment',
@@ -139,9 +139,9 @@ class _DemoTimelineDefaultState extends State<DemoTimelineDefault> {
               ));
             },
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FieldLabel(const Text('With First & Last Trim')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIInputToggleSwitch(
               initialValue: false,
               activeText: const Text('Yes'),
@@ -196,11 +196,11 @@ class _DemoTimelineDefaultState extends State<DemoTimelineDefault> {
 
         return FUISectionContainer(
           padding: FUISectionTheme.eiSecContainerPaddingMore,
-          child: FUIColumn(
+          child: UIColumn(
             children: [
               SizedBox(
                 height: 500,
-                child: FUISingleChildScrollView(
+                child: UISingleChildScrollView(
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: fuiTimelineTileList,

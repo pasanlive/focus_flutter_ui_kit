@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetScaffoldMenuRightLogin extends StatelessWidget {
   const DemoWidgetScaffoldMenuRightLogin({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
     FUIPanelTheme panelTheme = context.theme.fuiPanel;
 
@@ -41,8 +41,8 @@ class DemoWidgetScaffoldMenuRightLogin extends StatelessWidget {
                 avatar: AssetImage('assets/demo-avatar/avatar-man-08.jpg'),
                 fuiAvatarSize: FUIAvatarSize.large,
               ),
-              FUISpacer.hSpace20,
-              FUIColumn(
+              UISpacer.hSpace20,
+              UIColumn(
                 children: [
                   Text('John Doe', style: typoTheme.h3.copyWith(fontSize: 15)),
                   SmallText(Text('18 hours ago'), padding: EdgeInsets.zero),
@@ -57,7 +57,7 @@ class DemoWidgetScaffoldMenuRightLogin extends StatelessWidget {
       footer: FUIButtonBlockTextIcon(
         fuiButtonBlockLevel: FUIButtonBlockLevel.full,
         fuiButtonSize: FUIButtonSize.small,
-        fuiColorScheme: FUIColorScheme.secondary,
+        fuiColorScheme: UIColorScheme.secondary,
         icon: Icon(BoxIcons.bx_log_out),
         text: Text('Sign Out'),
         onPressed: () {},

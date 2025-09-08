@@ -6,8 +6,8 @@ import 'package:icons_plus/icons_plus.dart';
 import 'package:octo_image/octo_image.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../focus_ui_kit/exports.dart';
 import '../exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoLogin01 extends StatefulWidget {
   const DemoLogin01({super.key});
@@ -21,7 +21,7 @@ class _DemoLogin01State extends State<DemoLogin01> {
   GlobalKey<ScaffoldState> scaffoldKey = GlobalKey<ScaffoldState>(debugLabel: 'login01');
 
   /// Theme
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
   late FUITypographyTheme typoTheme;
 
   /// Bloc Controllers
@@ -159,7 +159,7 @@ class _DemoLogin01State extends State<DemoLogin01> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Expanded(
-              child: FUISingleChildScrollView(
+              child: UISingleChildScrollView(
                 child: _buildLogin(context),
               ),
             ),
@@ -184,39 +184,39 @@ class _DemoLogin01State extends State<DemoLogin01> {
           xs: 50,
         ),
       ),
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H2(const Text('Welcome')),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           Regular(const Text('Please enter your credential.')),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           FUIInputText(
             label: 'Username / email',
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIInputText(
             label: 'Password',
             obscureText: true,
           ),
-          FUISpacer.vSpace5,
+          UISpacer.vSpace5,
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               FUIButtonLinkTextIcon(text: const Text('Forgot password?'), onPressed: () {}),
             ],
           ),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           Row(
             mainAxisAlignment: MainAxisAlignment.end,
             children: [
               FUIButtonBlockTextIcon(text: const Text('Login'), onPressed: () => _loginProcess()),
             ],
           ),
-          FUISpacer.vSpace30,
-          FUIHDivider(),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
+          UIHDivider(),
+          UISpacer.vSpace30,
           SmallText(Text('or authenticate via social media')),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           Center(
             child: Wrap(
               alignment: WrapAlignment.center,

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetFinance03 extends StatelessWidget {
   const DemoWidgetFinance03({super.key});
@@ -10,7 +10,7 @@ class DemoWidgetFinance03 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     return FUIPanel(
       headerShow: true,
@@ -18,7 +18,7 @@ class DemoWidgetFinance03 extends StatelessWidget {
       height: responsiveValue(context, md: FUIPanelTheme.defaultHeight, sm: 620, xs: 620),
       headerIconButtons: _buildHeaderIconButtons(context),
       contentScrollBarEnable: false,
-      content: FUIColumn(
+      content: UIColumn(
         children: [
           ResponsiveGridRow(
             children: [
@@ -33,7 +33,7 @@ class DemoWidgetFinance03 extends StatelessWidget {
               ResponsiveGridCol(
                   md: 10,
                   sm: 12,
-                  child: FUIColumn(
+                  child: UIColumn(
                     children: [
                       Text('Financial Highlights', style: typoTheme.regular.copyWith(fontSize: 36, fontWeight: FontWeight.w800)),
                       Text('Year 2023 (Audited)', style: typoTheme.regular.copyWith(color: fuiColors.primary, fontSize: 16, fontWeight: FontWeight.w700)),
@@ -41,7 +41,7 @@ class DemoWidgetFinance03 extends StatelessWidget {
                   ))
             ],
           ),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           FUITabPane(
             height: responsiveValue(context, md: 230, sm: 320, xs: 320),
             fuiTabItems: [
@@ -95,7 +95,7 @@ class DemoWidgetFinance03 extends StatelessWidget {
 
   FUITabItem _buildTabIncomeStatement(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     TextStyle labelTs = typoTheme.regular.copyWith(color: fuiColors.textHinted);
     TextStyle valueTs = typoTheme.regular.copyWith(fontWeight: FontWeight.bold);
@@ -116,7 +116,7 @@ class DemoWidgetFinance03 extends StatelessWidget {
 
     return FUITabItem(
       tabHeadLabel: Text('Income Statement'),
-      content: FUISingleChildScrollView(
+      content: UISingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -137,7 +137,7 @@ class DemoWidgetFinance03 extends StatelessWidget {
 
   FUITabItem _buildTabBalanceSheet(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     TextStyle labelTs = typoTheme.regular.copyWith(color: fuiColors.textHinted);
     TextStyle valueTs = typoTheme.regular.copyWith(fontWeight: FontWeight.bold);
@@ -158,7 +158,7 @@ class DemoWidgetFinance03 extends StatelessWidget {
 
     return FUITabItem(
       tabHeadLabel: Text('Balance Sheet'),
-      content: FUISingleChildScrollView(
+      content: UISingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
@@ -179,7 +179,7 @@ class DemoWidgetFinance03 extends StatelessWidget {
 
   FUITabItem _buildTabCashFlow(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     TextStyle labelTs = typoTheme.regular.copyWith(color: fuiColors.textHinted);
     TextStyle valueTs = typoTheme.regular.copyWith(fontWeight: FontWeight.bold);
@@ -200,7 +200,7 @@ class DemoWidgetFinance03 extends StatelessWidget {
 
     return FUITabItem(
       tabHeadLabel: Text('Cash Flow'),
-      content: FUISingleChildScrollView(
+      content: UISingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [

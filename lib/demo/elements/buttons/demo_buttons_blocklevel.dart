@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoButtonsBlockLevel extends StatelessWidget {
@@ -18,7 +18,7 @@ class DemoButtonsBlockLevel extends StatelessWidget {
             md: 6,
             lg: 4,
             child:  FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   PreH(Text('Block Level')),
                   H3(Text('Fitted / Full')),

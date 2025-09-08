@@ -1,16 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../focus_ui_kit/exports.dart';
 import '../exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoSearch extends StatelessWidget {
   const DemoSearch({super.key});
 
   @override
   Widget build(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
-    return FUISingleChildScrollView(
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
+    return UISingleChildScrollView(
       child: FUISectionPlain(
         horizontalSpace: FUISectionHorizontalSpace.full,
         backgroundColor: fuiColors.shade1,

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoTypographyUnorderedlist extends StatelessWidget with FUITypographyHelper {
   const DemoTypographyUnorderedlist({super.key});
@@ -11,7 +11,7 @@ class DemoTypographyUnorderedlist extends StatelessWidget with FUITypographyHelp
     return FUISectionContainer(
       child: Column(mainAxisAlignment: MainAxisAlignment.start, crossAxisAlignment: CrossAxisAlignment.start, children: [
         H4(Text('Bullets and Dashes')),
-        FUISpacer.vSpace8,
+        UISpacer.vSpace8,
         ResponsiveGridRow(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

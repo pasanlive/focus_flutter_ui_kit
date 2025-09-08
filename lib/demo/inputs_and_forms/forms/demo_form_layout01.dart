@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoFormLayout01 extends StatefulWidget {
   const DemoFormLayout01({super.key});
@@ -52,7 +52,7 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
 
   _buildIntro() {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           PreH(const Text('STANDARD LAYOUT')),
           H2(const Text('Form')),
@@ -67,11 +67,11 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
     EdgeInsets inputPadding = const EdgeInsets.only(right: 20);
 
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H2(const Text('Investment Risk Profile')),
           Regular(const Text('Please take sometime to fill in the below of what best describes you as an investor.')),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -132,17 +132,17 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     FieldLabel(const Text('Enable UI Pro Mode')),
-                    FUISpacer.hSpace20,
+                    UISpacer.hSpace20,
                     FUIInputToggleSwitch(showOnOff: true, initialValue: true, onChanged: (onOff) {}),
                   ],
                 ),
               ),
             )
           ]),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           H5(const Text('Financial Survey')),
           Regular(const Text('Please indicate your current net worth.')),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -159,7 +159,7 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
                         fuiInputFieldRadioGroupController: radioGroupCtrl,
                         onChanged: (value) {},
                       ),
-                      FUISpacer.hSpace10,
+                      UISpacer.hSpace10,
                       Flexible(child: Regular(const Text('< \$500,000'))),
                     ],
                   ),
@@ -179,7 +179,7 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
                         fuiInputFieldRadioGroupController: radioGroupCtrl,
                         onChanged: (value) {},
                       ),
-                      FUISpacer.hSpace10,
+                      UISpacer.hSpace10,
                       Flexible(child: Regular(const Text('\$500,000 - \$1,000,000'))),
                     ],
                   ),
@@ -199,7 +199,7 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
                         fuiInputFieldRadioGroupController: radioGroupCtrl,
                         onChanged: (value) {},
                       ),
-                      FUISpacer.hSpace10,
+                      UISpacer.hSpace10,
                       Flexible(child: Regular(const Text('\$1,000,000 - \$5,000,000'))),
                     ],
                   ),
@@ -219,7 +219,7 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
                         fuiInputFieldRadioGroupController: radioGroupCtrl,
                         onChanged: (value) {},
                       ),
-                      FUISpacer.hSpace10,
+                      UISpacer.hSpace10,
                       Flexible(child: Regular(const Text('> \$5,000,000'))),
                     ],
                   ),
@@ -227,9 +227,9 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
               ),
             ],
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           Regular(const Text('My source(s) of funding are:')),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -242,7 +242,7 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       FUIInputCheckbox(initialValue: false, onChanged: (value) {}),
-                      FUISpacer.hSpace10,
+                      UISpacer.hSpace10,
                       Flexible(child: Regular(const Text('Own Salary'))),
                     ],
                   ),
@@ -258,7 +258,7 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       FUIInputCheckbox(initialValue: false, onChanged: (value) {}),
-                      FUISpacer.hSpace10,
+                      UISpacer.hSpace10,
                       Flexible(child: Regular(const Text('Family Trust'))),
                     ],
                   ),
@@ -274,7 +274,7 @@ class _DemoFormLayout01State extends State<DemoFormLayout01> {
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
                       FUIInputCheckbox(initialValue: false, onChanged: (value) {}),
-                      FUISpacer.hSpace10,
+                      UISpacer.hSpace10,
                       Flexible(child: Regular(const Text('Pensions / Retirement Funds'))),
                     ],
                   ),

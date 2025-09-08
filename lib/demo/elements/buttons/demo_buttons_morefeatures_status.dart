@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoButtonsMoreFeaturesStatus extends StatelessWidget {
   const DemoButtonsMoreFeaturesStatus({super.key});
@@ -9,24 +9,24 @@ class DemoButtonsMoreFeaturesStatus extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(Text('Status Buttons')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           SmallTextI(Text('Achieve by setting the fuiButtonColorScheme value.')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
                 md: 12,
                 lg: 6,
-                child: FUIColumn(
+                child: UIColumn(
                   children: [
                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: FUIButtonBlockTextIcon(
                         text: Text('Success'),
-                        fuiColorScheme: FUIColorScheme.success,
+                        fuiColorScheme: UIColorScheme.success,
                         onPressed: () {},
                       ),
                     ),
@@ -36,13 +36,13 @@ class DemoButtonsMoreFeaturesStatus extends StatelessWidget {
               ResponsiveGridCol(
                 md: 12,
                 lg: 6,
-                child: FUIColumn(
+                child: UIColumn(
                   children: [
                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: FUIButtonBlockTextIcon(
                         text: Text('Complete'),
-                        fuiColorScheme: FUIColorScheme.complete,
+                        fuiColorScheme: UIColorScheme.complete,
                         onPressed: () {},
                       ),
                     ),
@@ -56,13 +56,13 @@ class DemoButtonsMoreFeaturesStatus extends StatelessWidget {
               ResponsiveGridCol(
                 md: 12,
                 lg: 6,
-                child: FUIColumn(
+                child: UIColumn(
                   children: [
                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: FUIButtonBlockTextIcon(
                         text: Text('Warning'),
-                        fuiColorScheme: FUIColorScheme.warning,
+                        fuiColorScheme: UIColorScheme.warning,
                         onPressed: () {},
                       ),
                     ),
@@ -72,13 +72,13 @@ class DemoButtonsMoreFeaturesStatus extends StatelessWidget {
               ResponsiveGridCol(
                 md: 12,
                 lg: 6,
-                child: FUIColumn(
+                child: UIColumn(
                   children: [
                     Padding(
                       padding: EdgeInsets.all(8.0),
                       child: FUIButtonBlockTextIcon(
                         text: Text('Error'),
-                        fuiColorScheme: FUIColorScheme.error,
+                        fuiColorScheme: UIColorScheme.error,
                         onPressed: () {},
                       ),
                     ),

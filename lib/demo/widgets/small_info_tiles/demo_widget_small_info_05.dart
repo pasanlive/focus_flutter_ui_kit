@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetSmallInfo05 extends StatelessWidget {
   const DemoWidgetSmallInfo05({super.key});
@@ -10,7 +10,7 @@ class DemoWidgetSmallInfo05 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     FUITypographyTheme typoTheme = context.theme.fuiTypography;
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
 
     /// Attributes
     double height = 150;
@@ -55,7 +55,7 @@ class DemoWidgetSmallInfo05 extends StatelessWidget {
               ],
             ),
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           SmallText(Text('Lat updated - 22/05/2024 13:00:00', style: TextStyle(color: bottomDescColor))),
         ],
       ),

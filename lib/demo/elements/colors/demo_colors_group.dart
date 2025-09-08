@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoColorsGroup extends StatelessWidget {
@@ -17,11 +17,11 @@ class DemoColorsGroup extends StatelessWidget {
         children: [
           FUISectionContainer(
             padding: FUISectionTheme.eiSecContainerPaddingOnlyHorizontal,
-            child: FUIColumn(
+            child: UIColumn(
               children: [
                 H3(const Text('Named Colors')),
                 Regular(const Text('Besides primary and secondary colors, the theme has groups of colors that are named.')),
-                FUISpacer.vSpace20,
+                UISpacer.vSpace20,
               ],
             ),
           ),

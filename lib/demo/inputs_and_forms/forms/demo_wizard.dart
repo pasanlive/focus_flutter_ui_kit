@@ -4,7 +4,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:select2dot1/select2dot1.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoWizard extends StatefulWidget {
@@ -21,7 +21,7 @@ class DemoWizard extends StatefulWidget {
 
 class _DemoWizardState extends State<DemoWizard> {
   /// Theme
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
   late FUITypographyTheme typoTheme;
 
   /// Bloc
@@ -130,7 +130,7 @@ class _DemoWizardState extends State<DemoWizard> {
             md: 4,
             sm: 12,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   PreH(const Text('GUIDED FORMS')),
                   H2(const Text('Wizard')),
@@ -143,10 +143,10 @@ class _DemoWizardState extends State<DemoWizard> {
             md: 4,
             sm: 12,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   H5(const Text('Page Items Style')),
-                  FUISpacer.vSpace20,
+                  UISpacer.vSpace20,
                   _buildPageItemStyleSelect(),
                 ],
               ),
@@ -156,10 +156,10 @@ class _DemoWizardState extends State<DemoWizard> {
             md: 4,
             sm: 12,
             child: FUISectionContainer(
-              child: FUIColumn(
+              child: UIColumn(
                 children: [
                   H5(const Text('Page Items Position')),
-                  FUISpacer.vSpace20,
+                  UISpacer.vSpace20,
                   _buildPageItemPositionSelect(),
                 ],
               ),
@@ -175,11 +175,11 @@ class _DemoWizardState extends State<DemoWizard> {
       backgroundColor: fuiColors.shade1,
       horizontalSpace: FUISectionHorizontalSpace.focus,
       child: FUISectionContainer(
-        child: FUIColumn(
+        child: UIColumn(
           children: [
             PreH(const Text('Wizard Demo')),
             H2(const Text('Registration Form')),
-            FUISpacer.vSpace40,
+            UISpacer.vSpace40,
             BlocProvider(
               create: (_) => demoOptionCtrl,
               child: BlocBuilder(
@@ -322,7 +322,7 @@ class _DemoWizardState extends State<DemoWizard> {
       selectable: true,
       selectableWhen: _isPage1Selectable,
       onSelected: () => page1RefreshCtrl.trigger(true),
-      content: FUISingleChildScrollView(
+      content: UISingleChildScrollView(
         child: page1,
       ),
     );
@@ -354,7 +354,7 @@ class _DemoWizardState extends State<DemoWizard> {
       selectable: true,
       selectableWhen: _isPage2Selectable,
       onSelected: () => page2RefreshCtrl.trigger(true),
-      content: FUISingleChildScrollView(
+      content: UISingleChildScrollView(
         child: page2,
       ),
     );
@@ -386,7 +386,7 @@ class _DemoWizardState extends State<DemoWizard> {
       selectable: true,
       selectableWhen: _isPage3Selectable,
       onSelected: () => page3RefreshCtrl.trigger(true),
-      content: FUISingleChildScrollView(
+      content: UISingleChildScrollView(
         child: page3,
       ),
     );
@@ -418,7 +418,7 @@ class _DemoWizardState extends State<DemoWizard> {
       selectable: true,
       selectableWhen: _isPage4Selectable,
       onSelected: () => page4RefreshCtrl.trigger(true),
-      content: FUISingleChildScrollView(
+      content: UISingleChildScrollView(
         child: page4,
       ),
     );

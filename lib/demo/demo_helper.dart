@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
-import '../../../focus_ui_kit/exports.dart';
 
 mixin DemoHelper {
   static Widget buildGradientBox() {
@@ -26,8 +26,8 @@ mixin DemoHelper {
     );
   }
 
-  static FUIColorScheme randomFUIColorScheme() {
-    var vList = FUIColorScheme.values.toList();
+  static UIColorScheme randomFUIColorScheme() {
+    var vList = UIColorScheme.values.toList();
     vList.shuffle();
 
     return vList[0];

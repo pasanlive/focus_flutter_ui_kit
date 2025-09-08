@@ -2,7 +2,7 @@ import 'package:color_shade/color_shade.dart';
 import 'package:flutter/material.dart';
 import 'package:icons_plus/icons_plus.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoWidgetSmallInfo02 extends StatelessWidget {
   const DemoWidgetSmallInfo02({super.key});
@@ -27,7 +27,7 @@ class DemoWidgetSmallInfo02 extends StatelessWidget {
             style: typoTheme.h2.copyWith(fontSize: 60),
             child: Text('18,936'),
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           _buildDownIndicator(context),
         ],
       ),
@@ -35,7 +35,7 @@ class DemoWidgetSmallInfo02 extends StatelessWidget {
   }
 
   _buildDownIndicator(BuildContext context) {
-    FUIThemeCommonColors fuiColors = context.theme.fuiColors;
+    UIThemeCommonColors fuiColors = context.theme.fuiColors;
     double borderRadius = 5;
     double width = 60;
     double height = 25;

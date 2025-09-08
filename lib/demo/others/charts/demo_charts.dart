@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_animator/animation/animation_preferences.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoCharts extends StatelessWidget {
@@ -11,15 +11,15 @@ class DemoCharts extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return FUISingleChildScrollView(
-      child: FUIColumn(
+    return UISingleChildScrollView(
+      child: UIColumn(
         children: [
           _buildTopBanner(),
           _buildRow1(),
           _buildRow2(),
           _buildRow3(),
           _buildRow4(),
-          FUISpacer.vSpace30,
+          UISpacer.vSpace30,
           DemoScaffoldBottom01(),
         ],
       ),

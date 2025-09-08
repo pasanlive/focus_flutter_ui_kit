@@ -6,7 +6,7 @@ import 'package:mask_text_input_formatter/mask_text_input_formatter.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 import 'package:select2dot1/select2dot1.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoWizardPage4 extends StatefulWidget {
@@ -27,7 +27,7 @@ class DemoWizardPage4 extends StatefulWidget {
 
 class _DemoWizardPage4State extends State<DemoWizardPage4> {
   /// Theme
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Bloc
   late FUIInputFieldController ccNoFieldCtrl;
@@ -130,26 +130,26 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
 
   _buildSideInfo() {
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           Icon(
             LineAwesome.credit_card,
             size: 65,
           ),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           H3(Text('Payment Info')),
-          FUISpacer.vSpace5,
+          UISpacer.vSpace5,
           Regular(Text('Please fill in the credit card details for payment.')),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              FUISpacer.hSpace15,
+              UISpacer.hSpace15,
               Icon(FontAwesome.cc_visa_brand, size: 25),
               Icon(FontAwesome.cc_mastercard_brand, size: 25),
               Icon(FontAwesome.cc_amex_brand, size: 25),
               Icon(FontAwesome.cc_discover_brand, size: 25),
-              FUISpacer.hSpace15,
+              UISpacer.hSpace15,
             ],
           ),
         ],
@@ -173,13 +173,13 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
     );
 
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(
             padding: eiSidePadding,
             Text('Payment Details'),
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -200,7 +200,7 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
               ),
             ],
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -220,7 +220,7 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
               ),
             ],
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(
@@ -258,7 +258,7 @@ class _DemoWizardPage4State extends State<DemoWizardPage4> {
               ),
             ],
           ),
-          FUISpacer.vSpace15,
+          UISpacer.vSpace15,
           ResponsiveGridRow(
             children: [
               ResponsiveGridCol(

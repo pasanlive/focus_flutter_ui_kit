@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 
 class DemoTabsAccordionSimple extends StatelessWidget {
   const DemoTabsAccordionSimple({super.key});
@@ -29,11 +29,11 @@ class DemoTabsAccordionSimple extends StatelessWidget {
     ];
 
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           H3(Text('Simple Accordion')),
           Regular(Text('Accordions are found in components/accordion/FUIAccordion')),
-          FUISpacer.vSpace10,
+          UISpacer.vSpace10,
           FUIAccordion(
             fuiAccordionItems: accordionItemList,
           ),

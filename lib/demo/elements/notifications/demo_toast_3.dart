@@ -2,7 +2,7 @@ import 'package:enum_to_string/enum_to_string.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:responsive_grid/responsive_grid.dart';
 
-import '../../../focus_ui_kit/exports.dart';
+import 'package:pasanlive_flutter_ui_kit/pasanlive_ui_kit/exports.dart';
 import '../../exports.dart';
 
 class DemoToast3 extends StatefulWidget {
@@ -16,7 +16,7 @@ class DemoToast3 extends StatefulWidget {
 
 class _DemoToast3State extends State<DemoToast3> {
   /// Theme
-  late FUIThemeCommonColors fuiColors;
+  late UIThemeCommonColors fuiColors;
 
   /// Controllers
   late TextEditingController type3TitleCtrl;
@@ -93,12 +93,12 @@ class _DemoToast3State extends State<DemoToast3> {
     FUIToast3 t3 = FUIToast3(context);
 
     return FUISectionContainer(
-      child: FUIColumn(
+      child: UIColumn(
         children: [
           PreH(const Text('On-screen Toast')),
           H2(const Text('Fancy Notification / Toast: Type-3')),
           Regular(const Text('Slightly elaborated notification, with title, description, side icon, and decorative bar.')),
-          FUISpacer.vSpace20,
+          UISpacer.vSpace20,
           FUIButtonBlockTextIcon(
               text: const Text('Show Type-3'),
               onPressed: () {
@@ -109,7 +109,7 @@ class _DemoToast3State extends State<DemoToast3> {
                   title: title,
                   description: desc,
                   fuiToastPosition: FUIToastPosition.parseName(type3ToastPositionCtrl.text),
-                  fuiColorScheme: EnumToString.fromString(FUIColorScheme.values, type3ColorSchemeCtrl.text, camelCase: true),
+                  fuiColorScheme: EnumToString.fromString(UIColorScheme.values, type3ColorSchemeCtrl.text, camelCase: true),
                   fuiToastDecoBarPosition: EnumToString.fromString(FUIToastDecoBarPosition.values, type3DecoBarPositionCtrl.text, camelCase: true),
                   sideIcon: CupertinoIcons.exclamationmark_triangle,
                   sideWidgetPosition: EnumToString.fromString(FUIToastIconPosition.values, type3SideIconPositionCtrl.text, camelCase: true),

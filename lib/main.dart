@@ -6,5 +6,5 @@ import 'demo/demo_app.dart';
 void main() {
   /// This is to remedy the asset path for both web and mobile. Please look at this: https://docs.flutter.dev/ui/navigation/url-strategies
   usePathUrlStrategy();
-  runApp(const FocusThemeDemoApp());
+  runApp(const PasanLiveThemeDemoApp());
 }
